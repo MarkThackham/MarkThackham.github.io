@@ -30,8 +30,6 @@ I am a data scientist with experience in machine learning, statistical analysis,
 
 ### Research Pububilcations
 
-### Publications
-
 Thackham, M., & Ma, J. (2020). **On maximum likelihood estimation of competing risks using the cause‑specific semi‑parametric Cox model with time‑varying covariates – An application to credit risk.** *Journal of the Operational Research Society, 73*(2), 5–14. https://doi.org/10.1080/01605682.2020.1800418  
 
 Thackham, M., & Ma, J. (2019). **On maximum likelihood estimation of the semi‑parametric Cox model with time‑varying covariates.** *Journal of Applied Statistics, 47*(9), 1511–1528. https://doi.org/10.1080/02664763.2019.1681946  
