@@ -1,18 +1,18 @@
 # Mark Thackham
 
-Welcome to my professional homepage! I am a data scientist passionate about research, open source, and building impactful data-driven solutions.
-
-I am a PhD Statistician and Actuary with 21 years building, deploying and validating predictive models for banks insuers and fintechs.
+Welcome to my professional homepage! 
 
 ---
 
 ## About Me
 
-I am a data scientist with experience in machine learning, statistical analysis, and data visualization. My research interests include applied AI, reproducible science, and sharing knowledge through open source.
+I am a data scientist passionate about AI, machine learningm, open source, and building impactful data-driven solutions.
 
-- **GitHub:** [MarkThackham](https://github.com/MarkThackham)
-- **Email:** [mark.thackham@gmail.com](mailto:mark.thackham@gmail.com)
+I am a PhD Statistician and Actuary with 21 years building, deploying and validating predictive models for banks insuers and fintechs.
+
 - **LinkedIn:** [MarkThackham](https://www.linkedin.com/in/markthackham/)
+- **Email:** [mark.thackham@gmail.com](mailto:mark.thackham@gmail.com)
+- **GitHub:** [MarkThackham](https://github.com/MarkThackham)
 
 ---
 
