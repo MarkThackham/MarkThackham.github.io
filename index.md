@@ -11,7 +11,7 @@ I am a PhD Statistician and Actuary with 21 years building, deploying and valida
 I am a data scientist with experience in machine learning, statistical analysis, and data visualization. My research interests include applied AI, reproducible science, and sharing knowledge through open source.
 
 - **GitHub:** [MarkThackham](https://github.com/MarkThackham)
-- **Email:** mark.thackham@gmmail.com
+- **Email:** [mark.thackham@gmail.com](mailto:mark.thackham@gmail.com)
 - **LinkedIn:** [MarkThackham](https://www.linkedin.com/in/markthackham/)
 
 ---
