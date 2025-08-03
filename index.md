@@ -9,7 +9,9 @@ Welcome to my professional homepage! I am a data scientist passionate about rese
 I am a data scientist with experience in machine learning, statistical analysis, and data visualization. My research interests include applied AI, reproducible science, and sharing knowledge through open source.
 
 - **GitHub:** [MarkThackham](https://github.com/MarkThackham)
-- **Email:** your.email@example.com
+- **Email:** mark.thackham@gmmail.com
+- **LinkedIn:** [zzz](https://www.linkedin.com/in/markthackham/)
+
 
 ---
 
