@@ -2,6 +2,8 @@
 
 Welcome to my professional homepage! I am a data scientist passionate about research, open source, and building impactful data-driven solutions.
 
+PhD Statistician and Actuary with 20 years building, deploying and validating predictive models in financial services. Experienced analytics team leader with strong stakeholder management. Demonstrated hands-on modelling skills in: Python, R, SAS, SQL.
+
 ---
 
 ## About Me
@@ -10,7 +12,7 @@ I am a data scientist with experience in machine learning, statistical analysis,
 
 - **GitHub:** [MarkThackham](https://github.com/MarkThackham)
 - **Email:** mark.thackham@gmmail.com
-- **LinkedIn:** [zzz](https://www.linkedin.com/in/markthackham/)
+- **LinkedIn:** [MarkThackham](https://www.linkedin.com/in/markthackham/)
 
 
 ---
