@@ -26,13 +26,19 @@ I am a data scientist with experience in machine learning, statistical analysis,
 
 ---
 
-## Research
+## Research Pububilcations
 
-- **Paper Title 1**  
-  Published in Journal/Conference, Year. [DOI/Link](https://doi.org/yourdoi)
+- **On maximum likelihood estimation of competing risks using the cause-specific semi-parametric Cox model with time-varying covariates – An application to credit risk**  
+  *Journal of the Operational Research Society* · Jul 17, 2020  
+  [https://doi.org/10.1080/01605682.2020.1800418](https://doi.org/10.1080/01605682.2020.1800418)
 
-- **Paper Title 2**  
-  Published in Journal/Conference, Year. [DOI/Link](https://doi.org/yourdoi)
+- **On maximum likelihood estimation of the semi-parametric Cox model with time-varying covariates**  
+  *Journal of Applied Statistics* · Oct 14, 2019  
+  [https://doi.org/10.1080/02664763.2019.1681946](https://doi.org/10.1080/02664763.2019.1681946)
+
+- **Exposure at default without conversion factors — evidence from Global Credit Data for large corporate revolving facilities**  
+  *Journal of the Royal Statistical Society (Series A)* · Sep 30, 2018  
+  [https://doi.org/10.1111/rssa.12418](https://doi.org/10.1111/rssa.12418)
 
 ---
 
