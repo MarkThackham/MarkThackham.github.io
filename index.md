@@ -1,15 +1,10 @@
 ---
-title: "Mark Thackham"
----
-
-# Here is a title
-
-
-Welcome to my professional homepage! 
-
+#title: "Mark Thackham"
 ---
 
 ## About Me
+
+Welcome to my professional homepage! 
 
 I am a data scientist with experience in machine learning, statistical analysis, and data visualization. My research interests include: machine learning; statistics; applied AI.
 
