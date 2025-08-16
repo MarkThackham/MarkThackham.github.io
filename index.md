@@ -6,9 +6,9 @@ Welcome to my professional homepage!
 
 ## About Me
 
-I am a data scientist with experience in machine learning, statistical analysis, and data visualization. My research interests include applied AI, reproducible science, and sharing knowledge through open source. source.
+I am a data scientist with experience in machine learning, statistical analysis, and data visualization. My research interests include: machine learning; statistics; applied AI.
 
-I am a PhD Statistician and Actuary with 21 years building, deploying and validating predictive models for banks insuers and fintechs.
+I am a PhD Statistician and Actuary with 21 years building, deploying and validating predictive models for banks, insurers and fintechs.
 
 - **LinkedIn:** [MarkThackham](https://www.linkedin.com/in/markthackham/)
 - **Email:** [mark.thackham@gmail.com](mailto:mark.thackham@gmail.com)
@@ -16,7 +16,7 @@ I am a PhD Statistician and Actuary with 21 years building, deploying and valida
 
 ---
 
-## Data Science Pojects Projects
+## Data Science projects Projects
 
 - [Project 1 Title](https://github.com/MarkThackham/project1)  
   Short description of your project and its impact.
@@ -28,7 +28,7 @@ I am a PhD Statistician and Actuary with 21 years building, deploying and valida
 
 # Research
 
-### Research Pububilcations
+### Research Publications
 
 - **Thackham, M., & Ma, J. (2020). **On maximum likelihood estimation of competing risks using the cause‑specific semi‑parametric Cox model with time‑varying covariates – An application to credit risk.** *Journal of the Operational Research Society, 73*(2), 5–14. https://doi.org/10.1080/01605682.2020.1800418  
 
