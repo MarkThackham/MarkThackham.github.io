@@ -6,7 +6,7 @@ Welcome to my professional homepage! I am a data scientist passionate about rese
 
 ## About Me
 
-I am a data scientist with experience in machine learning, statistical analysis, and data visualization. My research interests include applied AI, reproducible science, and sharing knowledge through open source.
+I am a data scientist with experience in machine learning, statistical analysis, and data visualization. My research interests include applied AI, reproducible science, and sharing knowledge through open source. source.
 
 - **GitHub:** [MarkThackham](https://github.com/MarkThackham)
 - **Email:** your.email@example.com
