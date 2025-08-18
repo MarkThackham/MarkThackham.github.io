@@ -18,7 +18,7 @@ I am a PhD Statistician and Actuary with 21 years building, deploying and valida
 
 # Data Science projects Projects
 
-- [Project 1 Title](https://github.com/MarkThackham/project1)  
+- [Project 1 Title](/project1/)  
   Short description of your project and its impact.
 
 - [Project 2 Title](https://github.com/MarkThackham/project2)  
