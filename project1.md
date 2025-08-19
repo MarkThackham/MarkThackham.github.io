@@ -1,5 +1,6 @@
 ---
 title: "Project 1 Title"
+description: "Desc1"
 permalink: /project1/
 ---
 
