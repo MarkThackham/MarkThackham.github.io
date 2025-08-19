@@ -1,6 +1,6 @@
 ---
 title: "Project 1 Title"
-description: "Desc1"
+description: "Degrees of Freedom"
 permalink: /project1/
 ---
 
