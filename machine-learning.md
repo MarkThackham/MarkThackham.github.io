@@ -1,7 +1,7 @@
 ---
-title: "Project 1 Title"
+title: "Machine Learning"
 description: "Degrees of Freedom"
-permalink: /project1/
+permalink: /machine-learning/
 ---
 
 # Project 1 Title

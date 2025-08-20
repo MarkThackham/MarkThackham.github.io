@@ -16,10 +16,10 @@ I am a PhD Statistician and Actuary with 21 years building, deploying and valida
 
 ---
 
-# Data Science projects Projects
+# Data Science Projects
 
-- [Project 1 Title](/project1/)  
-  Short description of your project and its impact.
+- [Machine Learning](/project1/)  
+  Portfolio of example Machine Learning tasks
 
 - [Project 2 Title](https://github.com/MarkThackham/project2)  
   Brief summary of what the project does.
