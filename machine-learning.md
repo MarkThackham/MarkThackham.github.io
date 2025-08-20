@@ -6,6 +6,9 @@ permalink: /machine-learning/
 
 # Project 1 Title
 
-Short description of your project and its impact.
+This notebook runs several classification techniques on the [Pima Indians Dataset](https://archive.ics.uci.edu/dataset/34/diabetes)
+
 
 [View on GitHub](https://github.com/MarkThackham/project1)
+
+[← Back to Home](/)
