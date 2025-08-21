@@ -11,8 +11,8 @@ I am Dr Mark Thackham, a data scientist with experience in machine learning, sta
 I am a PhD Statistician and Actuary with 21 years building, deploying and validating predictive models for banks, insurers and fintechs.
 
 - **LinkedIn:** [MarkThackham](https://www.linkedin.com/in/markthackham/)
-- **Email:** [mark.thackham@gmail.com](mailto:mark.thackham@gmail.com)
 - **GitHub:** [MarkThackham](https://github.com/MarkThackham)
+- **Email:** [mark.thackham@gmail.com](mailto:mark.thackham@gmail.com)
 
 ---
 
@@ -28,7 +28,7 @@ I am a PhD Statistician and Actuary with 21 years building, deploying and valida
 
 # Research
 
-### Research Publications
+## Research Publications
 
 - Thackham, M., & Ma, J. (2020). **On maximum likelihood estimation of competing risks using the cause‑specific semi‑parametric Cox model with time‑varying covariates – An application to credit risk.** *Journal of the Operational Research Society, 73*(2), 5–14. https://doi.org/10.1080/01605682.2020.1800418  
 
@@ -36,7 +36,7 @@ I am a PhD Statistician and Actuary with 21 years building, deploying and valida
 
 - Thackham, M., & Ma, J. (2018). **Exposure at default without conversion factors — Evidence from Global Credit Data for large corporate revolving facilities.** *Journal of the Royal Statistical Society: Series A (Statistics in Society), 182*(4), 1267–1286. https://doi.org/10.1111/rssa.12418  
 
-### Research Thesis
+## Research Thesis
 
 - **Survival Analysis – Applications to Credit Risk Default Modelling**  
   [http://hdl.handle.net/1959.14/1281816](http://hdl.handle.net/1959.14/1281816)
@@ -47,7 +47,7 @@ I am a PhD Statistician and Actuary with 21 years building, deploying and valida
 - **Modelling Exposure at Default Without Using Conversion Factors**  
   [http://hdl.handle.net/1959.14/1195696](http://hdl.handle.net/1959.14/1195696)
 
-### Research Presentations
+## Research Presentations
 
 - **EAD Modelling for Large Corporate Exposure at Default Without Conversion Factors**  
   *European Global Credit Data Conference*, Vienna, March 2019  
@@ -59,6 +59,6 @@ I am a PhD Statistician and Actuary with 21 years building, deploying and valida
 
 ---
 
-## Contact
+# Contact
 
 Feel free to reach out for collaboration, consulting opportunities, or just to say hi!
