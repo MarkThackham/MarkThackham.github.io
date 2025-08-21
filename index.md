@@ -4,9 +4,9 @@ title: "Degrees of Freedom"
 
 # About Me
 
-Welcome to my professional homepage! 
+Welcome to my professional homepage and Data Science Portfolio! 
 
-I am Dr Mark Thackham and I am a data scientist with experience in machine learning, statistical analysis, and data visualization. My research interests include: machine learning; statistics; applied AI.
+I am Dr Mark Thackham, a data scientist with experience in machine learning, statistical analysis, and data visualization. My research interests include: machine learning; statistics; applied AI.
 
 I am a PhD Statistician and Actuary with 21 years building, deploying and validating predictive models for banks, insurers and fintechs.
 
