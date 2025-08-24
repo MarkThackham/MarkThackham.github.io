@@ -7,6 +7,6 @@ permalink: /machine-learning/machine-learning-pima-indians/
 
 This notebook applies classification techniques on the [Pima Indians Dataset](https://archive.ics.uci.edu/dataset/34/diabetes) dataset.
 
-[View on GitHub](https://github.com/MarkThackham/MarkThackham.github.io/blob/main/Portfolio/01%20Code%20Base/01%20Code%20Base.ipynb)
+[Pima Indians Notebook](https://github.com/MarkThackham/MarkThackham.github.io/blob/5d65bd8f95160c108963c694176a3c5f663a6ff3/Portfolio/machine-learning/pima-indians/machine-learning-pima-indians.ipynb)
 
 [← Back to Machine Learning](/machine-learning/)
