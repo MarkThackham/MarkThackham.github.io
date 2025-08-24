@@ -11,7 +11,7 @@ This notebook applies classification techniques on the [Pima Indians Dataset](ht
 
 Bee-swarm plot
 
-![SHAP Beeswarm](https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/pima-indians/shap_beeswarm.png)
+![SHAP Beeswarm](https://github.com/MarkThackham/MarkThackham.github.io/blob/885970ffb1a24f8aa14b7a7b7c7a04ef19c90236/Portfolio/machine-learning/pima-indians/pima_indians-shap_beeswarm.png)
 
 
 [← Back to Machine Learning](/machine-learning/)
