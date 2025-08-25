@@ -15,7 +15,6 @@ Classification techniques applied to the
 Pima Indians Dataset
 </a> assign probabilities a subject having diabetes. Key take-outs are:
 </p>
-
 <ul>
   <li>9 classification techniques are applied, including XGBoost and logistic regression</li>
   <li>SHAP explanations help explain which features mattered most</li>
