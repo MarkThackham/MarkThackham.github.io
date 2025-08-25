@@ -7,7 +7,7 @@ permalink: /machine-learning/machine-learning-pima-indians/
 
 This notebook applies classification techniques on the [Pima Indians Dataset](https://archive.ics.uci.edu/dataset/34/diabetes) dataset.
 
-
+Test
 
 <div style="display: flex; justify-content: center; gap: 20px;">
   <figure style="text-align: center;">
