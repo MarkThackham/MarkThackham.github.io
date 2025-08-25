@@ -38,6 +38,33 @@ The [Pima Indians Dataset](https://archive.ics.uci.edu/dataset/34/diabetes) cont
 
 ## Analysis
 
+### Classification Techniques
+These methods are used:
+1. **XGBoost** – Gradient boosting algorithm optimized for speed and performance.  
+2. **LightGBM** – Fast, memory-efficient boosting framework for large datasets.  
+3. **Random Forest** – Ensemble of decision trees that improves stability and accuracy.  
+4. **CatBoost** – Gradient boosting library with strong support for categorical features.  
+5. **Logistic Regression** – Simple, interpretable linear model for binary classification.  
+6. **Naive Bayes** – Probabilistic model based on Bayes’ theorem with independence assumptions.  
+7. **K-Nearest Neighbours** – Instance-based method that classifies based on closest neighbors.  
+8. **Support Vector Machine** – Finds optimal hyperplanes to separate classes with maximum margin.  
+9. **Neural Network – Multilayer Perceptron** – Deep learning model that learns complex, non-linear patterns.  
+
+### Hyperparameter Tuning Techniques
+These methods are used:
+1. **Randomised CV Grid Search** – Tests a random subset of hyperparameter combinations with cross-validation, making it faster than exhaustive grid search.  
+2. **Optuna** – An advanced optimization framework that efficiently searches hyperparameters using techniques like Bayesian optimization.  
+
+### SHAP Explanations
+SHAP (SHapley Additive exPlanations) helps explain how machine learning models make predictions:  
+
+- **Fair attribution** – assigns each feature a contribution to the prediction using Shapley values.  
+- **Local + global insights** – explains both individual predictions and overall feature importance.  
+- **Clear visualization** – tools like beeswarm plots show how features push predictions up or down.  
+  
+
+
+
 <div style="display: flex; justify-content: center; gap: 20px; align-items: flex-start;">
   <figure style="text-align: center; margin: 0;">
     <img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/pima-indians/pima_indians-shap_beeswarm.png"
@@ -53,6 +80,8 @@ The [Pima Indians Dataset](https://archive.ics.uci.edu/dataset/34/diabetes) cont
     <figcaption>SHAP Feature Importance</figcaption>
   </figure>
 </div>
+
+
 
 
 [← Back to Machine Learning](/machine-learning/)
