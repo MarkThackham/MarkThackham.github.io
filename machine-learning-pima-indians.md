@@ -9,20 +9,20 @@ This notebook applies classification techniques on the [Pima Indians Dataset](ht
 
 Test
 
-<div style="display: flex; justify-content: center; gap: 20px;">
-  <figure style="text-align: center;">
+<div style="display: flex; justify-content: center; gap: 20px; align-items: flex-start;">
+  <figure style="text-align: center; margin: 0;">
     <img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/pima-indians/pima_indians-shap_beeswarm.png"
          alt="SHAP Beeswarm"
          width="350">
     <figcaption>SHAP Beeswarm Plot</figcaption>
   </figure>
-  <figure style="text-align: center;">
-    <img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/pima-indians/pima_indians-shap_feature_importance.png"
+
+  <figure style="text-align: center; margin: 0;">
+    <img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/pima-indians/pima_indians-feature_importance.png"
          alt="Another Plot"
          width="350">
     <figcaption>Another Plot</figcaption>
   </figure>
 </div>
-
 
 [← Back to Machine Learning](/machine-learning/)
