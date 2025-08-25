@@ -10,15 +10,21 @@ permalink: /machine-learning/machine-learning-pima-indians/
 <div style="background-color: #f5f5f5; padding: 15px; border-radius: 8px;">
 
 <p>
-This page applies classification techniques on the [Pima Indians Dataset](https://archive.ics.uci.edu/dataset/34/diabetes). Classification techniques assign probabilities of an event of interest, in this case a subject having diabetes.
+Classification techniques applied to the 
+<a href="https://archive.ics.uci.edu/dataset/34/diabetes" target="_blank">
+Pima Indians Dataset
+</a> assign probabilities a subject having diabetes. Key take-outs are:
 </p>
+
 <ul>
   <li>9 classification techniques are applied, including XGBoost and logistic regression</li>
   <li>SHAP explanations help explain which features mattered most</li>
   <li>Hyperparameter tuning, using Randomised CV and Optuna, marginally increase predictiveness</li>
   <li>Glucose, Age and BMI strongly predict diabetes.</li>
 </ul>
+
 </div>
+
 
 ## Introduction
 This notebook applies classification techniques on the [Pima Indians Dataset](https://archive.ics.uci.edu/dataset/34/diabetes) dataset.
