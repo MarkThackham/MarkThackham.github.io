@@ -16,23 +16,15 @@ Pima Indians Dataset
 </a> assign probabilities a subject having diabetes. Key take-outs are:
 </p>
 <ul>
-  <li>9 classification techniques are applied, including XGBoost and logistic regression</li>
-  <li>SHAP explanations help explain which features mattered most</li>
-  <li>Hyperparameter tuning, using Randomised CV and Optuna, marginally increase predictiveness</li>
-  <li>Glucose, Age and BMI strongly predict diabetes.</li>
+  <li>Nine classification techniques applied (including XGBoost and Logistic Regression)</li>
+  <li>SHAP explanations show Glucose, Age and BMI strongly predict diabetes</li>
+  <li>Hyperparameter tuning (Randomised CV and Optuna) increase predictiveness</li>
 </ul>
 
 </div>
 
-
 ## Introduction
-This notebook applies classification techniques on the [Pima Indians Dataset](https://archive.ics.uci.edu/dataset/34/diabetes) dataset.
-
-The dataset originates from a study by the National Institute of Diabetes and Digestive and Kidney Diseases (NIDDK). It contains data from female Pima Indians aged 21 years or older, a group with a notably high incidence of type 2 diabetes, making it a valuable resource for predictive modeling and health research 
-
-It is widely used for binary classification tasks—predicting diabetes or no diabetes based on diagnostic and demographic input features
-
-The dataset contains nine columns: eight predictive features and one class label ("Outcome" or "diabetes"):
+The [Pima Indians Dataset](https://archive.ics.uci.edu/dataset/34/diabetes) contains data from female Pima Indians aged 21 years or older, a group with a notably high incidence of type 2 diabetes. The dataset contains nine columns: eight predictive features and one class label ("Outcome" or "diabetes"):
 
 1. **Pregnancies** – Number of times pregnant  
 2. **Glucose** – Plasma glucose concentration (2-hour oral glucose tolerance test)  
@@ -43,6 +35,8 @@ The dataset contains nine columns: eight predictive features and one class label
 7. **Diabetes Pedigree Function (DPF)** – A function measuring genetic predisposition to diabetes  
 8. **Age** – Age in years  
 9. **Outcome** – Binary label (0 = non-diabetic, 1 = diabetic)  
+
+## Analysis
 
 <div style="display: flex; justify-content: center; gap: 20px; align-items: flex-start;">
   <figure style="text-align: center; margin: 0;">
