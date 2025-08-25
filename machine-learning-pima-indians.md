@@ -16,7 +16,6 @@ Test22
          width="350">
     <figcaption>SHAP Beeswarm Plot</figcaption>
   </figure>
-
   <figure style="text-align: center; margin: 0;">
     <img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/pima-indians/pima_indians-feature_importance.png"
          alt="Another Plot"
