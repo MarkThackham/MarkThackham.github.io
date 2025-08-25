@@ -7,6 +7,19 @@ permalink: /machine-learning/machine-learning-pima-indians/
 
 ## Take Away
 
+<div style="background-color: #f5f5f5; padding: 15px; border-radius: 8px;">
+
+<p>
+This is the first paragraph of the takeaway section.  
+It highlights the main insights and provides a summary for the reader.  
+</p>
+
+<p>
+This is the second paragraph inside the light grey box.  
+You can use it for additional notes, context, or action points.  
+</p>
+
+</div>
 
 ## Introduction
 This notebook applies classification techniques on the [Pima Indians Dataset](https://archive.ics.uci.edu/dataset/34/diabetes) dataset.
