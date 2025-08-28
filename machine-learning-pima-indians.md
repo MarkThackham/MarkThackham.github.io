@@ -1,9 +1,9 @@
 ---
-title: "Machine Learning Details"
+title: "Machine Learning"
 permalink: /machine-learning/machine-learning-pima-indians/
 ---
 
-# Machine Learning Details
+# Classification and SHAP Explanations
 
 ## Take Away
 
