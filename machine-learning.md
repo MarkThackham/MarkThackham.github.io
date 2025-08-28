@@ -4,8 +4,8 @@ description: "Degrees of Freedom"
 permalink: /machine-learning/
 ---
 
-# Project 1 Title
+# Portfolio of Projects
 
-[Project Details](/machine-learning/machine-learning-pima-indians/)
+[Classification and SHAP Explanations](/machine-learning/machine-learning-pima-indians/)
 
 [← Back to Home](/)
