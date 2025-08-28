@@ -50,6 +50,8 @@ These methods are used:
 8. **Support Vector Machine** – Finds optimal hyperplanes to separate classes with maximum margin.  
 9. **Neural Network – Multilayer Perceptron** – Deep learning model that learns complex, non-linear patterns.  
 
+
+
 ### Hyperparameter Tuning Techniques
 These methods are used:
 1. **Randomised CV Grid Search** – Tests a random subset of hyperparameter combinations with cross-validation, making it faster than exhaustive grid search.  
@@ -61,9 +63,8 @@ SHAP (SHapley Additive exPlanations) helps explain how machine learning models m
 - **Fair attribution** – assigns each feature a contribution to the prediction using Shapley values.  
 - **Local + global insights** – explains both individual predictions and overall feature importance.  
 - **Clear visualization** – tools like beeswarm plots show how features push predictions up or down.  
-  
 
-
+SHAP explanations show Glucose, Age and BMI strongly predict diabetes.
 
 <div style="display: flex; justify-content: center; gap: 20px; align-items: flex-start;">
   <figure style="text-align: center; margin: 0;">
@@ -80,8 +81,5 @@ SHAP (SHapley Additive exPlanations) helps explain how machine learning models m
     <figcaption>SHAP Feature Importance</figcaption>
   </figure>
 </div>
-
-
-
 
 [← Back to Machine Learning](/machine-learning/)
