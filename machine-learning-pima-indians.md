@@ -23,7 +23,7 @@ Pima Indians Dataset
 
 </div>
 
-## Introduction
+## Data
 The [Pima Indians Dataset](https://archive.ics.uci.edu/dataset/34/diabetes) contains data from female Pima Indians aged 21 years or older, a group with a notably high incidence of type 2 diabetes. The dataset contains nine columns: eight predictive features and one class label ("Outcome" or "diabetes"):
 
 1. **Pregnancies** – Number of times pregnant  
@@ -50,13 +50,8 @@ These methods are used:
 8. **Support Vector Machine** – Finds optimal hyperplanes to separate classes with maximum margin.  
 9. **Neural Network – Multilayer Perceptron** – Deep learning model that learns complex, non-linear patterns.  
 
-Results show 
-
-
-
-
 ### Hyperparameter Tuning Techniques
-These methods are used:
+These methods are used to tune the XGBoost model:
 1. **Randomised CV Grid Search** – Tests a random subset of hyperparameter combinations with cross-validation, making it faster than exhaustive grid search.  
 2. **Optuna** – An advanced optimization framework that efficiently searches hyperparameters using techniques like Bayesian optimization.  
 
@@ -84,5 +79,22 @@ SHAP explanations show Glucose, Age and BMI strongly predict diabetes.
     <figcaption>SHAP Feature Importance</figcaption>
   </figure>
 </div>
+
+### Results
+
+Receiver-Operator Characteristic (ROC) curves for all models, as asell   
+
+<div style="display: flex; justify-content: center; align-items: flex-start;">
+  <figure style="text-align: center; margin: 0;">
+    <img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/pima-indians/pima_indians-roc_curve.png"
+         alt="SHAP Beeswarm"
+         width="350">
+    <figcaption>Receiver-Operator Characteristic (ROC) Curves</figcaption>
+  </figure>
+</div>
+
+## Codebase
+The codebase to implement this analysis is here.
+
 
 [← Back to Machine Learning](/machine-learning/)
