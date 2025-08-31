@@ -50,6 +50,9 @@ These methods are used:
 8. **Support Vector Machine** – Finds optimal hyperplanes to separate classes with maximum margin.  
 9. **Neural Network – Multilayer Perceptron** – Deep learning model that learns complex, non-linear patterns.  
 
+Results show 
+
+
 
 
 ### Hyperparameter Tuning Techniques
