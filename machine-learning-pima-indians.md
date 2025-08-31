@@ -103,4 +103,7 @@ The codebase to implement this analysis is here.
 
 You can view the full analysis and code in the Jupyter notebook on [GitHub](https://github.com/MarkThackham/MarkThackham.github.io/blob/main/Portfolio/machine-learning/pima-indians/machine-learning-pima-indians.ipynb).
 
+[Machine Learning Analysis – Pima Indians Diabetes](https://nbviewer.org/github/MarkThackham/MarkThackham.github.io/blob/main/Portfolio/machine-learning/pima-indians/machine-learning-pima-indians.ipynb)
+
+
 [← Back to Machine Learning](/machine-learning/)
