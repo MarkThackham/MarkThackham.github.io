@@ -1,4 +1,4 @@
----
+  ---
 title: "Machine Learning"
 permalink: /machine-learning/machine-learning-pima-indians/
 ---
@@ -94,16 +94,6 @@ Receiver-Operator Characteristic (ROC) curves for all models, as asell
 </div>
 
 ## Codebase
-The codebase to implement this analysis is here.
-
-
-**Jupyter Notebook:**  
-[Machine Learning Analysis – Pima Indians Diabetes](https://github.com/MarkThackham/MarkThackham.github.io/blob/main/Portfolio/machine-learning/pima-indians/machine-learning-pima-indians.ipynb)
-
-
-You can view the full analysis and code in the Jupyter notebook on [GitHub](https://github.com/MarkThackham/MarkThackham.github.io/blob/main/Portfolio/machine-learning/pima-indians/machine-learning-pima-indians.ipynb).
-
-[Machine Learning Analysis – Pima Indians Diabetes](https://nbviewer.org/github/MarkThackham/MarkThackham.github.io/blob/main/Portfolio/machine-learning/pima-indians/machine-learning-pima-indians.ipynb)
-
+The codebase to implement this analysis is [here] (https://github.com/MarkThackham/MarkThackham.github.io/blob/main/Portfolio/machine-learning/pima-indians/machine-learning-pima-indians.ipynb)
 
 [← Back to Machine Learning](/machine-learning/)
