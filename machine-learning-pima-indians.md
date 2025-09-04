@@ -82,7 +82,7 @@ SHAP explanations show Glucose, Age and BMI strongly predict diabetes.
 
 ### Results
 
-Receiver-Operator Characteristic (ROC) curves for all models, as asell   
+Receiver-Operator Characteristic (ROC) curves for all models, as well as the results for Optuna and Random Grid Search CV.   
 
 <div style="display: flex; justify-content: center; align-items: flex-start;">
   <figure style="text-align: center; margin: 0;">
@@ -94,6 +94,6 @@ Receiver-Operator Characteristic (ROC) curves for all models, as asell
 </div>
 
 ## Codebase
-The codebase to implement this analysis is [here] (https://github.com/MarkThackham/MarkThackham.github.io/blob/main/Portfolio/machine-learning/pima-indians/machine-learning-pima-indians.ipynb)
+The codebase to implement this analysis is [here](https://github.com/MarkThackham/MarkThackham.github.io/blob/main/Portfolio/machine-learning/pima-indians/machine-learning-pima-indians.ipynb)
 
 [← Back to Machine Learning](/machine-learning/)
