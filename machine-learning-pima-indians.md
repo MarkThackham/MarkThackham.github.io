@@ -1,4 +1,4 @@
-  ---
+---
 title: "Machine Learning"
 permalink: /machine-learning/machine-learning-pima-indians/
 ---
