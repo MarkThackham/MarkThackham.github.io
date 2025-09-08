@@ -1,6 +1,6 @@
 ---
 title: "Machine Learning"
-permalink: /machine-learning/machine-seoul-bike-hire/
+permalink: /machine-learning/machine-learning-seoul-bike-hire/
 ---
 
 # Seoul Bike Hire
