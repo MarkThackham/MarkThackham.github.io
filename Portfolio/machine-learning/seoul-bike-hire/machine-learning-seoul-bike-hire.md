@@ -3,7 +3,7 @@ title: "Machine Learning"
 permalink: /machine-learning/machine-learning-seoul-bike-hire/
 ---
 
-# Seoul Bike Hire
+# Seoul Bike Hire2
 
 ## Take Away
 
