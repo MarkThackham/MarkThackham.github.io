@@ -6,6 +6,6 @@ permalink: /machine-learning/
 
 # Portfolio
 
-[Classification and SHAP Explanations](/machine-learning/machine-learning-pima-indians/)
+[Classification and SHAP Explanations](/machine-learning/pima-indians/machine-learning-pima-indians/)
 
 [← Back to Home](/)
