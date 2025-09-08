@@ -3,7 +3,7 @@ title: "Machine Learning"
 permalink: /machine-learning/machine-learning-pima-indians/
 ---
 
-# Classification and SHAP Explanations Happy Days
+# Classification and SHAP Explanations
 
 ## Take Away
 
