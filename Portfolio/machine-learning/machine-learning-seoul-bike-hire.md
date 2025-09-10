@@ -10,31 +10,34 @@ permalink: /machine-learning/machine-learning-seoul-bike-hire/
 <div style="background-color: #f5f5f5; padding: 15px; border-radius: 8px;">
 
 <p>
-Classification techniques applied to the 
-<a href="https://archive.ics.uci.edu/dataset/34/diabetes" target="_blank">
-Pima Indians Dataset
-</a> assign probabilities a subject having diabetes. Key take-outs are:
+Dataset 
+<a href="https://archive.ics.uci.edu/dataset/560/seoul+bike+sharing+demand" target="_blank">
+Seoul Bike Sharing Demand
+</a> Desc:
 </p>
 <ul>
-  <li>Nine classification techniques applied (including XGBoost and Logistic Regression)</li>
-  <li>SHAP explanations show Glucose, Age and BMI strongly predict diabetes</li>
-  <li>Hyperparameter tuning (Randomised CV and Optuna) increase predictiveness</li>
+  <li>xx</li>
 </ul>
 
 </div>
 
 ## Data
-The [Pima Indians Dataset](https://archive.ics.uci.edu/dataset/34/diabetes) contains data from female Pima Indians aged 21 years or older, a group with a notably high incidence of type 2 diabetes. The dataset contains nine columns: eight predictive features and one class label ("Outcome" or "diabetes"):
+The [Seoul Bike Sharing Demand Dataset](https://archive.ics.uci.edu/dataset/560/seoul+bike+sharing+demand) contains data zz (units in brackets):
 
-1. **Pregnancies** – Number of times pregnant  
-2. **Glucose** – Plasma glucose concentration (2-hour oral glucose tolerance test)  
-3. **Blood Pressure (BP)** – Diastolic blood pressure (mm Hg)  
-4. **Skin Thickness** – Triceps skin fold thickness (mm)  
-5. **Insulin** – 2-hour serum insulin (µU/ml)  
-6. **BMI** – Body Mass Index (weight in kg/(height in m)²)  
-7. **Diabetes Pedigree Function (DPF)** – A function measuring genetic predisposition to diabetes  
-8. **Age** – Age in years  
-9. **Outcome** – Binary label (0 = non-diabetic, 1 = diabetic)  
+1. **Date** (Date)
+2. **Rented Bike** (Integer)
+3. **Hour** (Integer)
+4. **Temperature** (C)
+5. **Humidity** (%)
+6. **Wind speed** (m/s)
+7. **Visibility** (10m)
+8. **Dew point temperature** (C)
+9. **Solar Radiation**	(Mj/m2)
+10. **Rainfall** (mm)
+11. **Snowfall** (cm)
+12. **Seasons**	(Categorical)
+13. **Holiday**	(Binary)
+14. **Functioning Day**	(Binary)
 
 ## Analysis
 
