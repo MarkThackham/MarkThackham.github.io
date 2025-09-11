@@ -13,7 +13,7 @@ permalink: /machine-learning/machine-learning-seoul-bike-hire/
 Dataset 
 <a href="https://archive.ics.uci.edu/dataset/560/seoul+bike+sharing+demand" target="_blank">
 Seoul Bike Sharing Demand
-</a> Desc:
+</a> qqqq
 </p>
 <ul>
   <li>xx</li>
@@ -22,7 +22,7 @@ Seoul Bike Sharing Demand
 </div>
 
 ## Data
-The [Seoul Bike Sharing Demand Dataset](https://archive.ics.uci.edu/dataset/560/seoul+bike+sharing+demand) contains data zz (units in brackets):
+The [Seoul Bike Sharing Demand Dataset](https://archive.ics.uci.edu/dataset/560/seoul+bike+sharing+demand) contains hourly counts of bike rentals in Seoul across a full year, along with weather data (temperature, humidity, wind speed, visibility, dew point, solar radiation, rainfall, snowfall), temporal features (hour, date, season), and holiday / functional day indicators. It can be used to predict the number of bikes rented in a given hour, based on both environmental and calendar variables. The dataset contains 8,760 examples and 13 features (units in brackets):
 
 1. **Date** (Date)
 2. **Rented Bike** (Integer)
