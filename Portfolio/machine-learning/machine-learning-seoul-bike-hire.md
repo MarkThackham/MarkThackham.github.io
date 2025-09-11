@@ -49,9 +49,9 @@ The response variable is the number of bikes rented in a given hour. The plot be
 <div style="display: flex; justify-content: center; align-items: flex-start;">
   <figure style="text-align: center; margin: 0;">
     <img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/seoul-bike-hire/seoul-bike-hire-count-hour.png"
-         alt="Cap1"
+         alt="Bike Rentals by Hour of Day"
          width="800">
-    <figcaption>Cap1</figcaption>
+    <figcaption>Bike Rentals by Hour of Day</figcaption>
   </figure>
 </div>
 
@@ -60,11 +60,25 @@ Looking at a single month (September) shows the daily rental patterns more clear
 <div style="display: flex; justify-content: center; align-items: flex-start;">
   <figure style="text-align: center; margin: 0;">
     <img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/seoul-bike-hire/seoul-bike-hire-count-hour-september.png"
-         alt="Cap1"
+         alt="Bike Rentals by Hour of Day - September 2018"
          width="800">
-    <figcaption>Cap1</figcaption>
+    <figcaption>Bike Rentals by Hour of Day - September 2018</figcaption>
   </figure>
 </div>
+
+There are 295 hours where the bike rental service was not functioning, which are removed from subsequent analysis.
+
+#### Features - time
+
+<div style="display: flex; justify-content: center; align-items: flex-start;">
+  <figure style="text-align: center; margin: 0;">
+    <img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/seoul-bike-hire/seoul-bike-hire-features-time.png"
+         alt="Bike Rentals by Hour of Day - September 2018"
+         width="800">
+    <figcaption>Bike Rentals by Hour of Day - September 2018</figcaption>
+  </figure>
+</div>
+The boxplots above show the distribution of bike rentals by various time features.  
 
 
 ### Results
