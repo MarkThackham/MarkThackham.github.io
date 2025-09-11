@@ -47,7 +47,7 @@ The [Seoul Bike Sharing Demand Dataset](https://archive.ics.uci.edu/dataset/560/
   <figure style="text-align: center; margin: 0;">
     <img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/seoul-bike-hire/seoul-bike-hire-count-hour.png"
          alt="Cap1"
-         width="350">
+         width="700">
     <figcaption>Cap1</figcaption>
   </figure>
 </div>
