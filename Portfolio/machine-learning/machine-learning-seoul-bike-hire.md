@@ -111,6 +111,6 @@ The plots below show the relation between weather conditions and bike rentals.
 
 
 ## Codebase
-The codebase to implement this analysis is [here](https://github.com/MarkThackham/MarkThackham.github.io/blob/main/Portfolio/machine-learning/seoul-bike-hire/Seoul-bike-hire.ipynb)
+The codebase to implement this analysis is [here](https://github.com/MarkThackham/MarkThackham.github.io/blob/main/Portfolio/machine-learning/seoul-bike-hire/machine-learning-seoul-bike-hire.ipynb)
 
 [← Back to Machine Learning](/machine-learning/)
