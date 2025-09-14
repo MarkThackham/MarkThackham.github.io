@@ -44,7 +44,9 @@ The [Seoul Bike Sharing Demand Dataset](https://archive.ics.uci.edu/dataset/560/
 ### Exploratory Data Analysis
 
 #### Response Variable
-The response variable is the number of bikes rented in a given hour. The plot below shows the hourly rental counts across the entire year, with clear daily and seasonal patterns. 
+The response variable is the number of bikes rented in a given hour. 
+
+The distribution of bike rentals is right-skewed, with most hours having low to moderate rentals, and a few hours with very high rentals.
 
 <div style="display: flex; justify-content: center; align-items: flex-start;">
   <figure style="text-align: center; margin: 0;">
@@ -55,8 +57,7 @@ The response variable is the number of bikes rented in a given hour. The plot be
   </figure>
 </div>
 
-
-There are peaks in the morning and evening corresponding to commuting times, as well as higher overall rentals in warmer months.
+The plot below shows the hourly rental counts across the entire year, with clear daily and seasonal patterns. There are peaks in the morning and evening corresponding to commuting times, as well as higher overall rentals in warmer months.
 
 <div style="display: flex; justify-content: center; align-items: flex-start;">
   <figure style="text-align: center; margin: 0;">
@@ -82,18 +83,29 @@ There are 295 hours where the bike rental service was not functioning, which are
 
 #### Features - Time
 
+The plots below show the relation between time and bike rentals.
+
 <div style="display: flex; justify-content: center; align-items: flex-start;">
   <figure style="text-align: center; margin: 0;">
     <img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/seoul-bike-hire/seoul-bike-hire-features-time.png"
-         alt="Bike Rentals by Hour of Day - September 2018"
+         alt="Distribution of Bike Rentals by Time"
          width="800">
     <figcaption>Distribution of Bike Rentals by Time</figcaption>
   </figure>
 </div>
-The boxplots above show the distribution of bike rentals by various time features.  
 
 #### Features - Weather
 
+The plots below show the relation between weather conditions and bike rentals.
+
+<div style="display: flex; justify-content: center; align-items: flex-start;">
+  <figure style="text-align: center; margin: 0;">
+    <img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/seoul-bike-hire/seoul-bike-hire-features-weather.png"
+         alt="Bike Rentals by Weather Conditions"
+         width="800">
+    <figcaption>Bike Rentals by Weather Conditions</figcaption>
+  </figure>
+</div>
 
 ### Results
 
