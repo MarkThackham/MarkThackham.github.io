@@ -44,7 +44,19 @@ The [Seoul Bike Sharing Demand Dataset](https://archive.ics.uci.edu/dataset/560/
 ### Exploratory Data Analysis
 
 #### Response Variable
-The response variable is the number of bikes rented in a given hour. The plot below shows the hourly rental counts across the entire year, with clear daily and seasonal patterns. There are peaks in the morning and evening corresponding to commuting times, as well as higher overall rentals in warmer months.
+The response variable is the number of bikes rented in a given hour. The plot below shows the hourly rental counts across the entire year, with clear daily and seasonal patterns. 
+
+<div style="display: flex; justify-content: center; align-items: flex-start;">
+  <figure style="text-align: center; margin: 0;">
+    <img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/seoul-bike-hire/seoul-bike-hire-histogram.png"
+         alt="Bike Rentals Histogram"
+         width="800">
+    <figcaption>Bike Rentals Histogram</figcaption>
+  </figure>
+</div>
+
+
+There are peaks in the morning and evening corresponding to commuting times, as well as higher overall rentals in warmer months.
 
 <div style="display: flex; justify-content: center; align-items: flex-start;">
   <figure style="text-align: center; margin: 0;">
@@ -68,17 +80,19 @@ Looking at a single month (September) shows the daily rental patterns more clear
 
 There are 295 hours where the bike rental service was not functioning, which are removed from subsequent analysis.
 
-#### Features - time
+#### Features - Time
 
 <div style="display: flex; justify-content: center; align-items: flex-start;">
   <figure style="text-align: center; margin: 0;">
     <img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/seoul-bike-hire/seoul-bike-hire-features-time.png"
          alt="Bike Rentals by Hour of Day - September 2018"
          width="800">
-    <figcaption>Bike Rentals by Hour of Day - September 2018</figcaption>
+    <figcaption>Distribution of Bike Rentals by Time</figcaption>
   </figure>
 </div>
 The boxplots above show the distribution of bike rentals by various time features.  
+
+#### Features - Weather
 
 
 ### Results
