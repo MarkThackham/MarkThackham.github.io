@@ -53,7 +53,7 @@ The distribution of bike rentals is right-skewed, with most hours having low to 
     <img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/seoul-bike-hire/seoul-bike-hire-count-histogram.png"
          alt="Bike Rentals Histogram"
          width="800">
-    <figcaption>Bike Rentals Histogram</figcaption>
+    <figcaption>Bike Rentals Histogram, with Overlaid Density Estimate</figcaption>
   </figure>
 </div>
 
