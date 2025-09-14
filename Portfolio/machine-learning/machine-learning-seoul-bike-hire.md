@@ -48,7 +48,7 @@ The response variable is the number of bikes rented in a given hour. The plot be
 
 <div style="display: flex; justify-content: center; align-items: flex-start;">
   <figure style="text-align: center; margin: 0;">
-    <img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/seoul-bike-hire/seoul-bike-hire-histogram.png"
+    <img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/seoul-bike-hire/seoul-bike-hire-count-histogram.png"
          alt="Bike Rentals Histogram"
          width="800">
     <figcaption>Bike Rentals Histogram</figcaption>
