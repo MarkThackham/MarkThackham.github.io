@@ -93,6 +93,11 @@ There are 295 hours where the bike rental service was not functioning, which are
 #### Features - Time
 
 The plots below show the relation between time and bike rentals.
+- **DayOfWeek** → rentals are fairly steady across weekdays, with Fri/Sat slightly higher.  
+- **Hour** → strong commuting pattern, peaking at 7–9 AM and 5–7 PM.  
+- **Month** → lowest in winter, highest from late spring through early autumn.  
+- **Seasons** → summer has the most rentals, winter the least.  
+- **Holiday** → rentals drop on holidays compared to normal days.  
 
 <div style="display: flex; justify-content: center; align-items: flex-start;">
   <figure style="text-align: center; margin: 0;">
@@ -106,6 +111,14 @@ The plots below show the relation between time and bike rentals.
 #### Features - Weather
 
 The plots below show the relation between weather conditions and bike rentals.
+- **Temperature** → rentals increase steadily with warmer temperatures, peaking in the 20–30°C range.  
+- **Humidity** → moderate humidity supports higher rentals, but very high humidity reduces usage.  
+- **Wind speed** → higher wind speeds are linked to fewer rentals.  
+- **Visibility** → better visibility is associated with slightly more rentals.  
+- **Dew point temperature** → higher dew points (warmer, humid air) generally align with more rentals.  
+- **Solar Radiation** → more sunlight corresponds to increased bike rentals.  
+- **Rainfall Indicator** → bike rentals drop sharply when it rains.  
+- **Snowfall Indicator** → rentals are much lower on snowy days.  
 
 <div style="display: flex; justify-content: center; align-items: flex-start;">
   <figure style="text-align: center; margin: 0;">
@@ -116,8 +129,13 @@ The plots below show the relation between weather conditions and bike rentals.
   </figure>
 </div>
 
-### Results
+## Modelling
 
+### Preparation
+
+### Modelling
+
+### Results
 
 ## Codebase
 The codebase to implement this analysis is [here](https://github.com/MarkThackham/MarkThackham.github.io/blob/main/Portfolio/machine-learning/seoul-bike-hire/machine-learning-seoul-bike-hire.ipynb)
