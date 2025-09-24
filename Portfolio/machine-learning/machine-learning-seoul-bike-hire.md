@@ -136,9 +136,7 @@ The plots below show the relation between weather conditions and bike rentals.
 ## Modelling
 
 ### Preparation
-Machine learning models need categorical features numerically encoded.  Cyclical encoding represents variables that repeat in cycles (like hour of day). For example, Hour 0 and Hour 23 are close in time, which cyclic encoding reflects.
-
-Cyclical encoding maps a periodic variable \( v \) with period \( N \) onto a circle:
+Machine learning models need categorical features numerically encoded.  Cyclical encoding represents variables that repeat in cycles (like hour of day). For example, Hour 0 and Hour 23 are close in time, which cyclic encoding reflects. Cyclical encoding maps a periodic variable \( v \) with period \( N \) onto a circle:
 
 $$
 x_{\sin} = \sin\left(\frac{2\pi v}{N}\right)
@@ -152,21 +150,31 @@ Where:
 - \( v \) = the value (e.g., 0–23 for hours)  
 - \( N \) = the total number of categories (e.g., 24 for hours)  
 
-<div style="display: flex; justify-content: center; gap: 20px; align-items: flex-start;">
-  <figure style="text-align: center; margin: 0;">
-    <img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/seoul-bike-hire/seoul-bike-hire-features-cyclic-days.png"
-         alt="Cyclical Days"
-         width="350">
-    <figcaption>Cyclical Encoding of Days of the Week</figcaption>
-  </figure>
+<div style="display: flex; justify-content: center; gap: 20px; align-items: flex-start; flex-wrap: wrap;">
 
   <figure style="text-align: center; margin: 0;">
     <img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/seoul-bike-hire/seoul-bike-hire-features-cyclic-hours.png"
          alt="Cyclical Hours"
-         width="350">
+         width="300">
     <figcaption>Cyclical Encoding of Hours of the Day</figcaption>
   </figure>
+
+  <figure style="text-align: center; margin: 0;">
+    <img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/seoul-bike-hire/seoul-bike-hire-features-cyclic-days.png"
+         alt="Cyclical Days"
+         width="300">
+    <figcaption>Cyclical Encoding of Days of the Week</figcaption>
+  </figure>
+
+  <figure style="text-align: center; margin: 0;">
+    <img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/seoul-bike-hire/seoul-bike-hire-features-cyclic-months.png"
+         alt="Cyclical Months"
+         width="300">
+    <figcaption>Cyclical Encoding of Months of the Year</figcaption>
+  </figure>
+
 </div>
+
 
 ### Modelling
 
