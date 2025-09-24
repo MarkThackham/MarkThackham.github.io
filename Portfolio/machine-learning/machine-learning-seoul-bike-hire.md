@@ -153,22 +153,24 @@ Where:
 <div style="display: flex; justify-content: center; gap: 20px; align-items: flex-start;">
 
   <figure style="flex: 1; text-align: center; margin: 0;">
-    <img src="...days.png" alt="Cyclical Days" style="max-width: 100%; height: auto;">
+    <img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/seoul-bike-hire/seoul-bike-hire-features-cyclic-days.png"
+         alt="Cyclical Days" style="max-width: 100%; height: auto;">
     <figcaption>Cyclical Encoding of Days of the Week</figcaption>
   </figure>
 
   <figure style="flex: 1; text-align: center; margin: 0;">
-    <img src="...hours.png" alt="Cyclical Hours" style="max-width: 100%; height: auto;">
+    <img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/seoul-bike-hire/seoul-bike-hire-features-cyclic-hours.png"
+         alt="Cyclical Hours" style="max-width: 100%; height: auto;">
     <figcaption>Cyclical Encoding of Hours of the Day</figcaption>
   </figure>
 
   <figure style="flex: 1; text-align: center; margin: 0;">
-    <img src="...months.png" alt="Cyclical Months" style="max-width: 100%; height: auto;">
+    <img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/seoul-bike-hire/seoul-bike-hire-features-cyclic-months.png"
+         alt="Cyclical Months" style="max-width: 100%; height: auto;">
     <figcaption>Cyclical Encoding of Months of the Year</figcaption>
   </figure>
 
 </div>
-
 
 ### Modelling
 
