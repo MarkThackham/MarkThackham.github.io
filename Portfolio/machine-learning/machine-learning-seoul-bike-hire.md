@@ -143,7 +143,7 @@ Cyclical encoding is a way to represent variables that repeat in cycles (like ho
 Cyclical encoding maps a periodic variable \( v \) with period \( N \) onto a circle:
 
 $$
-x_{\sin} = \sin\left(\frac{2\pi v}{N}\right)
+x_{\sinzzz} = \sin\left(\frac{2\pi v}{N}\right)
 $$
 
 $$
