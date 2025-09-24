@@ -14,6 +14,10 @@ Dataset
 <a href="https://archive.ics.uci.edu/dataset/560/seoul+bike+sharing+demand" target="_blank">
 Seoul Bike Sharing Demand
 </a> qqqq
+
+This way, midnight (0) and 11 PM (23) are close together, preserving the natural cycle.
+In short: cyclical encoding lets machine learning models “see” the circular structure of time-like features.
+
 </p>
 <ul>
   <li>xx</li>
@@ -132,6 +136,20 @@ The plots below show the relation between weather conditions and bike rentals.
 ## Modelling
 
 ### Preparation
+Features for machine learning models need to be numerical, so categorical variables (Seasons, Holiday, Functioning Day) need to be encoded.  Options include one-hot encoding, ordinal encoding, target encoding, or cyclic encoding (for time features like hour, day of week, month).  Cyclic encoding is used for Hour, DayOfWeek, and Month to capture their cyclical nature. For example, Hour 0 and Hour 23 are close in time, which cyclic encoding reflects.
+
+Cyclical encoding is a way to represent variables that repeat in cycles (like hour of day, day of week, or month of year). Instead of using plain integers (which make the first and last values look far apart), you map them onto a circle using sine and cosine:
+
+Cyclical encoding maps a periodic variable \(v\) with period \(N\) onto a circle:
+
+\[
+x_{\sin} = \sin\left(\frac{2\pi \cdot v}{N}\right), \quad
+x_{\cos} = \cos\left(\frac{2\pi \cdot v}{N}\right)
+\]
+
+- \(v\) = the value (e.g., 0–23 for hours)  
+- \(N\) = total number of categories (e.g., 24 for hours)  
+
 
 ### Modelling
 
