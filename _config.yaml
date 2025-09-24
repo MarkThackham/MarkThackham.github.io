@@ -1,6 +1,9 @@
 #title: "Data Science and Research Portfolio"
 description: "Data Science and Research Portfolio"
 theme: jekyll-theme-cayman
-#theme: jekyll-theme-tactile
-#theme: jekyll-theme-slate
 show_downloads: false
+
+# Enable kramdown + MathJax for LaTeX equations
+markdown: kramdown
+kramdown:
+  math_engine: mathjax
