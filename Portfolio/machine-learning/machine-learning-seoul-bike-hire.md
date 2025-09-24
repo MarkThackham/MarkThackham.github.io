@@ -140,15 +140,20 @@ Features for machine learning models need to be numerical, so categorical variab
 
 Cyclical encoding is a way to represent variables that repeat in cycles (like hour of day, day of week, or month of year). Instead of using plain integers (which make the first and last values look far apart), you map them onto a circle using sine and cosine:
 
-Cyclical encoding maps a periodic variable \(v\) with period \(N\) onto a circle:
+Cyclical encoding maps a periodic variable \( v \) with period \( N \) onto a circle:
 
-\[
-x_{\sin} = \sin\left(\frac{2\pi \cdot v}{N}\right), \quad
-x_{\cos} = \cos\left(\frac{2\pi \cdot v}{N}\right)
-\]
+$$
+x_{\sin} = \sin\left(\frac{2\pi v}{N}\right)
+$$
 
-- \(v\) = the value (e.g., 0–23 for hours)  
-- \(N\) = total number of categories (e.g., 24 for hours)  
+$$
+x_{\cos} = \cos\left(\frac{2\pi v}{N}\right)
+$$
+
+Where:  
+- \( v \) = the value (e.g., 0–23 for hours)  
+- \( N \) = the total number of categories (e.g., 24 for hours)  
+
 
 
 ### Modelling
