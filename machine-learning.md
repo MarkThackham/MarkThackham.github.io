@@ -6,9 +6,9 @@ permalink: /machine-learning/
 
 # Portfolio
 
-[Classification and SHAP Explanations](/machine-learning/machine-learning-pima-indians/)
+[Classification, Hyperparameter Tuning, SHAP Explanations (Titanic Data)](/machine-learning/machine-learning-pima-indians/)
 
-[Regression on Seoul Bike Hire](/machine-learning/machine-learning-seoul-bike-hire/)
+[Regression, Cyclical Feature Encoding (Seoul Bike Hire Data)](/machine-learning/machine-learning-seoul-bike-hire/)
 
 
 [← Back to Home](/)
