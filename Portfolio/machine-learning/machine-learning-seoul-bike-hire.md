@@ -136,7 +136,7 @@ The plots below show the relation between weather conditions and bike rentals.
 ## Modelling
 
 ### Preparation
-Machine learning models need categorical features numerically encoded.  Cyclical encoding represents variables that repeat in cycles (like hour of day). For example, Hour 0 and Hour 23 are close in time, which cyclic encoding reflects. Cyclical encoding maps a periodic variable \( v \) with period \( N \) onto a circle:
+Machine learning models need categorical features numerically encoded.  Cyclical encoding represents variables that repeat in cycles (like hour of day). For example, Hour 0 and Hour 23 are close in time, which cyclic encoding reflects. Cyclical encoding maps a periodic variable \( v \ = the value (e.g., 0–23 for hours)) with period \( N \ = the total number of categories (e.g., 24 for hours) ) onto a circle:
 
 $$
 x_{\sin} = \sin\left(\frac{2\pi v}{N}\right)
@@ -146,9 +146,7 @@ $$
 x_{\cos} = \cos\left(\frac{2\pi v}{N}\right)
 $$
 
-Where:  
-- \( v \) = the value (e.g., 0–23 for hours)  
-- \( N \) = the total number of categories (e.g., 24 for hours)  
+The below plots show the cyclical encoding for DayOfWeek, Hour and Month.
 
 <div style="display: flex; justify-content: center; gap: 20px; align-items: flex-start;">
 
