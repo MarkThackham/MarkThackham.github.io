@@ -168,9 +168,9 @@ The below plots show the cyclical encoding for DayOfWeek, Hour and Month.
     <figcaption>Cyclical Encoding - Months</figcaption>
   </figure>
 
-The Seasons (Spring, Summer, Autumn, Winter) and Holiday (Yes, No) categorical features are one-hot encoded into binary features.
-
 </div>
+
+The Seasons (Spring, Summer, Autumn, Winter) and Holiday (Yes, No) categorical features are one-hot encoded into binary features.
 
 ### Modelling
 
