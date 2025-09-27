@@ -26,7 +26,7 @@ In short: cyclical encoding lets machine learning models “see” the circular 
 </div>
 
 ## Data
-The [Seoul Bike Sharing Demand Dataset](https://archive.ics.uci.edu/dataset/560/seoul+bike+sharing+demand) contains hourly counts of bike rentals in Seoul across a full year, along with weather data (temperature, humidity, wind speed, visibility, dew point, solar radiation, rainfall, snowfall), temporal features (hour, date, season), and holiday / functional day indicators. Features can be used to predict the number of bikes rented in a given hour, based on both environmental and calendar variables. The dataset contains 8,760 examples and 13 features (units in brackets):
+The [Seoul Bike Sharing Demand Dataset](https://archive.ics.uci.edu/dataset/560/seoul+bike+sharing+demand) contains hourly counts of bike rentals in Seoul across a full year, along with weather data (temperature, humidity, wind speed, visibility, dew point, solar radiation, rainfall, snowfall), temporal features (hour, date, season), and holiday / functional day indicators. Features can be used to predict the number of bikes rented in a given hour, based on both environmental and calendar features. The dataset contains 8,760 examples and 13 features (units in brackets):
 
 1. **Date** (Date)
 2. **Rented Bike** (Integer)
@@ -47,8 +47,8 @@ The [Seoul Bike Sharing Demand Dataset](https://archive.ics.uci.edu/dataset/560/
 
 ### Exploratory Data Analysis
 
-#### Response Variable
-The response variable is the number of bikes rented in a given hour. The histogram below shows the distribution of bike rentals, with an overlaid density estimate. The distribution of bike rentals is right-skewed, with most hours having low to moderate rentals, and a few hours with very high rentals.
+#### Response
+The response is the number of bikes rented in a given hour. The histogram below shows the distribution of bike rentals, with an overlaid density estimate. The distribution of bike rentals is right-skewed, with most hours having low to moderate rentals, and a few hours with very high rentals.
 
 <div style="display: flex; justify-content: center; align-items: flex-start;">
   <figure style="text-align: center; margin: 0;">
@@ -136,7 +136,7 @@ The plots below show the relation between weather conditions and bike rentals.
 ## Modelling
 
 ### Preparation
-Machine learning models need categorical features numerically encoded.  Cyclical encoding represents variables that repeat in cycles (like hour of day). For example, Hour 0 and Hour 23 are close in time, which cyclic encoding reflects. Cyclical encoding maps a periodic variable \( v \ = the value (e.g., 0–23 for hours)) with period \( N \ = the total number of categories (e.g., 24 for hours) ) onto a circle:
+Machine learning models need categorical features numerically encoded.  Cyclical encoding accounts for features that repeat in cycles (like hour of day). For example, Hour 0 and Hour 23 are close in time, which cyclic encoding reflects. Cyclical encoding maps a periodic feature \( v \ = the value (e.g., 0–23 for hours)) with period \( N \ = the total number of categories (e.g., 24 for hours) ) onto a circle:
 
 $$
 x_{\sin} = \sin\left(\frac{2\pi v}{N}\right)
@@ -153,20 +153,22 @@ The below plots show the cyclical encoding for DayOfWeek, Hour and Month.
   <figure style="flex: 1; text-align: center; margin: 0;">
     <img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/seoul-bike-hire/seoul-bike-hire-features-cyclic-days.png"
          alt="Cyclical Days" style="max-width: 100%; height: auto;">
-    <figcaption>Cyclical Encoding of Days of the Week</figcaption>
+    <figcaption>Cyclical Encoding - Days</figcaption>
   </figure>
 
   <figure style="flex: 1; text-align: center; margin: 0;">
     <img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/seoul-bike-hire/seoul-bike-hire-features-cyclic-hours.png"
          alt="Cyclical Hours" style="max-width: 100%; height: auto;">
-    <figcaption>Cyclical Encoding of Hours of the Day</figcaption>
+    <figcaption>Cyclical Encoding - Hours</figcaption>
   </figure>
 
   <figure style="flex: 1; text-align: center; margin: 0;">
     <img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/seoul-bike-hire/seoul-bike-hire-features-cyclic-months.png"
          alt="Cyclical Months" style="max-width: 100%; height: auto;">
-    <figcaption>Cyclical Encoding of Months of the Year</figcaption>
+    <figcaption>Cyclical Encoding - Months</figcaption>
   </figure>
+
+The Seasons (Spring, Summer, Autumn, Winter) and Holiday (Yes, No) categorical features are one-hot encoded into binary features.
 
 </div>
 
