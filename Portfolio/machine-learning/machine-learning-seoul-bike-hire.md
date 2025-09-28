@@ -173,6 +173,17 @@ The below plots show the cyclical encoding for DayOfWeek, Hour and Month.
 The Seasons (Spring, Summer, Autumn, Winter) and Holiday (Yes, No) categorical features are one-hot encoded into binary features.
 
 ### Modelling
+The dataset is split into training (80%) and test (20%) sets.  The below plot shows RMSE for XGBoost models trained on individual features, displaying univariate predictive power.  
+
+<div style="display: flex; justify-content: center; align-items: flex-start;">
+  <figure style="text-align: center; margin: 0;">
+    <img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/seoul-bike-hire/seoul-bike-hire-count-feature-rmse.png"
+         alt="Bike Rentals Histogram"
+         width="800">
+    <figcaption>RMSE by Individual Feature</figcaption>
+  </figure>
+</div>
+
 
 ### Results
 
