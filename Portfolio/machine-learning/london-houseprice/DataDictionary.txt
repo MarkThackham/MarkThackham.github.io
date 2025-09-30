@@ -1,0 +1,17 @@
+Address: The address of the house.
+Neighborhood: The neighborhood or district where the house is located.
+Bedrooms: The number of bedrooms in the house.
+Bathrooms: The number of bathrooms in the house.
+Square Meters: The total size of the house in square meters.
+Building Age: The age of the building, indicating how long ago it was constructed.
+Garden: Indicates whether the house has a garden ("Yes" or "No").
+Garage: Indicates whether the house has a garage ("Yes" or "No").
+Floors: The total number of floors in the house.
+Property Type: The type of property, such as "Apartment" or "House."
+Heating Type: The type of heating system used in the house (e.g., "Central Heating," "Gas").
+Balcony: Indicates whether the house has a balcony ("Yes" or "No").
+Interior Style: The interior design style of the house (e.g., "Modern," "Contemporary").
+View: The type of view from the house (e.g., "City View," "Sea View").
+Materials: The materials used in the construction of the house (e.g., "Brick," "Wood").
+Building Status: The current condition of the building (e.g., "New," "Renovated," "Old").
+Price (£): The sale price of the house, in British pounds (£).
