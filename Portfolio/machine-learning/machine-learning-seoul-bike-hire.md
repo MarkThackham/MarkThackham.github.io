@@ -184,8 +184,46 @@ The dataset is split into training (80%) and test (20%) sets.  The below plot sh
   </figure>
 </div>
 
-
 ### Results
+A final XGBoost model is trained on all features. The table below shows the RMSE and R² for both training and test sets, indicating good model performance without overfitting.
+
+| Metric     |  Value |
+|------------|-------:|
+| Train RMSE | 169.56 |
+| Test RMSE  | 198.06 |
+| Train R2   |  0.9311 |
+| Test R2    |  0.9001 |
+
+The predicted vs residuals and predicted vs actual plots show good agreement between predicted and actual values, with no obvious patterns in the residuals.
+
+<div style="display: flex; justify-content: center; align-items: flex-start;">
+  <figure style="text-align: center; margin: 0;">
+    <img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/seoul-bike-hire/seoul-bike-hire-count-residuals-actual-vs-predicted.png"
+         alt="Bike Rentals Histogram"
+         width="800">
+    <figcaption>Predicted vs Residuals and Predicted vs Actual Plots</figcaption>
+  </figure>
+</div>
+
+These plots show the feature importance from the final XGBoost model, using both gain and SHAP values.  Temperature, Hour, and Dew Point are the most important features.
+
+<div style="display: flex; justify-content: center; gap: 20px; align-items: flex-start;">
+  <figure style="text-align: center; margin: 0;">
+    <img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/seoul-bike-hire/seoul-bike-hire-count-shap-beeswarm.png"
+         alt="SHAP Beeswarm"
+         width="350">
+    <figcaption>SHAP Beeswarm Plot</figcaption>
+  </figure>
+
+  <figure style="text-align: center; margin: 0;">
+    <img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/seoul-bike-hire/seoul-bike-hire-count-shap-summary.png"
+         alt="SHAP Feature Importance"
+         width="350">
+    <figcaption>SHAP Feature Importance</figcaption>
+  </figure>
+</div>
+
+
 
 ## Codebase
 The codebase to implement this analysis is [here](https://github.com/MarkThackham/MarkThackham.github.io/blob/main/Portfolio/machine-learning/seoul-bike-hire/machine-learning-seoul-bike-hire.ipynb)

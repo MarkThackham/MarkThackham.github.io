@@ -1,0 +1,5 @@
+Metric,Value
+Train RMSE,169.56
+Test RMSE,198.06
+Train R2,0.9311
+Test R2,0.9001
