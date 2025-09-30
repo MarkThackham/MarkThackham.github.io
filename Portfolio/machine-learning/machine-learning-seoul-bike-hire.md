@@ -13,16 +13,13 @@ permalink: /machine-learning/machine-learning-seoul-bike-hire/
 Dataset 
 <a href="https://archive.ics.uci.edu/dataset/560/seoul+bike+sharing+demand" target="_blank">
 Seoul Bike Sharing Demand
-</a> qqqq
-
-This way, midnight (0) and 11 PM (23) are close together, preserving the natural cycle.
-In short: cyclical encoding lets machine learning models “see” the circular structure of time-like features.
-
+</a> contains hourly bike rental counts in Seoul with weather and temporal features. Key take-outs are:
 </p>
 <ul>
-  <li>xx</li>
+  <li>Strong temporal patterns → Bike rentals follow clear daily commuting peaks (7–9 AM, 5–7 PM), are highest in summer and lowest in winter, and drop on holidays</li>
+  <li>Weather strongly influences demand → Rentals rise with warmer temperatures and sunlight, but fall sharply with rain, snow, or high humidity/wind</li>
+  <li>XGBoost model performs well → Using cyclical encoding for time features and weather data, the final model achieves good accuracy (Test RMSE ≈ 198, R² ≈ 0.90), with Temperature, Hour, and Solar Radiation as the most important predictors</li>
 </ul>
-
 </div>
 
 ## Data
@@ -205,7 +202,7 @@ The predicted vs residuals and predicted vs actual plots show good agreement bet
   </figure>
 </div>
 
-These plots show the feature importance from the final XGBoost model, using both gain and SHAP values.  Temperature, Hour, and Dew Point are the most important features.
+These plots show the feature importance from the final XGBoost model, using both gain and SHAP values.  Temperature, Hour, and Solar Radiation are the most important features.
 
 <div style="display: flex; justify-content: center; gap: 20px; align-items: flex-start;">
   <figure style="text-align: center; margin: 0;">
