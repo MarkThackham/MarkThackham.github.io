@@ -10,7 +10,7 @@ permalink: /machine-learning/
 
 [Regression, Cyclical Feature Encoding (Seoul Bike Hire Data)](/machine-learning/machine-learning-seoul-bike-hire/)
 
-[Regression, Cyclical Feature Encoding (London House Price Data)](/machine-learning/machine-learning-london-houseprice/)
+[Regression, Everybody Needs Good Neighbours (London House Price Data)](/machine-learning/machine-learning-london-houseprice/)
 
 
 

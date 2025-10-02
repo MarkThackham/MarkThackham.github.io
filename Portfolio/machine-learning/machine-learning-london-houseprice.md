@@ -11,124 +11,88 @@ permalink: /machine-learning/machine-learning-london-houseprice/
 
 <p>
 Dataset 
-<a href="https://archive.ics.uci.edu/dataset/560/seoul+bike+sharing+demand" target="_blank">
-Seoul Bike Sharing Demand
-</a> contains hourly bike rental counts in Seoul with weather and temporal features. Key take-outs are:
+<a href="https://www.kaggle.com/datasets/oktayrdeki/houses-in-london" target="_blank">
+London House Price Data
+</a> zzz. Key take-outs are:
 </p>
 <ul>
-  <li>Strong temporal patterns → Bike rentals follow clear daily commuting peaks (7–9 AM, 5–7 PM), are highest in summer and lowest in winter, and drop on holidays</li>
-  <li>Weather strongly influences demand → Rentals rise with warmer temperatures and sunlight, but fall sharply with rain, snow, or high humidity/wind</li>
-  <li>XGBoost model performs well → Using cyclical encoding for time features and weather data, the final model achieves good accuracy (Test RMSE ≈ 198, R² ≈ 0.90), with Temperature, Hour, and Solar Radiation as the most important predictors</li>
+  <li>zz</li>
+  <li>zz</li>
+  <li>zz</li>
 </ul>
 </div>
 
 ## Data
-The [Seoul Bike Sharing Demand Dataset](https://archive.ics.uci.edu/dataset/560/seoul+bike+sharing+demand) contains hourly counts of bike rentals in Seoul across a full year, along with weather data (temperature, humidity, wind speed, visibility, dew point, solar radiation, rainfall, snowfall), temporal features (hour, date, season), and holiday / functional day indicators. Features can be used to predict the number of bikes rented in a given hour, based on both environmental and calendar features. The dataset contains 8,760 examples and 13 features (units in brackets):
+The [London House Price Data](https://www.kaggle.com/datasets/oktayrdeki/houses-in-london) contains 1,000 examples of prices for London houses, together with 15 features:
 
-1. **Date** (Date)
-2. **Rented Bike** (Integer)
-3. **Hour** (Integer)
-4. **Temperature** (C)
-5. **Humidity** (%)
-6. **Wind speed** (m/s)
-7. **Visibility** (10m)
-8. **Dew point temperature** (C)
-9. **Solar Radiation**	(Mj/m2)
-10. **Rainfall** (mm)
-11. **Snowfall** (cm)
-12. **Seasons**	(Categorical)
-13. **Holiday**	(Binary)
-14. **Functioning Day**	(Binary)
+1. **Neighborhood** (Categorical)  
+2. **Bedrooms** (Integer)  
+3. **Bathrooms** (Integer)  
+4. **Square Meters** (Integer)  
+5. **Building Age** (Years, Integer)  
+6. **Garden** (Binary: 0 = No, 1 = Yes)  
+7. **Garage** (Binary: 0 = No, 1 = Yes)  
+8. **Floors** (Integer)  
+9. **Property Type** (Categorical)  
+10. **Heating Type** (Categorical)  
+11. **Balcony** (Binary: 0 = No, 1 = Yes)  
+12. **Interior Style** (Categorical)  
+13. **View** (Categorical)  
+14. **Materials** (Categorical)  
+15. **Building Status** (Categorical)  
+16. **Price** (Integer, Currency)  
 
 ## Analysis
 
 ### Exploratory Data Analysis
 
 #### Response
-The response is the number of bikes rented in a given hour. The histogram below shows the distribution of bike rentals, with an overlaid density estimate. The distribution of bike rentals is right-skewed, with most hours having low to moderate rentals, and a few hours with very high rentals.
+The response is house price. The histograms below shows the distribution of house prices, which is right-skewed.  A log transformation normalises the distribution.
 
 <div style="display: flex; justify-content: center; align-items: flex-start;">
   <figure style="text-align: center; margin: 0;">
-    <img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/seoul-bike-hire/seoul-bike-hire-count-histogram.png"
-         alt="Bike Rentals Histogram"
+    <img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/london-houseprice/london-house-price-histogram.png"
+         alt="Distribution of House Prices"
          width="800">
-    <figcaption>Bike Rentals Histogram, with Overlaid Density Estimate</figcaption>
+    <figcaption>Distribution of House Prices</figcaption>
   </figure>
 </div>
 
-The plot below shows the hourly rental counts across the entire year, with clear seasonal. There are in warmer months, especially summer, when rentals peak. January to March have the lowest rentals.
+#### Features
+
+The plot shows the distribution of house prices by neighbourhood.  Neighbourhoods vary widely in price, with some areas (e.g., Chelsea, Westminster) having significantly higher prices than others (e.g., Shoreditch, Greenwich).
 
 <div style="display: flex; justify-content: center; align-items: flex-start;">
   <figure style="text-align: center; margin: 0;">
-    <img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/seoul-bike-hire/seoul-bike-hire-count-hour.png"
-         alt="Bike Rentals by Hour of Day"
+    <img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/london-houseprice/london-house-price-neighborhood.png"
+         alt="Distribution of House Prices by Neighbourhood"
          width="800">
-    <figcaption>Bike Rentals by Hour of Day</figcaption>
+    <figcaption>Distribution of House Prices by Neighbourhood</figcaption>
   </figure>
 </div>
 
-The plot below looks at a single month (September) shows the daily rental patterns more clearly, with consistent repetitive peaks.
+The plot below shows the relationships between the 14 remaining features and house price. 
 
 <div style="display: flex; justify-content: center; align-items: flex-start;">
   <figure style="text-align: center; margin: 0;">
-    <img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/seoul-bike-hire/seoul-bike-hire-count-hour-september.png"
-         alt="Bike Rentals by Hour of Day - September 2018"
+    <img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/london-houseprice/london-house-price-features.png"
+         alt="Relation between Features and House Price"
          width="800">
-    <figcaption>Bike Rentals by Hour of Day - September 2018</figcaption>
+    <figcaption>Relation between Features and House Price</figcaption>
   </figure>
 </div>
 
-Finally, the plot below looks at the first 7 days of September 2018.  Saturday and Sunday have a single peak while weekdays have two peaks, one in the morning and one in the evening, likely corresponding to commuting patterns.
+Feature importance is assessed using the R² from univariate, with square metres, neighbourhood, and property type being the most important features.  
 
 <div style="display: flex; justify-content: center; align-items: flex-start;">
   <figure style="text-align: center; margin: 0;">
-    <img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/seoul-bike-hire/seoul-bike-hire-count-hour-september-1st-7th.png"
-         alt="Bike Rentals by Hour of Day - September 2018"
+    <img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/london-houseprice/london-house-price-rsq.png"
+         alt="Feature Importance"
          width="800">
-    <figcaption>Bike Rentals by Hour of Day - September 2018</figcaption>
+    <figcaption>Feature Importance</figcaption>
   </figure>
 </div>
 
-There are 295 hours where the bike rental service was not functioning, which are removed from subsequent analysis.
-
-#### Features - Time
-
-The plots below show the relation between time and bike rentals.
-- **DayOfWeek** → rentals are fairly steady across weekdays, with Fri/Sat slightly higher.  
-- **Hour** → strong commuting pattern, peaking at 7–9 AM and 5–7 PM.  
-- **Month** → lowest in winter, highest from late spring through early autumn.  
-- **Seasons** → summer has the most rentals, winter the least.  
-- **Holiday** → rentals drop on holidays compared to normal days.  
-
-<div style="display: flex; justify-content: center; align-items: flex-start;">
-  <figure style="text-align: center; margin: 0;">
-    <img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/seoul-bike-hire/seoul-bike-hire-features-time.png"
-         alt="Distribution of Bike Rentals by Time"
-         width="800">
-    <figcaption>Distribution of Bike Rentals by Time</figcaption>
-  </figure>
-</div>
-
-#### Features - Weather
-
-The plots below show the relation between weather conditions and bike rentals.
-- **Temperature** → rentals increase steadily with warmer temperatures, peaking in the 20–30°C range.  
-- **Humidity** → moderate humidity supports higher rentals, but very high humidity reduces usage.  
-- **Wind speed** → higher wind speeds are linked to fewer rentals.  
-- **Visibility** → better visibility is associated with slightly more rentals.  
-- **Dew point temperature** → higher dew points (warmer, humid air) generally align with more rentals.  
-- **Solar Radiation** → more sunlight corresponds to increased bike rentals.  
-- **Rainfall Indicator** → bike rentals drop sharply when it rains.  
-- **Snowfall Indicator** → rentals are much lower on snowy days.  
-
-<div style="display: flex; justify-content: center; align-items: flex-start;">
-  <figure style="text-align: center; margin: 0;">
-    <img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/seoul-bike-hire/seoul-bike-hire-features-weather.png"
-         alt="Bike Rentals by Weather Conditions"
-         width="800">
-    <figcaption>Bike Rentals by Weather Conditions</figcaption>
-  </figure>
-</div>
 
 ## Modelling
 
