@@ -82,7 +82,7 @@ The plot below shows the relationships between the 14 remaining features and hou
   </figure>
 </div>
 
-Feature importance is assessed using the R² from univariate, with square metres, neighbourhood, and property type being the most important features.  
+Feature importance is assessed using the R² from univariate, with square metres, neighbourhood, and property type being the most important features. 
 
 <div style="display: flex; justify-content: center; align-items: flex-start;">
   <figure style="text-align: center; margin: 0;">
@@ -93,78 +93,41 @@ Feature importance is assessed using the R² from univariate, with square metres
   </figure>
 </div>
 
+Only the square metres, neighbourhood, and property type features are retained for modelling, with neighbourhood and property type one-hot encoded into binary features.
 
 ## Modelling
 
-### Preparation
-Machine learning models need categorical features numerically encoded.  Cyclical encoding accounts for features that repeat in cycles (like hour of day). For example, Hour 0 and Hour 23 are close in time, which cyclic encoding reflects. Cyclical encoding maps a periodic feature \( v \ = the value (e.g., 0–23 for hours)) with period \( N \ = the total number of categories (e.g., 24 for hours) ) onto a circle:
+### Models
+Three models are trained:
+1. Linear Regression (square metres, neighbourhood, and property type)
+2. Linear Regression (square metres, square metres squared, neighbourhood, and property type)
+3. XGBoost (square metres, neighbourhood, and property type)
 
-$$
-x_{\sin} = \sin\left(\frac{2\pi v}{N}\right)
-$$
+### Results
 
-$$
-x_{\cos} = \cos\left(\frac{2\pi v}{N}\right)
-$$
-
-The below plots show the cyclical encoding for DayOfWeek, Hour and Month.
 
 <div style="display: flex; justify-content: center; gap: 20px; align-items: flex-start;">
 
   <figure style="flex: 1; text-align: center; margin: 0;">
-    <img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/seoul-bike-hire/seoul-bike-hire-features-cyclic-days.png"
+    <img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/london-houseprice/london-house-price-OLS.png"
          alt="Cyclical Days" style="max-width: 100%; height: auto;">
     <figcaption>Cyclical Encoding - Days</figcaption>
   </figure>
 
   <figure style="flex: 1; text-align: center; margin: 0;">
-    <img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/seoul-bike-hire/seoul-bike-hire-features-cyclic-hours.png"
+    <img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/london-houseprice/london-house-price-OLS2.png"
          alt="Cyclical Hours" style="max-width: 100%; height: auto;">
     <figcaption>Cyclical Encoding - Hours</figcaption>
   </figure>
 
   <figure style="flex: 1; text-align: center; margin: 0;">
-    <img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/seoul-bike-hire/seoul-bike-hire-features-cyclic-months.png"
+    <img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/london-houseprice/london-house-price-XGBoost.png"
          alt="Cyclical Months" style="max-width: 100%; height: auto;">
     <figcaption>Cyclical Encoding - Months</figcaption>
   </figure>
 
 </div>
 
-The Seasons (Spring, Summer, Autumn, Winter) and Holiday (Yes, No) categorical features are one-hot encoded into binary features.
-
-### Modelling
-The dataset is split into training (80%) and test (20%) sets.  The below plot shows RMSE for XGBoost models trained on individual features, displaying univariate predictive power.  
-
-<div style="display: flex; justify-content: center; align-items: flex-start;">
-  <figure style="text-align: center; margin: 0;">
-    <img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/seoul-bike-hire/seoul-bike-hire-count-feature-rmse.png"
-         alt="Bike Rentals Histogram"
-         width="800">
-    <figcaption>RMSE by Individual Feature</figcaption>
-  </figure>
-</div>
-
-### Results
-A final XGBoost model is trained on all features. The table below shows the RMSE and R² for both training and test sets, indicating good model performance without overfitting.
-
-| Metric     |  Value |
-|------------|-------:|
-| Train RMSE | 169.56 |
-| Test RMSE  | 198.06 |
-| Train R2   |  0.9311 |
-| Test R2    |  0.9001 |
-
-The predicted vs residuals and predicted vs actual plots show good agreement between predicted and actual values, with no obvious patterns in the residuals.
-
-<div style="display: flex; justify-content: center; align-items: flex-start;">
-  <figure style="text-align: center; margin: 0;">
-    <img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/seoul-bike-hire/seoul-bike-hire-count-residuals-actual-vs-predicted.png"
-         alt="Bike Rentals Histogram"
-         width="800">
-    <figcaption>Predicted vs Residuals and Predicted vs Actual Plots</figcaption>
-  </figure>
-</div>
 
 These plots show the feature importance from the final XGBoost model, using both gain and SHAP values.  Temperature, Hour, and Solar Radiation are the most important features.
 
