@@ -105,6 +105,7 @@ Three models are trained:
 
 ### Results
 
+These plots show the predicted vs actual prices for the three models on both the training and test sets.  The XGBoost model performs best, with predictions closely aligned to actual prices.
 
 <div style="display: flex; justify-content: center; gap: 20px; align-items: flex-start;">
 
@@ -147,10 +148,19 @@ These plots show the feature importance from the final XGBoost model, using both
   </figure>
 </div>
 
+This table shows the RMSE and R² for the three models on both the training and test sets.  The XGBoost model performs best, with the lowest RMSE and highest R² on both sets.
 
+| Model   | Split |    RMSE    |   R²    |
+|---------|-------|------------|---------|
+| OLS     | Train | 203923.77  | 0.9471  |
+| OLS     | Test  | 196788.19  | 0.9471  |
+| OLS2    | Train | 203134.76  | 0.9475  |
+| OLS2    | Test  | 200161.57  | 0.9452  |
+| XGBoost | Train |  44327.78  | 0.9975  |
+| XGBoost | Test  |  58683.96  | 0.9953  |
 
 ## Codebase
-The codebase to implement this analysis is [here](https://github.com/MarkThackham/MarkThackham.github.io/blob/main/Portfolio/machine-learning/seoul-bike-hire/machine-learning-seoul-bike-hire.ipynb)
+The codebase to implement this analysis is [here](https://github.com/MarkThackham/MarkThackham.github.io/blob/main/Portfolio/machine-learning/london-houseprice/machine-learning-London House Data.ipynb)
 
 [← Back to Machine Learning](/machine-learning/)
 
