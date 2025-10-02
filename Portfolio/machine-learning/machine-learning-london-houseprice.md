@@ -10,15 +10,15 @@ permalink: /machine-learning/machine-learning-london-houseprice/
 <div style="background-color: #f5f5f5; padding: 15px; border-radius: 8px;">
 
 <p>
-Dataset 
+The
 <a href="https://www.kaggle.com/datasets/oktayrdeki/houses-in-london" target="_blank">
-London House Price Data
-</a> zzz. Key take-outs are:
+dataset
+</a> contains 1,000 examples of prices for London houses. Key take-outs are:
 </p>
 <ul>
-  <li>zz</li>
-  <li>zz</li>
-  <li>zz</li>
+  <li>Square meters is the strongest predictor of house prices.</li>
+  <li>House prices are critically dependent on location, with significant variations across different neighborhoods.</li>
+  <li>Property type also influences prices, with detached houses typically fetching higher prices</li>
 </ul>
 </div>
 
