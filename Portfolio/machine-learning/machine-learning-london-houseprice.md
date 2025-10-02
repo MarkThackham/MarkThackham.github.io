@@ -131,14 +131,14 @@ These plots show the predicted vs actual prices for the three models on both the
 
 This table shows the RMSE and R² for the three models on both the training and test sets.  The XGBoost model performs best, with the lowest RMSE and highest R² on both sets.
 
-| Model   | Split |    RMSE    |   R²    |
-|---------|-------|------------|---------|
-| OLS     | Train | 203923.77  | 0.9471  |
-| OLS     | Test  | 196788.19  | 0.9471  |
-| OLS2    | Train | 203134.76  | 0.9475  |
-| OLS2    | Test  | 200161.57  | 0.9452  |
-| XGBoost | Train |  44327.78  | 0.9975  |
-| XGBoost | Test  |  58683.96  | 0.9953  |
+| Model   | Split |  RMSE    |   R²    |
+|---------|-------|----------|---------|
+| OLS     | Train | 203,923  | 0.9471  |
+| OLS     | Test  | 196,788  | 0.9471  |
+| OLS2    | Train | 203,134  | 0.9475  |
+| OLS2    | Test  | 200,161  | 0.9452  |
+| XGBoost | Train |  44,327  | 0.9975  |
+| XGBoost | Test  |  58,683  | 0.9953  |
 
 ## Codebase
 The codebase to implement this analysis is [here](https://github.com/MarkThackham/MarkThackham.github.io/blob/main/Portfolio/machine-learning/london-houseprice/machine-learning-London House Data.ipynb)
