@@ -129,25 +129,6 @@ These plots show the predicted vs actual prices for the three models on both the
 
 </div>
 
-
-These plots show the feature importance from the final XGBoost model, using both gain and SHAP values.  Temperature, Hour, and Solar Radiation are the most important features.
-
-<div style="display: flex; justify-content: center; gap: 20px; align-items: flex-start;">
-  <figure style="text-align: center; margin: 0;">
-    <img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/seoul-bike-hire/seoul-bike-hire-count-shap-beeswarm.png"
-         alt="SHAP Beeswarm"
-         width="350">
-    <figcaption>SHAP Beeswarm Plot</figcaption>
-  </figure>
-
-  <figure style="text-align: center; margin: 0;">
-    <img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/seoul-bike-hire/seoul-bike-hire-count-shap-summary.png"
-         alt="SHAP Feature Importance"
-         width="350">
-    <figcaption>SHAP Feature Importance</figcaption>
-  </figure>
-</div>
-
 This table shows the RMSE and R² for the three models on both the training and test sets.  The XGBoost model performs best, with the lowest RMSE and highest R² on both sets.
 
 | Model   | Split |    RMSE    |   R²    |
