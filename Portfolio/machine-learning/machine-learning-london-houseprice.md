@@ -112,19 +112,19 @@ These plots show the predicted vs actual prices for the three models on both the
   <figure style="flex: 1; text-align: center; margin: 0;">
     <img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/london-houseprice/london-house-price-OLS.png"
          alt="Cyclical Days" style="max-width: 100%; height: auto;">
-    <figcaption>Cyclical Encoding - Days</figcaption>
+    <figcaption>OLS</figcaption>
   </figure>
 
   <figure style="flex: 1; text-align: center; margin: 0;">
     <img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/london-houseprice/london-house-price-OLS2.png"
          alt="Cyclical Hours" style="max-width: 100%; height: auto;">
-    <figcaption>Cyclical Encoding - Hours</figcaption>
+    <figcaption>OLS2</figcaption>
   </figure>
 
   <figure style="flex: 1; text-align: center; margin: 0;">
     <img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/london-houseprice/london-house-price-XGBoost.png"
          alt="Cyclical Months" style="max-width: 100%; height: auto;">
-    <figcaption>Cyclical Encoding - Months</figcaption>
+    <figcaption>XGBoost</figcaption>
   </figure>
 
 </div>
