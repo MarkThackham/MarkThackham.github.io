@@ -12,6 +12,7 @@ permalink: /machine-learning/
 
 [Regression, Everybody Needs Good Neighbours (London House Price Data)](/machine-learning/machine-learning-london-houseprice/)
 
+[SARIMAX, Seasonally-Adjusted Autoregressive Integrated Moving Average with eXogenous regressors (UK Macroeconomic Data)](/machine-learning/machine-learning-sarimax-gdp/)
 
 
 [← Back to Home](/)
