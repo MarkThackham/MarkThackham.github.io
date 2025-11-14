@@ -1,6 +1,6 @@
 ---
 title: "Machine Learning"
-permalink: /machine-learning/sarimax-gdp/
+permalink: /machine-learning/machine-learning-sarimax-gdp/
 ---
 
 # SARIMAX GDP
