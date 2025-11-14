@@ -1,9 +1,9 @@
 ---
 title: "Machine Learning"
-permalink: /machine-learning/machine-learning-seoul-bike-hire/
+permalink: /machine-learning/sarimax-gdp/
 ---
 
-# Seoul Bike Hire2
+# SARIMAX GDP
 
 ## Take Away
 
