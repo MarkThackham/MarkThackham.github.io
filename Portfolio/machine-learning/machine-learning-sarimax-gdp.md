@@ -45,7 +45,7 @@ The response is GDP and we want a predictive timeseries model. SARIMAX (Seasonal
 The avaliable data spans 1971Q1 to 2025Q2, with GDP and UnempRate plotted below.
 <div style="display: flex; justify-content: center; align-items: flex-start;">
   <figure style="text-align: center; margin: 0;">
-    <img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/saimax-gdp/sarimax_gdp-growth.png"
+    <img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/sarimax-gdp/sarimax_gdp-growth.png"
          alt="GDP_Timeseries"
          width="800">
     <figcaption>Gross Domestic Product and Unemployment Rate Growth</figcaption>
