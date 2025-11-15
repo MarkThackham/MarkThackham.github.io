@@ -10,7 +10,7 @@ permalink: /machine-learning/machine-learning-sarimax-gdp/
 <div style="background-color: #f5f5f5; padding: 15px; border-radius: 8px;">
 
 <p>
-ARIMAX (Seasonal AutoRegressive Integrated Moving Average with eXogenous variables) is a time-series model that extends ARIMA (AutoRegressive Integrated Moving Average) by allowing seasonal patterns and by incorporating external predictors (exogenous variables) that influence the target series. This analysis models UK GDP Growth using Unemployment Rate Growth as an exogenous predictor within a SARIMAX framework.
+SARIMAX (Seasonal AutoRegressive Integrated Moving Average with eXogenous variables) is a time-series model that extends ARIMA (AutoRegressive Integrated Moving Average) by allowing seasonal patterns and by incorporating external predictors (exogenous variables) that influence the target series. This analysis models UK GDP Growth using Unemployment Rate Growth as an exogenous predictor within a SARIMAX framework.
 </p>
 <ul>
   <li><b>GDP Growth and Unemployment Rate Growth are stationary</b>, making them suitable for time-series modelling, whereas their level counterparts are non-stationary.</li>
@@ -21,7 +21,7 @@ ARIMAX (Seasonal AutoRegressive Integrated Moving Average with eXogenous variabl
 </div>
 
 ## Data
-The [Office of National Statistics](https://www.ons.gov.uk/) collate and estimate data 
+The [Office of National Statistics](https://www.ons.gov.uk/) collate and publish data 
 <ul>
   <li>Gross Domestic Product (GDP) in  the  
   <a href="https://www.ons.gov.uk/economy/grossdomesticproductgdp/datasets/quarterlynationalaccounts" target="_blank">Quarterly National Accounts</a> </li>
@@ -40,9 +40,9 @@ When merged by quarter, the dataset contains 218 examples of quarterly features 
 ### Exploratory Data Analysis
 
 #### Features
-The response is GDP and we want a predictive timeseries model. SARIMAX (Seasonal AutoRegressive Integrated Moving Average with eXogenous variables) is a time-series model that extends ARIMA (AutoRegressive Integrated Moving Average) by allowing seasonal patterns and by incorporating external predictors (exogenous variables) that influence the target series. It models both the internal dynamics of the series (AR, I, MA, seasonal terms) and the effect of outside factors to improve forecasting accuracy.
+The response is GDP and we want a predictive time series model. SARIMAX (Seasonal AutoRegressive Integrated Moving Average with eXogenous variables) is a time series model that extends ARIMA (AutoRegressive Integrated Moving Average) by allowing seasonal patterns and by incorporating external predictors (exogenous variables) that influence the target series. It models both the internal dynamics of the series (AR, I, MA, seasonal terms) and the effect of outside factors to improve forecasting accuracy.
 
-The avaliable data spans 1971Q1 to 2025Q2, with GDP and UnempRate plotted below.
+The available data spans 1971Q1 to 2025Q2, with GDP and UnempRate plotted below.
 <div style="display: flex; justify-content: center; align-items: flex-start;">
   <figure style="text-align: center; margin: 0;">
     <img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/sarimax-gdp/sarimax_gdp-growth.png"
@@ -104,9 +104,9 @@ ACF and PACF for both GDP Growth and UnempRate Growth show significant spikes, s
 
 ### SARIMAX Model
 
-The SARIMAX model is fitted to the training data (1971Q1 to 2018Q4) with the following parameters:
+The SARIMAX model is fitted to the training data (1971Q1 to 2025Q2) with the following parameters:
 - Order: (1,0,1) - AR(1), I(0), MA(1)
-- Seasonal Order: (2,0,0,4) - Seasonal AR(1), I(0), MA(1) with a seasonal period of 4 (quarterly data)
+- Seasonal Order: (2,0,0,4) - Seasonal AR(2), I(0), MA(0) with a seasonal period of 4 (quarterly data)
 - Exogenous Variable: UnempRate Growth
 
 ### Results
@@ -118,16 +118,14 @@ The SARIMAX model yields the following results:
 <div style="display: flex; justify-content: center; align-items: flex-start;">
   <figure style="text-align: center; margin: 0;">
     <img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/sarimax-gdp/sarimax-gdp-modelfit.png"
-         alt="ACF_PACF_UnempRate"
+         alt="ACF_PACF_Model"
          width="800">
-    <figcaption>Unemployment Rate</figcaption>
+    <figcaption>SARIMAX Model Fit</figcaption>
   </figure>
 </div>
 
 ### Diagnostics
 The SARIMAX model diagnostics indicate a good fit, with residuals resembling white noise. The Ljung-Box test confirms that there is no significant autocorrelation in the residuals (lag 12, p = 0.167), suggesting that the model has adequately captured the underlying patterns in the data. The ACF and PACF plots of the residuals show no significant spikes, further supporting the model's adequacy.
-
-The Ljung-Box test shows no evidence of autocorrelation up to , indicating the residuals behave like white noise.
 
 <div style="display: flex; justify-content: center; align-items: flex-start;">
   <figure style="text-align: center; margin: 0;">
@@ -138,7 +136,7 @@ The Ljung-Box test shows no evidence of autocorrelation up to , indicating the r
   </figure>
 </div>
 
-### Preeicted vs Actuals
+### Predicted vs Actuals
 The SARIMAX model's predictions for GDP Growth closely align with the actual values. The model captures the overall trend and seasonal patterns effectively, demonstrating its capability to forecast GDP Growth based on historical data and the exogenous variable (UnempRate Growth).
 
 Both scatter and line plots of observed vs predicted values show a strong model fit, with some deviations during Covid-19 periods.
