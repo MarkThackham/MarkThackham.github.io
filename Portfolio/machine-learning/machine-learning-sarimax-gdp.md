@@ -10,13 +10,13 @@ permalink: /machine-learning/machine-learning-sarimax-gdp/
 <div style="background-color: #f5f5f5; padding: 15px; border-radius: 8px;">
 
 <p>
-Dataset 
-<a href="https://archive.ics.uci.edu/dataset/560/seoul+bike+sharing+demand" target="_blank">
-data
-</a> contains things. Key take-outs are:
+ARIMAX (Seasonal AutoRegressive Integrated Moving Average with eXogenous variables) is a time-series model that extends ARIMA (AutoRegressive Integrated Moving Average) by allowing seasonal patterns and by incorporating external predictors (exogenous variables) that influence the target series. This analysis models UK GDP Growth using Unemployment Rate Growth as an exogenous predictor within a SARIMAX framework.
 </p>
 <ul>
-  <li></li>
+  <li><b>GDP Growth and Unemployment Rate Growth are stationary</b>, making them suitable for time-series modelling, whereas their level counterparts are non-stationary.</li>
+  <li><b>Unemployment Rate Growth significantly predicts GDP Growth</b>, supporting economic theory that labour-market conditions respond to output dynamics.</li>
+  <li>The <b>SARIMAX(1,0,1)(2,0,0,4) model fits well</b>, capturing both quarterly seasonality and underlying autocorrelation patterns.</li>
+  <li><b>Residual diagnostics (Ljung-Box, ACF, PACF)</b> confirm the model is well-specified, with no remaining autocorrelation and strong alignment between predicted and observed GDP Growth.</li>
 </ul>
 </div>
 
@@ -141,6 +141,8 @@ The Ljung-Box test shows no evidence of autocorrelation up to , indicating the r
 ### Preeicted vs Actuals
 The SARIMAX model's predictions for GDP Growth closely align with the actual values. The model captures the overall trend and seasonal patterns effectively, demonstrating its capability to forecast GDP Growth based on historical data and the exogenous variable (UnempRate Growth).
 
+Both scatter and line plots of observed vs predicted values show a strong model fit, with some deviations during Covid-19 periods.
+
 <div style="display: flex; justify-content: center; gap: 20px; align-items: flex-start;">
 
   <figure style="flex: 1; text-align: center; margin: 0;">
@@ -154,11 +156,7 @@ The SARIMAX model's predictions for GDP Growth closely align with the actual val
          alt="Observed vs Predicted - Line" style="max-width: 100%; height: auto;">
     <figcaption>Observed vs Predicted - Line</figcaption>
   </figure>
-
 </div>
-
-
-
 
 ## Codebase
 The codebase to implement this analysis is [here](https://github.com/MarkThackham/MarkThackham.github.io/blob/main/Portfolio/machine-learning/sarimax-gdp/sarimax-gdp.ipynb)
