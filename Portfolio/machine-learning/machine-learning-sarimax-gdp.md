@@ -113,48 +113,50 @@ The SARIMAX model is fitted to the training data (1971Q1 to 2018Q4) with the fol
 
 
 ## SARIMAX Results
+The SARIMAX model yields the following results:
 
-### Model Setup
-
-|                                  |                                  |
-|----------------------------------|----------------------------------|
-| **Dep. Variable:**               | GDPGrowth                        |
-| **No. Observations:**            | 202                              |
-| **Model:**                       | SARIMAX(1, 0, 1) x (2, 0, [], 4) |
-| **Log Likelihood:**              | -437.565                         |
-| **Date:**                        | Sat, 15 Nov 2025                 |
-| **AIC:**                         | 889.130                          |
-| **Time:**                        | 20:04:26                         |
-| **BIC:**                         | 911.969                          |
-| **Sample:**                      | 03-31-1975 to 06-30-2025         |
-| **HQIC:**                        | 898.379                          |
-| **Covariance Type:**             | opg                              |
-
----
-
-### Coefficients
-
-| Parameter         | Coef    | Std Err | z-value | P>|z| | [0.025 | 0.975]   |
-|-------------------|--------:|--------:|--------:|------:|-------------------|
-| intercept         | 0.6783  | 0.222   | 3.062   | 0.002 | 0.244 – 1.113     |
-| UnempRateGrowth   | -0.1085 | 0.045   | -2.389  | 0.017 | -0.197 – -0.019   |
-| ar.L1             | 0.8378  | 0.069   | 12.069  | 0.000 | 0.702 – 0.974     |
-| ma.L1             | -0.3769 | 0.110   | -3.413  | 0.001 | -0.593 – -0.160   |
-| ar.S.L4           | -0.6794 | 0.033   | -20.657 | 0.000 | -0.744 – -0.615   |
-| ar.S.L8           | -0.2837 | 0.041   | -6.958  | 0.000 | -0.364 – -0.204   |
-| sigma²            | 5.4503  | 0.155   | 35.179  | 0.000 | 5.147 – 5.754     |
-
----
+<div style="display: flex; justify-content: center; align-items: flex-start;">
+  <figure style="text-align: center; margin: 0;">
+    <img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/sarimax-gdp/sarimax-gdp-modelfit.png"
+         alt="ACF_PACF_UnempRate"
+         width="800">
+    <figcaption>Unemployment Rate</figcaption>
+  </figure>
+</div>
 
 ### Diagnostics
+The SARIMAX model diagnostics indicate a good fit, with residuals resembling white noise. The Ljung-Box test confirms that there is no significant autocorrelation in the residuals (lag 12, p = 0.167), suggesting that the model has adequately captured the underlying patterns in the data. The ACF and PACF plots of the residuals show no significant spikes, further supporting the model's adequacy.
 
-| Test                        | Value     | Prob     |
-|-----------------------------|-----------|----------|
-| **Ljung-Box (L1) (Q):**     | 0.11      | 0.74     |
-| **Jarque-Bera (JB):**       | 17012.62  | 0.00     |
-| **Heteroskedasticity (H):** | 10.19     | 0.00     |
-| **Skew:**                   | -2.16     | —        |
-| **Kurtosis:**               | 48.79     | —        |
+The Ljung-Box test shows no evidence of autocorrelation up to , indicating the residuals behave like white noise.
+
+<div style="display: flex; justify-content: center; align-items: flex-start;">
+  <figure style="text-align: center; margin: 0;">
+    <img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/sarimax-gdp/sarimax_model-acf-pacf.png"
+         alt="ACF_PACF_Model"
+         width="800">
+    <figcaption>Model Diagnostics</figcaption>
+  </figure>
+</div>
+
+### Preeicted vs Actuals
+The SARIMAX model's predictions for GDP Growth closely align with the actual values. The model captures the overall trend and seasonal patterns effectively, demonstrating its capability to forecast GDP Growth based on historical data and the exogenous variable (UnempRate Growth).
+
+<div style="display: flex; justify-content: center; gap: 20px; align-items: flex-start;">
+
+  <figure style="flex: 1; text-align: center; margin: 0;">
+    <img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/sarimax-gdp/sarimax_model-scatter.png"
+         alt="Observed vs Predicted - Scatter" style="max-width: 100%; height: auto;">
+    <figcaption>Observed vs Predicted - Scatter</figcaption>
+  </figure>
+
+  <figure style="flex: 1; text-align: center; margin: 0;">
+    <img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/sarimax-gdp/sarimax_model-actual-vs-predicted.png"
+         alt="Observed vs Predicted - Line" style="max-width: 100%; height: auto;">
+    <figcaption>Observed vs Predicted - Line</figcaption>
+  </figure>
+
+</div>
+
 
 
 
