@@ -23,8 +23,10 @@ data
 ## Data
 The [Office of National Statistics](https://www.ons.gov.uk/) collate and estimate data 
 <ul>
-  <li>Gross Domestic Product (GDP) in  the [Quarterly National Accounts](https://www.ons.gov.uk/economy/grossdomesticproductgdp/datasets/quarterlynationalaccounts)</li>
-  <li>Unemployment Rate (UnempRate) in  the [Labour Market Statistics](https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/datasets/labourmarketstatistics)</li>
+  <li>Gross Domestic Product (GDP) in  the  
+  <a href="https://www.ons.gov.uk/economy/grossdomesticproductgdp/datasets/quarterlynationalaccounts" target="_blank">Quarterly National Accounts</a> </li>
+  <li>Unemployment Rate (UnempRate) in  the  
+  <a href="https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/datasets/labourmarketstatistics" target="_blank">Labour Market Statistics</a> </li>
   </ul>
 When merged by quarter, the dataset contains 218 examples of quarterly features spanning 1971Q1 to 2025Q2 (units in brackets):
 
