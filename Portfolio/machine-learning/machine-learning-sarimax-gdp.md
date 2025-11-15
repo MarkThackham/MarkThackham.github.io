@@ -48,7 +48,16 @@ The avaliable data spans 1971Q1 to 2025Q2, with GDP and UnempRate plotted below.
     <img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/sarimax-gdp/sarimax_gdp-growth.png"
          alt="GDP_Timeseries"
          width="800">
-    <figcaption>Gross Domestic Product and Unemployment Rate Growth</figcaption>
+    <figcaption>Gross Domestic Product</figcaption>
+  </figure>
+</div>
+
+<div style="display: flex; justify-content: center; align-items: flex-start;">
+  <figure style="text-align: center; margin: 0;">
+    <img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/sarimax-gdp/sarimax_unemp-rate-growth.png"
+         alt="GDP_Timeseries"
+         width="800">
+    <figcaption>Unemployment Rate</figcaption>
   </figure>
 </div>
 
