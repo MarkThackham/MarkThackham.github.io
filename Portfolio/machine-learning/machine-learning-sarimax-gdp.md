@@ -10,18 +10,18 @@ permalink: /machine-learning/machine-learning-sarimax-gdp/
 <div style="background-color: #f5f5f5; padding: 15px; border-radius: 8px;">
 
 <p>
-SARIMAX (Seasonal AutoRegressive Integrated Moving Average with eXogenous variables) is a time-series model that extends ARIMA (AutoRegressive Integrated Moving Average) by allowing seasonal patterns and by incorporating external predictors (exogenous variables) that influence the target series. This analysis models UK GDP Growth using Unemployment Rate Growth as an exogenous predictor within a SARIMAX framework.
+SARIMAX (Seasonal AutoRegressive Integrated Moving Average with eXogenous variables) is a time series model that extends ARIMA (AutoRegressive Integrated Moving Average) by allowing seasonal patterns and by incorporating external predictors (exogenous variables) that influence the target series. This analysis models UK GDP Growth using Unemployment Rate Growth as an exogenous predictor within a SARIMAX framework.
 </p>
 <ul>
-  <li><b>GDP Growth and Unemployment Rate Growth are stationary</b>, making them suitable for time-series modelling, whereas their level counterparts are non-stationary.</li>
-  <li><b>Unemployment Rate Growth significantly predicts GDP Growth</b>, supporting economic theory that labour-market conditions respond to output dynamics.</li>
+  <li><b>GDP Growth and Unemployment Rate Growth are stationary</b>, making them suitable for time series modelling, whereas their level counterparts are non-stationary.</li>
+  <li><b>Unemployment Rate Growth is strongly linked with GDP Growth</b>, supporting economic theory that labour-market conditions respond to output dynamics.</li>
   <li>The <b>SARIMAX(1,0,1)(2,0,0,4) model fits well</b>, capturing both quarterly seasonality and underlying autocorrelation patterns.</li>
   <li><b>Residual diagnostics (Ljung-Box, ACF, PACF)</b> confirm the model is well-specified, with no remaining autocorrelation and strong alignment between predicted and observed GDP Growth.</li>
 </ul>
 </div>
 
 ## Data
-The [Office of National Statistics](https://www.ons.gov.uk/) collate and publish data 
+The [Office for National Statistics](https://www.ons.gov.uk/) collate and publish data 
 <ul>
   <li>Gross Domestic Product (GDP) in  the  
   <a href="https://www.ons.gov.uk/economy/grossdomesticproductgdp/datasets/quarterlynationalaccounts" target="_blank">Quarterly National Accounts</a> </li>
@@ -109,10 +109,10 @@ The SARIMAX model is fitted to the training data (1971Q1 to 2025Q2) with the fol
 - Seasonal Order: (2,0,0,4) - Seasonal AR(2), I(0), MA(0) with a seasonal period of 4 (quarterly data)
 - Exogenous Variable: UnempRate Growth
 
-### Results
+## Results
 
 
-## SARIMAX Results
+### SARIMAX Results
 The SARIMAX model yields the following results:
 
 <div style="display: flex; justify-content: center; align-items: flex-start;">

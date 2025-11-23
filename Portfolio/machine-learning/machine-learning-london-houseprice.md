@@ -16,16 +16,16 @@ dataset
 </a> contains 1,000 examples of prices for London houses. Key take-outs are:
 </p>
 <ul>
-  <li>Square meters is the strongest predictor of house prices.</li>
-  <li>House prices are critically dependent on location, with significant variations across different neighborhoods.</li>
-  <li>Property type also influences prices, with detached houses typically fetching higher prices</li>
+  <li>Square meters, neighbourhood, and property type the strongest predictors of house prices.</li>
+  <li>House prices are critically dependent on location, with significant variations across different neighbourhoods.</li>
+  <li>Property type also influences prices, with detached houses typically fetching higher prices.</li>
 </ul>
 </div>
 
 ## Data
 The [London House Price Data](https://www.kaggle.com/datasets/oktayrdeki/houses-in-london) contains 1,000 examples of prices for London houses, together with 15 features:
 
-1. **Neighborhood** (Categorical)  
+1. **Neighbourhood** (Categorical)  
 2. **Bedrooms** (Integer)  
 3. **Bathrooms** (Integer)  
 4. **Square Meters** (Integer)  
@@ -47,7 +47,7 @@ The [London House Price Data](https://www.kaggle.com/datasets/oktayrdeki/houses-
 ### Exploratory Data Analysis
 
 #### Response
-The response is house price. The histograms below shows the distribution of house prices, which is right-skewed.  A log transformation normalises the distribution.
+The response is house price. The histograms below show the distribution of house prices, which is right-skewed.  A log transformation normalises the distribution.
 
 <div style="display: flex; justify-content: center; align-items: flex-start;">
   <figure style="text-align: center; margin: 0;">
@@ -82,7 +82,7 @@ The plot below shows the relationships between the 14 remaining features and hou
   </figure>
 </div>
 
-Feature importance is assessed using the R² from univariate, with square metres, neighbourhood, and property type being the most important features. 
+Feature importance is assessed using the R² from univariate analysis, with square metres, neighbourhood, and property type being the most important features. 
 
 <div style="display: flex; justify-content: center; align-items: flex-start;">
   <figure style="text-align: center; margin: 0;">

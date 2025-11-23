@@ -18,7 +18,7 @@ Pima Indians Dataset
 <ul>
   <li>Nine classification techniques applied (including XGBoost and Logistic Regression)</li>
   <li>SHAP explanations show Glucose, Age and BMI strongly predict diabetes</li>
-  <li>Hyperparameter tuning (Randomised CV and Optuna) increase predictiveness</li>
+  <li>Hyperparameter tuning (Randomised CV and Optuna) increase predictive accuracy</li>
 </ul>
 
 </div>

@@ -23,7 +23,7 @@ Seoul Bike Sharing Demand
 </div>
 
 ## Data
-The [Seoul Bike Sharing Demand Dataset](https://archive.ics.uci.edu/dataset/560/seoul+bike+sharing+demand) contains hourly counts of bike rentals in Seoul across a full year, along with weather data (temperature, humidity, wind speed, visibility, dew point, solar radiation, rainfall, snowfall), temporal features (hour, date, season), and holiday / functional day indicators. Features can be used to predict the number of bikes rented in a given hour, based on both environmental and calendar features. The dataset contains 8,760 examples and 13 features (units in brackets):
+The [Seoul Bike Sharing Demand Dataset](https://archive.ics.uci.edu/dataset/560/seoul+bike+sharing+demand) contains hourly counts of bike rentals in Seoul across a full year, along with weather data (temperature, humidity, wind speed, visibility, dew point, solar radiation, rainfall, snowfall), temporal features (hour, date, season), and holiday / functional day indicators. Features can be used to predict the number of bikes rented in a given hour, based on both environmental and calendar features. The dataset contains 8,760 examples and 13 feature and 1 response (units in brackets):
 
 1. **Date** (Date)
 2. **Rented Bike** (Integer)
@@ -56,7 +56,7 @@ The response is the number of bikes rented in a given hour. The histogram below 
   </figure>
 </div>
 
-The plot below shows the hourly rental counts across the entire year, with clear seasonal. There are in warmer months, especially summer, when rentals peak. January to March have the lowest rentals.
+The plot below shows the hourly rental counts across the entire year, with clear seasonality. There are in warmer months, especially summer, when rentals peak. January to March have the lowest rentals.
 
 <div style="display: flex; justify-content: center; align-items: flex-start;">
   <figure style="text-align: center; margin: 0;">
@@ -188,8 +188,8 @@ A final XGBoost model is trained on all features. The table below shows the RMSE
 |------------|-------:|
 | Train RMSE | 169.56 |
 | Test RMSE  | 198.06 |
-| Train R2   |  0.9311 |
-| Test R2    |  0.9001 |
+| Train R²   |  0.9311 |
+| Test R²    |  0.9001 |
 
 The predicted vs residuals and predicted vs actual plots show good agreement between predicted and actual values, with no obvious patterns in the residuals.
 
