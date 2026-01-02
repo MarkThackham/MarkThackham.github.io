@@ -14,5 +14,7 @@ permalink: /machine-learning/
 
 [SARIMAX, Seasonally-Adjusted Autoregressive Integrated Moving Average with eXogenous regressors (UK Macroeconomic Data)](/machine-learning/machine-learning-sarimax-gdp/)
 
+[Computer Vision, Digitise Data from Graph (S&P Default Study)](/machine-learning/machine-learning-digitise-graph/)
+
 
 [← Back to Home](/)
