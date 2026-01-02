@@ -36,6 +36,8 @@ The [S&P Default Study](https://www.spglobal.com/ratings/en/regulatory/article/d
          width="350">
     <figcaption>S&P Default Study Graph</figcaption>
   </figure>
+  </figure>
+</div>
 
 ## Analysis
 
@@ -68,6 +70,8 @@ Receiver-Operator Characteristic (ROC) curves for all models, as well as the res
          width="350">
     <figcaption>S&P Default Study Graph</figcaption>
   </figure>
+  </figure>
+</div>
 
 ## Codebase
 The codebase to implement this analysis is [here](https://github.com/MarkThackham/MarkThackham.github.io/blob/main/Portfolio/machine-learning/pima-indians/machine-learning-pima-indians.ipynb)
