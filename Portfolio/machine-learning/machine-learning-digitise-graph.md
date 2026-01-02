@@ -23,6 +23,7 @@ Computer Vision techniques applied to the
 </ul>
 
 This approach works well because it leverages two strong cues that charts usually contain: (1) gridlines/baselines that define the coordinate system, and (2) saturated colored strokes that stand out from neutral grays. By isolating those cues separately, you can calibrate the axes and trace the series without needing heavy computer vision machinery.
+
 </div>
 
 ## Data
