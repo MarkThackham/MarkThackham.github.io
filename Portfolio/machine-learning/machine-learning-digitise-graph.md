@@ -66,7 +66,7 @@ These are the results of the digitisation process, showing the extracted series 
   <figure style="text-align: center; margin: 0;">
     <img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/digitise-graph/digitised-chart-output.png"
          alt="S&P Default Study Graph"
-         width="350">
+         width="800">
     <figcaption>S&P Default Study Graph</figcaption>
   </figure>
 </div>
