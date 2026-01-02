@@ -10,88 +10,63 @@ permalink: /machine-learning/machine-learning-digitise-graph/
 <div style="background-color: #f5f5f5; padding: 15px; border-radius: 8px;">
 
 <p>
-Classification techniques applied to the 
-<a href="https://archive.ics.uci.edu/dataset/34/diabetes" target="_blank">
-Pima Indians Dataset
-</a> assign probabilities a subject having diabetes. Key take-outs are:
+Computer Vision techniques applied to the 
+<a href="https://www.spglobal.com/ratings/en/regulatory/article/default-transition-and-recovery-us-corporate-defaults-fall-to-the-lowest-level-since-february-s101661849" target="_blank">Standard and Poor's (S&P) Default Study
+</a> to extract data points from a graph. Key take-outs are:
 </p>
 <ul>
-  <li>Nine classification techniques applied (including XGBoost and Logistic Regression)</li>
-  <li>SHAP explanations show Glucose, Age and BMI strongly predict diabetes</li>
-  <li>Hyperparameter tuning (Randomised CV and Optuna) increase predictive accuracy</li>
+  <li>A cropped image of the graph is used as input</li>
+  <li>Image processing isolates the coloured graph lines (using HSV thresholds) and the gray-ish grid/baseline lines (using RGB thresholds)</li>
+  <li>Mask-based tracing (column-wise sampling) extracts a y-value for each x-position along each line</li>
+  <li>Pixel coordinates are mapped back to the original chart axes (y from detected gridlines; x assumed uniformly spaced in time)</li>
+  <li>The extracted series are saved to a CSV file for further analysis</li>
 </ul>
 
+This approach works well because it leverages two strong cues that charts usually contain: (1) gridlines/baselines that define the coordinate system, and (2) saturated colored strokes that stand out from neutral grays. By isolating those cues separately, you can calibrate the axes and trace the series without needing heavy computer vision machinery.
 </div>
 
 ## Data
-The [Pima Indians Dataset](https://archive.ics.uci.edu/dataset/34/diabetes) contains data from female Pima Indians aged 21 years or older, a group with a notably high incidence of type 2 diabetes. The dataset contains nine columns: eight predictive features and one class label ("Outcome" or "diabetes"):
-
-1. **Pregnancies** – Number of times pregnant  
-2. **Glucose** – Plasma glucose concentration (2-hour oral glucose tolerance test)  
-3. **Blood Pressure (BP)** – Diastolic blood pressure (mm Hg)  
-4. **Skin Thickness** – Triceps skin fold thickness (mm)  
-5. **Insulin** – 2-hour serum insulin (µU/ml)  
-6. **BMI** – Body Mass Index (weight in kg/(height in m)²)  
-7. **Diabetes Pedigree Function (DPF)** – A function measuring genetic predisposition to diabetes  
-8. **Age** – Age in years  
-9. **Outcome** – Binary label (0 = non-diabetic, 1 = diabetic)  
-
-## Analysis
-
-### Classification Techniques
-These methods are used:
-1. **XGBoost** – Gradient boosting algorithm optimized for speed and performance.  
-2. **LightGBM** – Fast, memory-efficient boosting framework for large datasets.  
-3. **Random Forest** – Ensemble of decision trees that improves stability and accuracy.  
-4. **CatBoost** – Gradient boosting library with strong support for categorical features.  
-5. **Logistic Regression** – Simple, interpretable linear model for binary classification.  
-6. **Naive Bayes** – Probabilistic model based on Bayes’ theorem with independence assumptions.  
-7. **K-Nearest Neighbours** – Instance-based method that classifies based on closest neighbors.  
-8. **Support Vector Machine** – Finds optimal hyperplanes to separate classes with maximum margin.  
-9. **Neural Network – Multilayer Perceptron** – Deep learning model that learns complex, non-linear patterns.  
-
-### Hyperparameter Tuning Techniques
-These methods are used to tune the XGBoost model:
-1. **Randomised CV Grid Search** – Tests a random subset of hyperparameter combinations with cross-validation, making it faster than exhaustive grid search.  
-2. **Optuna** – An advanced optimization framework that efficiently searches hyperparameters using techniques like Bayesian optimization.  
-
-### SHAP Explanations
-SHAP (SHapley Additive exPlanations) helps explain how machine learning models make predictions:  
-
-- **Fair attribution** – assigns each feature a contribution to the prediction using Shapley values.  
-- **Local + global insights** – explains both individual predictions and overall feature importance.  
-- **Clear visualization** – tools like beeswarm plots show how features push predictions up or down.  
-
-SHAP explanations show Glucose, Age and BMI strongly predict diabetes.
+The [S&P Default Study](https://www.spglobal.com/ratings/en/regulatory/article/default-transition-and-recovery-us-corporate-defaults-fall-to-the-lowest-level-since-february-s101661849) analyses historical default rates for speculative grade corporate borrowers, stratified by: GLobal; United States; Europe; and Emerging Markets 
 
 <div style="display: flex; justify-content: center; gap: 20px; align-items: flex-start;">
   <figure style="text-align: center; margin: 0;">
-    <img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/pima-indians/pima_indians-shap_beeswarm.png"
-         alt="SHAP Beeswarm"
+    <img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/digitise-graph/Input/digitise-graph.png"
+         alt="S&P Default Study Graph"
          width="350">
-    <figcaption>SHAP Beeswarm Plot</figcaption>
+    <figcaption>S&P Default Study Graph</figcaption>
   </figure>
 
-  <figure style="text-align: center; margin: 0;">
-    <img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/pima-indians/pima_indians-shap_feature_importance.png"
-         alt="SHAP Feature Importance"
-         width="350">
-    <figcaption>SHAP Feature Importance</figcaption>
-  </figure>
-</div>
+## Analysis
 
-### Results
+### 1) Start with a clean input: crop to the plot area
+The code loads the PNG and crops it to the chart region. Cropping removes titles, margins, and legends so the later detection steps focus only on pixels that could plausibly be part of the plot.
+
+### 2) Separate “structure” (grid/baseline) from “signal” (data lines)
+Gridlines and axes are mostly gray, so the code detects them using simple RGB rules (R≈G≈B plus a brightness range). It scans rows to find horizontal gridlines, clusters adjacent rows (gridline thickness), and uses their midpoints as the gridline y-positions. It also detects the baseline near the bottom and uses it to estimate the plot’s x-range. From this it builds a **plot mask** so analysis only happens inside the plot area.
+
+### 3) Isolate each coloured series using HSV thresholds
+The coloured lines are segmented in HSV space, where hue cleanly separates colors. The code converts the image to HSV, then creates one boolean mask per series using tuned hue bands plus minimum saturation/value thresholds to reject gray gridlines and background noise.
+
+### 4) Turn pixels into data: column-wise sampling (mask-based tracing)
+For each x pixel column across the plot, the code finds pixels that are both (a) inside the plot mask and (b) inside a series’ color mask. If it finds any, it takes the **median y** to represent the line’s position at that x. Missing columns become NaN and are later filled by interpolation.
+
+### 5) Calibrate to the chart axes (pixels → real values)
+Using the detected horizontal gridlines (assumed to correspond to values 7..0), the code fits a linear mapping from **y pixel → chart value**. For x, it assumes the chart is uniformly spaced in time and samples the trace onto a monthly date index from Jan 2017 to Nov 2025.
+
+### 6) Export and validate by re-plotting
+The extracted monthly series are assembled into a DataFrame and saved to a single CSV. The code then re-plots the extracted lines with seaborn as a visual check that the digitised curves match the original chart.
+
+## Results
 
 Receiver-Operator Characteristic (ROC) curves for all models, as well as the results for Optuna and Random Grid Search CV.   
 
-<div style="display: flex; justify-content: center; align-items: flex-start;">
+<div style="display: flex; justify-content: center; gap: 20px; align-items: flex-start;">
   <figure style="text-align: center; margin: 0;">
-    <img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/pima-indians/pima_indians-roc_curve.png"
-         alt="SHAP Beeswarm"
+    <img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/digitise-graph/digitised-chart-output.png"
+         alt="S&P Default Study Graph"
          width="350">
-    <figcaption>Receiver-Operator Characteristic (ROC) Curves</figcaption>
+    <figcaption>S&P Default Study Graph</figcaption>
   </figure>
-</div>
 
 ## Codebase
 The codebase to implement this analysis is [here](https://github.com/MarkThackham/MarkThackham.github.io/blob/main/Portfolio/machine-learning/pima-indians/machine-learning-pima-indians.ipynb)
