@@ -33,9 +33,8 @@ The [S&P Default Study](https://www.spglobal.com/ratings/en/regulatory/article/d
   <figure style="text-align: center; margin: 0;">
     <img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/digitise-graph/Input/digitise-graph.png"
          alt="S&P Default Study Graph"
-         width="350">
+         width="800">
     <figcaption>S&P Default Study Graph</figcaption>
-  </figure>
   </figure>
 </div>
 
@@ -67,13 +66,12 @@ Receiver-Operator Characteristic (ROC) curves for all models, as well as the res
   <figure style="text-align: center; margin: 0;">
     <img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/digitise-graph/digitised-chart-output.png"
          alt="S&P Default Study Graph"
-         width="350">
+         width="800">
     <figcaption>S&P Default Study Graph</figcaption>
-  </figure>
   </figure>
 </div>
 
 ## Codebase
-The codebase to implement this analysis is [here](https://github.com/MarkThackham/MarkThackham.github.io/blob/main/Portfolio/machine-learning/pima-indians/machine-learning-pima-indians.ipynb)
+The codebase to implement this analysis is [here](https://github.com/MarkThackham/MarkThackham.github.io/blob/main/Portfolio/machine-learning/digitise-graph/digitise-graph.ipynb)
 
 [← Back to Machine Learning](/machine-learning/)
