@@ -16,5 +16,6 @@ permalink: /machine-learning/
 
 [Computer Vision, Digitise Data from Graph (S&P Default Study)](/machine-learning/machine-learning-digitise-graph/)
 
+[Natural Language Processing on Amazon Bird App Reviews](/machine-learning/machine-learning-birdapp-amazon-ntlk/)
 
 [← Back to Home](/)

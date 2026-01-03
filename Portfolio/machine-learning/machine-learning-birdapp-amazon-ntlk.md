@@ -3,7 +3,7 @@ title: "Machine Learning"
 permalink: /machine-learning/machine-learning-birdapp-amazon-ntlk/
 ---
 
-# Natural Language Processing with NLTK on Amazon Bird App Reviews
+# Natural Language Processing on Amazon Bird App Reviews
 
 ## Take Away
 
