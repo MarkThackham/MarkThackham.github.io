@@ -6,6 +6,8 @@ permalink: /research/
 
 # Research
 
+This section contains my published research articles, theses, and presentations related to statistics, survival analysis, and credit risk modelling.
+
 ## Research Publications
 
 - Thackham, M., & Ma, J. (2020). **On maximum likelihood estimation of competing risks using the cause-specific semi-parametric Cox model with time-varying covariates – An application to credit risk.** *Journal of the Operational Research Society, 73*(2), 5–14. [DOI:10.1080/01605682.2020.1800418](https://doi.org/10.1080/01605682.2020.1800418)

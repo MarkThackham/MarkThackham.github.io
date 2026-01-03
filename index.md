@@ -10,10 +10,6 @@ I am Dr Mark Thackham, a data scientist with experience in machine learning, sta
 
 I am a PhD Statistician and Actuary with 21 years building, deploying and validating predictive models for banks, insurers and fintechs.
 
-- **LinkedIn:** [MarkThackham](https://www.linkedin.com/in/markthackham/)
-- **GitHub:** [MarkThackham](https://github.com/MarkThackham)
-- **Email:** [mark.thackham@gmail.com](mailto:mark.thackham@gmail.com)
-
 ---
 
 # Data Science Portfolio
@@ -26,9 +22,16 @@ Portfolio of example Machine Learning tasks
 # Research
 
 Pubslished research articles, theses, and presentations
-- [Machine Learning](/machine-learning/)  
+- [Research](/research/)  
 
+---
 
 # Contact
 
 Feel free to reach out for collaboration, consulting opportunities, or just to say hi!
+
+- **LinkedIn:** [MarkThackham](https://www.linkedin.com/in/markthackham/)
+- **GitHub:** [MarkThackham](https://github.com/MarkThackham)
+- **Email:** [mark.thackham@gmail.com](mailto:mark.thackham@gmail.com)
+
+---
