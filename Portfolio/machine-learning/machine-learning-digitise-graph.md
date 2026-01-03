@@ -18,11 +18,11 @@ Computer Vision techniques applied to the
   <li>A cropped image of the graph is used as input</li>
   <li>Image processing isolates the coloured graph lines (using HSV thresholds) and the gray-ish grid/baseline lines (using RGB thresholds)</li>
   <li>Mask-based tracing (column-wise sampling) extracts a y-value for each x-position along each line</li>
-  <li>Pixel coordinates are mapped back to the original chart axes (y from detected gridlines; x assumed uniformly spaced in time)</li>
+  <li>Pixel coordinates are mapped back to the original chart axes (y from detected grid lines; x assumed uniformly spaced in time)</li>
   <li>The extracted series are saved to a CSV file for further analysis</li>
 </ul>
 
-This approach works well because it leverages two strong cues that charts usually contain: (1) gridlines/baselines that define the coordinate system, and (2) saturated coloured strokes that stand out from neutral grays. By isolating those cues separately, you can calibrate the axes and trace the series without needing heavy computer vision machinery.
+This approach works well because it leverages two strong cues that charts usually contain: (1) grid lines/baselines that define the coordinate system, and (2) saturated coloured strokes that stand out from neutral grays. By isolating those cues separately, you can calibrate the axes and trace the series without needing heavy computer vision machinery.
 
 </div>
 
@@ -45,16 +45,16 @@ The approach to digitising the graph involves several steps:
 The PNG is cropped to the chart region. Cropping removes titles, margins, and legends so the later detection steps focus only on pixels that could plausibly be part of the plot.
 
 ### 2) Separate “structure” (grid/baseline) from “signal” (data lines)
-Gridlines and axes are mostly gray, so these are detected using simple RGB (Red, Green, Blue) rules (R≈G≈B plus a brightness range). It scans rows to find horizontal gridlines, clusters adjacent rows (gridline thickness), and uses their midpoints as the gridline y-positions. It also detects the baseline near the bottom and uses it to estimate the plot’s x-range. From this it builds a **plot mask** so analysis only happens inside the plot area.
+grid lines and axes are mostly gray, so these are detected using simple RGB (Red, Green, Blue) rules (R≈G≈B plus a brightness range). It scans rows to find horizontal grid lines, clusters adjacent rows (grid line thickness), and uses their midpoints as the grid line y-positions. It also detects the baseline near the bottom and uses it to estimate the plot’s x-range. From this it builds a **plot mask** so analysis only happens inside the plot area.
 
 ### 3) Isolate each coloured series using HSV thresholds
-The coloured lines are segmented in HSV (Hue, Saturation, Value) space, where hue cleanly separates colours. This converts the image to HSV, then creates one boolean mask per series using tuned hue bands plus minimum saturation/value thresholds to reject gray gridlines and background noise.
+The coloured lines are segmented in HSV (Hue, Saturation, Value) space, where hue cleanly separates colours. This converts the image to HSV, then creates one boolean mask per series using tuned hue bands plus minimum saturation/value thresholds to reject gray grid lines and background noise.
 
 ### 4) Turn pixels into data: column-wise sampling (mask-based tracing)
 For each x pixel column across the plot, the approach finds pixels that are both (a) inside the plot mask and (b) inside a series’ colour mask. If it finds any, it takes the **median y** to represent the line’s position at that x. Missing columns become NaN and are later filled by interpolation.
 
 ### 5) Calibrate to the chart axes (pixels → real values)
-Using the detected horizontal gridlines (assumed to correspond to values 7..0), a linear mapping is fit from **y pixel → chart value**. For x, it assumes the chart is uniformly spaced in time and samples the trace onto a monthly date index from Jan 2017 to Nov 2025.
+Using the detected horizontal grid lines (assumed to correspond to values 7..0), a linear mapping is fit from **y pixel → chart value**. For x, it assumes the chart is uniformly spaced in time and samples the trace onto a monthly date index from Jan 2017 to Nov 2025.
 
 ### 6) Export and validate by re-plotting
 The extracted monthly series are assembled into a DataFrame and saved to a single CSV. The result is re-plotted  as a visual check that the digitised curves match the original chart.
