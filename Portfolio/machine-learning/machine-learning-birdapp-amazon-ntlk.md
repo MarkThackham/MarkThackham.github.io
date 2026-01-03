@@ -41,21 +41,25 @@ The following pre-processing steps were applied using NLTK:
 Here is an example of the pre-processed text:
 
 Example Review:
+```text
 [ORIGINAL]    : This is a one of the best apps acording to a bunch of people and I agree it has bombs eggs pigs TNT 
 [LOWERED]     : this is a one of the best apps acording to a bunch of people and i agree it has bombs eggs pigs tnt 
 [CONTRACTIONS]: this is a one of the best apps acording to a bunch of people and i agree it has bombs eggs pigs tnt 
 [STOPWORDED]  : one best apps acording bunch people agree bombs eggs pigs tnt king pigs realustic stuff
 [UNPUNCTUATED]: one best apps acording bunch people agree bombs eggs pigs tnt king pigs realustic stuff
 [LEMMATIZED]  : one best apps acording bunch people agree bomb egg pig tnt king pig realustic stuff
+```
+
 
 Example Review:
+```text
 [ORIGINAL]    : This is a very entertaining game!  You don't have to be smart to play it.  I guess that's why I like
 [LOWERED]     : this is a very entertaining game!  you don't have to be smart to play it.  i guess that's why i like
 [CONTRACTIONS]: this is a very entertaining game!  you do not have to be smart to play it.  i guess that is why i li
 [STOPWORDED]  : entertaining game ! smart play . guess like ... easy fun games suppose . warned : game highly addict
 [UNPUNCTUATED]: entertaining game  smart play  guess like  easy fun games suppose  warned  game highly addictive 
 [LEMMATIZED]  : entertaining game smart play guess like easy fun game suppose warned game highly addictive
-
+```
 
 ## Analysis
 
