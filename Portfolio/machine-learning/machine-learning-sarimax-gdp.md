@@ -159,7 +159,7 @@ Both scatter and line plots of observed vs predicted values show a strong model 
 ## Codebase
 The codebase to implement this analysis is [here](https://github.com/MarkThackham/MarkThackham.github.io/blob/main/Portfolio/machine-learning/sarimax-gdp/sarimax-gdp.ipynb)
 
-[← Back to Machine Learning](/machine-learning/)
+[← Back to Portfolio](/machine-learning/)
 
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script id="MathJax-script" async

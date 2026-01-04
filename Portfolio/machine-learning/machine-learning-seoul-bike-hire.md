@@ -225,7 +225,7 @@ These plots show the feature importance from the final XGBoost model, using both
 ## Codebase
 The codebase to implement this analysis is [here](https://github.com/MarkThackham/MarkThackham.github.io/blob/main/Portfolio/machine-learning/seoul-bike-hire/machine-learning-seoul-bike-hire.ipynb)
 
-[← Back to Machine Learning](/machine-learning/)
+[← Back to Portfolio](/machine-learning/)
 
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script id="MathJax-script" async

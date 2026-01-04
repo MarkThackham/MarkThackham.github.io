@@ -96,4 +96,4 @@ Receiver-Operator Characteristic (ROC) curves for all models, as well as the res
 ## Codebase
 The codebase to implement this analysis is [here](https://github.com/MarkThackham/MarkThackham.github.io/blob/main/Portfolio/machine-learning/pima-indians/machine-learning-pima-indians.ipynb)
 
-[← Back to Machine Learning](/machine-learning/)
+[← Back to Portfolio](/machine-learning/)
