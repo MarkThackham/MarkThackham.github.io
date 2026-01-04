@@ -188,6 +188,6 @@ Selecting 2 topics, the top words for each topic along with their probabilities 
 </div>
 
 ## Codebase
-The codebase to implement this analysis is [here](https://github.com/MarkThackham/MarkThackham.github.io/blob/main/Portfolio/machine-learning/birdapp-amazon-ntlk/birdapp-amazon-ntlk.md)
+The codebase to implement this analysis is [here](https://github.com/MarkThackham/MarkThackham.github.io/blob/main/Portfolio/machine-learning/birdapp-amazon-ntlk/birdapp-amazon-ntlk.ipynb)
 
 [← Back to Portfolio](/machine-learning/)
