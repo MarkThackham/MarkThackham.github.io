@@ -24,7 +24,7 @@ Bird App Reviews Dataset
 </div>
 
 ## Data
-The [Bird App Reviews Dataset](https://raw.githubusercontent.com/pycaret/pycaret/master/datasets/amazon.csv) contains customer reviews of Angry Bird App. The dataset includes 20,000 reviews with the following 2 columns:
+The [Bird App Reviews Dataset](https://raw.githubusercontent.com/pycaret/pycaret/master/datasets/amazon.csv) contains customer reviews of Angry Bird App on the Amazon Kindle Fire. The dataset includes 20,000 reviews with the following 2 columns:
 
 1. **reviewText** – The text of the review  
 2. **Positive** – Binary label indicating if the review is positive (1) or negative (0)
@@ -65,12 +65,17 @@ Example Review:
 ### Natural Language Processing Techniques
 These methods are used:
 1. **VADER Sentiment Analysis** – To analyze the sentiment of the reviews, providing scores for positive, negative, neutral, and compound sentiment, often used for social media text. (VADER = Valence Aware Dictionary and sEntiment Reasoner)
-2. **Word Cloud** – To visualize the most frequent words in the reviews, helping identify key themes and topics.  XXX UP TO HERE XXX
-
+2. **Word Cloud** – To visualize the most frequent words in the reviews, helping identify key themes and topics.  
+3. **TF-IDF Vectorization** – To convert the text data into numerical format by calculating the Term Frequency-Inverse Document Frequency, which reflects the importance of words in the reviews.
+4. **Latent Dirichlet Allocation (LDA)** – To identify topics within the reviews by grouping similar words together based on their co-occurrence patterns.
 
 #### Results - VADER Sentiment Analysis
 
-AUC 82.54%
+VADER (Valence Aware Dictionary and sEntiment Reasoner) is rule-based sentiment analysis designed especially for short, informal text like tweets and product reviews. It works by looking up words and phrases in a sentiment lexicon (each term has a built-in positive/negative “valence” score) and then adjusting those scores with heuristics that capture how people actually write online—things like negation (“not good”), intensifiers (“very good”), punctuation and capitalization (“GOOD!!”). It combines these signals into four outputs: positive, negative, neutral, and a single compound score (a normalized overall sentiment from -1 to +1) that’s often used as the main summary.
+
+For this analysis, we focus on the compound score to classify reviews as positive or negative, and evaluate the classification performance which yields and AUC of 82.54%.
+
+##### Most Positive and Negative Reviews
 
 Print 3 most positive reviews:
 ```text
@@ -99,6 +104,36 @@ Print 3 most negative reviews:
 -0.9643 :  Very bad app had to dump it would not work... could not even get my mail setup... Bad... Bad........... Bad.... Bad.....
 -0.9628 :  Great game.. will recommend to others.Angry Birds Angry Birds Angry Birds Angry Birds Angry Birds Angry Birds Angry Birds Angry Birds Angry BirdsYesss!
 ```
+
+#### Results - Word Cloud
+A word cloud is a simple text-visualization that shows the most common words (or short phrases) in a dataset, with more frequent terms drawn larger (and often bolder) so themes “pop out” at a glance. To build one, you typically clean and tokenize your text (lowercasing, removing URLs/@mentions/stopwords, optionally stemming/lemmatizing), count term frequencies, then map counts to visual weights (font size) and place words in a layout that avoids overlaps. 
+
+For tweet analysis, this is handy as a quick overview of what people talk about most—but it shows frequency, not sentiment, unless you generate separate clouds for positive/negative subsets.
+
+<div style="display: flex; justify-content: center; gap: 20px; align-items: flex-start;">
+  <figure style="text-align: center; margin: 0;">
+    <img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/birdapp-amazon-ntlk/bigram_wordcloud_positive.png"
+         alt="bigram_wordcloud_positive"
+         width="350">
+    <figcaption>WWord Cloud - Positive Reviews</figcaption>
+  </figure>
+
+  <figure style="text-align: center; margin: 0;">
+    <img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/birdapp-amazon-ntlk/bigram_wordcloud_negative.png"
+         alt="bigram_wordcloud_negative"
+         width="350">
+    <figcaption>Word Cloud - Negative Reviews</figcaption>
+  </figure>
+</div>
+
+
+#### Results - TF-IDF Vectorization
+XXX
+
+#### Results - Latent Dirichlet Allocation (LDA)
+XXX
+
+
 
 ## Codebase
 The codebase to implement this analysis is [here](https://github.com/MarkThackham/MarkThackham.github.io/blob/main/Portfolio/machine-learning/birdapp-amazon-ntlk/machine-learning-birdapp-amazon-ntlk.md)
