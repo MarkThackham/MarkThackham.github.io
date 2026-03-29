@@ -1,1 +1,3 @@
-This is a temp file.
+This is a temp file. Some more text on the third line
+A second line
+A third line
