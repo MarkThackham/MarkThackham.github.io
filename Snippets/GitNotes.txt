@@ -1,0 +1,59 @@
+## Setup
+# git clone
+git clone https://github.com/MyRepo
+
+# move to directory
+cd \MyRepo
+
+# Create branch
+git branch feature
+
+# Switch branch
+git checkout feature
+
+# Or create branch and switch to branch in one step
+git checkout -b feature
+
+# check what branch I am on
+git branch
+
+# push
+git add .
+git commit -m "Commit Message"
+git push -u origin feature
+
+
+## Align changes on feature branch
+
+# Fetch meta data from main branch
+# Downloads the new data but does not touch your working files. 
+# It’s like checking the mail but not opening the envelopes yet. git fetch origin
+
+# pull changes from feature branch
+# Does a fetch AND immediately tries to merge those changes into your files. 
+# It's the "Update me now" button.
+git pull origin feature
+
+
+## Merge feature back to main
+
+# Switch to main
+git checkout main
+
+# Update local main
+git pull origin main
+
+# Merge feature to the current branch (which is main)
+git merge feature
+
+# Push results to github
+git push origin main
+
+
+## Cleanup 
+
+# delete feature locally
+git branch -d feature
+
+# Delete branch on github
+git push origin --delete feature
