@@ -8,6 +8,8 @@ permalink: /machine-learning/
 
 [Classification, Hyperparameter Tuning, SHAP Explanations (Pima Indians Data)](/machine-learning/machine-learning-pima-indians/)
 
+[Classification, Gini Coefficient, Information Value, Weight of Evidence, Hierarchial Clustering (German Credit Data)](/machine-learning/machine-learning-credit-data/)
+
 [Regression, Cyclical Feature Encoding (Seoul Bike Hire Data)](/machine-learning/machine-learning-seoul-bike-hire/)
 
 [Regression, Everybody Needs Good Neighbours (London House Price Data)](/machine-learning/machine-learning-london-houseprice/)

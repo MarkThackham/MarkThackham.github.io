@@ -16,10 +16,10 @@ German Credit Data
 </a> contains contains funded retail credit applications. Key take-outs are:
 </p>
 <ul>
-  <li>take-out 1 → description 1</li>
-  <li>take-out 2 → description 2</li>
-  <li>take-out 3 → description 3</li>
-  <li>take-out 4 → description 4</li>
+  <li>Gini Coefficient, Information Value (IV) and Weight-of-Evidence(WoE) are helpful measures for classification modelling</li>
+  <li>Hierarchial Clustering of features can identify related features</li>
+  <li>Current and recent credit performance are the most powerful predictors of default risk</li>
+  <li>LightGBM performs best of 10 models assessed</li>
 </ul>
 </div>
 
@@ -134,11 +134,60 @@ The plots below show the relation between higher bad rate and each categorical f
 ## Modelling
 
 ### Univariate
+The Gini co-efficient and Information Values (IV) are calculated for each feature. The values are tabulated below#:
+
+                    feature   IV  Gini
+0                    status 0.67  0.42
+1            credit_history 0.29  0.25
+2                   savings 0.20  0.20
+3                  duration 0.18  0.22
+4                   purpose 0.17  0.22
+5                  property 0.11  0.17
+6       employment_duration 0.09  0.16
+7                       age 0.09  0.15
+8                   housing 0.09  0.14
+9                    amount 0.07  0.14
+10  other_installment_plans 0.06  0.10
+11      personal_status_sex 0.04  0.10
+12           foreign_worker 0.04  0.03
+13            other_debtors 0.03  0.05
+14         installment_rate 0.03  0.09
+15           number_credits 0.01  0.05
+16                      job 0.01  0.04
+17                telephone 0.01  0.04
+18        present_residence 0.00  0.03
+19            people_liable 0.00  0.00
+
+### Feature Clustering
+Using hierachical clustering of the features (using Wards Linkage and Euclidean Distance), the features form the below clusters when cutting the distance at 12.4. The conclusion is that there are 3 clusters identified, and 5 features that do not cluster with any other features
+
+<div style="display: flex; justify-content: center; align-items: flex-start;">
+  <figure style="text-align: center; margin: 0;">
+    <img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/credit-data/credit-data-feature-clustering-dendrogram-cut-12.4.png"
+         alt="Dendrogram"
+         width="800">
+    <figcaption>Dendrogram</figcaption>
+  </figure>
+</div>
 
 ### Correlation
+The Spearman Rank correlation matrix below shows which feature pairs have high correlation. The highest correlated pairs are:
+ - "Amount" and "Duration"
+ - "Credit History" and "Number of Credits"
+ - "Housing" and "Property"
+ - "Telephone" and "Job"
+
+<div style="display: flex; justify-content: center; align-items: flex-start;">
+  <figure style="text-align: center; margin: 0;">
+    <img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/credit-data/credit-data-correlation-matrix.png"
+         alt="Correlation Matrix"
+         width="800">
+    <figcaption>Correlation Matrix</figcaption>
+  </figure>
+</div>
 
 ### Modelling
-The dataset is split into training (80%) and test (20%) sets.  There ar 10 models evaluated:
+The dataset is split into training (70%) and test (30%) sets.  There ar 10 models evaluated:
 
 - XGBoost
 - LightGBM
@@ -152,7 +201,10 @@ The dataset is split into training (80%) and test (20%) sets.  There ar 10 model
 - Linear Discriminant Analysis
 
 ### Results
-XXX
+The 10 models are run, with no further hyperparameter tuning. The best models are:
+ - Random Forest
+ - LightGBM
+ - CatBost
 
 <div style="display: flex; justify-content: center; align-items: flex-start;">
   <figure style="text-align: center; margin: 0;">
@@ -162,8 +214,6 @@ XXX
     <figcaption>Bar Plot of Gini</figcaption>
   </figure>
 </div>
-
-XXXX
 
 <div style="display: flex; justify-content: center; align-items: flex-start;">
   <figure style="text-align: center; margin: 0;">
