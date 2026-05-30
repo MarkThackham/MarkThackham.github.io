@@ -141,7 +141,7 @@ This table shows the RMSE and R² for the three models on both the training and 
 | XGBoost | Test  |  58,683  | 0.9953  |
 
 ## Codebase
-The codebase to implement this analysis is [here](https://nbviewer.org/github/MarkThackham/MarkThackham.github.io/blob/main/Portfolio/machine-learning/london-houseprice/machine-learning-London%20House%20Data.ipynb)
+The codebase to implement this analysis is [here](https://nbviewer.org/github/MarkThackham/MarkThackham.github.io/blob/main/Portfolio/machine-learning/london-houseprice/machine-learning-London-House-Data.ipynb)
 
 [← Back to Portfolio](/machine-learning/)
 
