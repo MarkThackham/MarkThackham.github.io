@@ -5,48 +5,48 @@ permalink: /machine-learning/machine-learning-south-german-credit-data/
 
 # South German Credit Data
 
-## Key Takeaways
+## Take Away
 
 <div style="background-color: #f5f5f5; padding: 15px; border-radius: 8px;">
 
 <p>
-The 
+Dataset 
 <a href="https://archive.ics.uci.edu/dataset/522/south+german+credit" target="_blank">
-South German Credit Dataset
-</a> contains funded retail credit applications. Key takeaways are:
+South German Credit Data
+</a> contains contains funded retail credit applications. Key take-outs are:
 </p>
 <ul>
-  <li>Gini Coefficient, Information Value (IV), and Weight-of-Evidence (WoE) are helpful measures for classification modelling.</li>
-  <li>Hierarchical Clustering of features can identify related features.</li>
-  <li>Current and recent credit performance are the most powerful predictors of default risk.</li>
-  <li>XGBoost performs best out of the 10 models assessed.</li>
+  <li>Gini Coefficient, Information Value (IV) and Weight-of-Evidence(WoE) are helpful measures for classification modelling</li>
+  <li>Hierarchical Clustering of features can identify related features</li>
+  <li>Current and recent credit performance are the most powerful predictors of default risk</li>
+  <li>XGBoost performs best of 10 models assessed</li>
 </ul>
 </div>
 
 ## Data
-The [South German Credit Dataset](https://archive.ics.uci.edu/dataset/522/south+german+credit) contains 1,000 examples of funded retail credit applications with a bad rate of 30%. The 20 features span product (3), financial (3), behavioural (3), and borrower (11) characteristics. This is an updated dataset from the older German Credit Data.
+The [South German Credit Dataset](https://archive.ics.uci.edu/dataset/522/south+german+credit) contains 1,000 examples of funded retail credit applications a bad-rate of 30%. The 20 features span: product (3); financial (3); behavioural (3); and borrower(11) features. This is an updated dataset from the older German Credit Data
 
-**Product Features**
+Product Features
 1. **duration** (months) - loan duration
 2. **purpose** (categorical) - loan purpose
 3. **instalment_rate** (categorical) - instalment amount band
 
-**Financial Features**
+Financial Features
 4. **amount** (float) - loan amount
-5. **savings** (categorical) - savings band
-6. **status** (categorical) - checking account amount band
+5. **savings** (categorical)- savings band
+6. **status** (categorical) - savings account amount band
 
-**Behavioural Features**
+Behavioural Features
 7. **credit_history** (categorical) - credit history
-8. **number_credits** (categorical) - number of credits
+8. **number_credits** (categorical) - number of credits`
 9. **other_instalment_plans** (categorical) - other loans
 
-**Borrower Features**
+Borrower Features
 10. **age** (years) - customer age
 11. **employment_duration** (categorical) - employment duration
 12. **present_residence** (categorical) - residence duration
 13. **other_debtors** (categorical) - guarantor
-14. **people_liable** (categorical) - number of borrowers
+14. **people_liable** (categorical) - number borrowers
 15. **housing** (categorical) - owner/renter
 16. **job** (categorical) - job title
 17. **telephone** (binary) - telephone
@@ -54,15 +54,15 @@ The [South German Credit Dataset](https://archive.ics.uci.edu/dataset/522/south+
 19. **property** (categorical) - assets
 20. **foreign_worker** (binary) - foreign worker
 
-**Target**
-21. **bad_flag** (float) - good/bad flag
+Target
+21. **bad_flag** (float) - good bad flag
 
 ## Analysis
 
 ### Exploratory Data Analysis
 
 #### Response
-The response variable indicates whether the granted loan defaults. The bar plot below shows the frequency of loan outcomes.
+The response is whether the granted loan defaults. The bar plot below shows the frequency of loan outcomes.
 
 <div style="display: flex; justify-content: center; align-items: flex-start;">
   <figure style="text-align: center; margin: 0;">
@@ -75,7 +75,7 @@ The response variable indicates whether the granted loan defaults. The bar plot 
 
 #### Features - Continuous
 
-The stratified KDE (Kernel Density Estimate) plots below provide insight into the distribution of numerical features (`duration`, `amount`, `age`) stratified by the target variable (`bad_flag`). 
+The stratified KDE (Kernel Density Estimate) plots below provide insights into the distribution of numerical features(`duration`, `amount`, `age`) stratified by the target variable (`bad_flag`). 
 
 <div style="display: flex; justify-content: center; align-items: flex-start;">
   <figure style="text-align: center; margin: 0;">
@@ -88,15 +88,23 @@ The stratified KDE (Kernel Density Estimate) plots below provide insight into th
 
 Here are the key observations:
 
-1. **Duration:** The distribution of `duration` indicates that longer durations are more common among bad credit risks. There is a noticeable peak for bad credit risks at higher durations, suggesting extended loan terms are associated with elevated risk.
-2. **Amount:** Higher loan amounts are more common among bad credit risks. A noticeable peak at higher loan amounts suggests that larger requests carry a higher risk of default.
-3. **Age:** Younger individuals represent a larger portion of bad credit risks. There is a clear peak at lower ages, indicating that younger applicants might be associated with higher credit risk.
+1. Duration
+- The distribution of `duration` for both good and bad credit risks shows that longer durations are more common among bad credit risks.
+- There is a noticeable peak for bad credit risks at higher durations, indicating that longer loan durations might be associated with higher credit risk.
 
-Overall, the stratified KDE plots suggest that longer loan durations, higher loan amounts, and younger ages correlate with higher credit risk. These insights are useful for understanding the core characteristics of high-risk applications.
+2. Amount
+- The distribution of `amount` for both good and bad credit risks shows that higher loan amounts are more common among bad credit risks.
+- There is a noticeable peak for bad credit risks at higher loan amounts, suggesting that larger loan amounts might be associated with higher credit risk.
+
+3. Age
+- The distribution of `age` for both good and bad credit risks shows that younger individuals are more common among bad credit risks.
+- There is a noticeable peak for bad credit risks at lower ages, indicating that younger age might be associated with higher credit risk.
+
+Overall, the stratified KDE plots suggest that longer loan durations, higher loan amounts, and younger ages are associated with higher credit risk. These insights can be useful for understanding the characteristics of high-risk loans and individuals.
 
 #### Features - Discrete
 
-The list below highlights which specific categories within each discrete feature are associated with higher default rates:
+The plots below show the relation between higher bad rate and each categorical feature.
 - **status** → smaller balances or no checking account
 - **credit_history** → past delays or critical account status
 - **purpose** → repairs, business, domestic appliances
@@ -111,7 +119,7 @@ The list below highlights which specific categories within each discrete feature
 - **number_credits** → 6 or more
 - **job** → very little signal
 - **people_liable** → very little signal
-- **telephone** → no telephone
+- **telephone** → no
 - **foreign_worker** → no
 
 <div style="display: flex; justify-content: center; align-items: flex-start;">
@@ -126,7 +134,7 @@ The list below highlights which specific categories within each discrete feature
 ## Modelling
 
 ### Univariate
-The Gini coefficient and Information Values (IV) were calculated for each feature. The values are tabulated below:
+The Gini co-efficient and Information Values (IV) are calculated for each feature. The values are tabulated below:
 
 | Feature | IV | Gini |
 |---|---:|---:|
@@ -140,11 +148,11 @@ The Gini coefficient and Information Values (IV) were calculated for each featur
 | age | 0.09 | 0.15 |
 | housing | 0.09 | 0.14 |
 | amount | 0.07 | 0.14 |
-| other_instalment_plans | 0.06 | 0.10 |
+| other_installment_plans | 0.06 | 0.10 |
 | personal_status_sex | 0.04 | 0.10 |
 | foreign_worker | 0.04 | 0.03 |
 | other_debtors | 0.03 | 0.05 |
-| instalment_rate | 0.03 | 0.09 |
+| installment_rate | 0.03 | 0.09 |
 | number_credits | 0.01 | 0.05 |
 | job | 0.01 | 0.04 |
 | telephone | 0.01 | 0.04 |
@@ -152,7 +160,7 @@ The Gini coefficient and Information Values (IV) were calculated for each featur
 | people_liable | 0.00 | 0.00 |
 
 ### Feature Clustering
-By applying hierarchical clustering to the features (using Ward's Linkage and Euclidean Distance) and cutting the distance at 12.4, the features form the clusters visualized below. Ultimately, 3 main clusters are identified, alongside 5 independent features that do not cluster with any others.
+Using hierachical clustering of the features (using Wards Linkage and Euclidean Distance), the features form the below clusters when cutting the distance at 12.4. The conclusion is that there are 3 clusters identified, and 5 features that do not cluster with any other features
 
 <div style="display: flex; justify-content: center; align-items: flex-start;">
   <figure style="text-align: center; margin: 0;">
@@ -164,7 +172,7 @@ By applying hierarchical clustering to the features (using Ward's Linkage and Eu
 </div>
 
 ### Correlation
-The Spearman Rank correlation matrix below shows which feature pairs are highly correlated. The most correlated pairs are:
+The Spearman Rank correlation matrix below shows which feature pairs have high correlation. The highest correlated pairs are:
  - "Amount" and "Duration"
  - "Credit History" and "Number of Credits"
  - "Housing" and "Property"
@@ -179,8 +187,8 @@ The Spearman Rank correlation matrix below shows which feature pairs are highly 
   </figure>
 </div>
 
-### Modelling Process
-The dataset was split into training (70%) and test (30%) sets. There are 10 models evaluated:
+### Modelling
+The dataset is split into training (70%) and test (30%) sets.  There ar 10 models evaluated:
 
 - XGBoost
 - LightGBM
@@ -194,7 +202,7 @@ The dataset was split into training (70%) and test (30%) sets. There are 10 mode
 - Linear Discriminant Analysis
 
 ### Results
-The 10 models were trained and evaluated with no further hyperparameter tuning. The best performing models are:
+The 10 models are run, with no further hyperparameter tuning. The best models are:
  - XGBoost
  - LightGBM
 
@@ -217,7 +225,7 @@ The 10 models were trained and evaluated with no further hyperparameter tuning. 
 </div>
 
 ## Codebase
-The codebase to implement this analysis can be found [here](https://github.com/MarkThackham/MarkThackham.github.io/blob/main/Portfolio/machine-learning/credit-data/machine-learning-south-german-credit-data.ipynb).
+The codebase to implement this analysis is [here](https://github.com/MarkThackham/MarkThackham.github.io/blob/main/Portfolio/machine-learning/credit-data/machine-learning-south-german-credit-data.ipynb)
 
 [← Back to Portfolio](/machine-learning/)
 

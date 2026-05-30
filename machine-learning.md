@@ -22,6 +22,6 @@ permalink: /machine-learning/
 
 [Binary Classification Techniques (South German Credit Data)](/machine-learning/machine-learning-south-german-credit-data/)
 
-[Recursive Feature Elimination (Titanic Data))](/machine-learning/machine-learning-recursive-feature-elimination/)
+[Recursive Feature Elimination (Titanic Data)](/machine-learning/machine-learning-recursive-feature-elimination/)
 
 [← Back to Home](/)
