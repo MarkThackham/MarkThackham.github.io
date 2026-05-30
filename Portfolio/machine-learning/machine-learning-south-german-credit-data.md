@@ -1,6 +1,6 @@
 ---
 title: "Machine Learning"
-permalink: /machine-learning/machine-learning-credit-data/
+permalink: /machine-learning/machine-learning-south-german-credit-data/
 ---
 
 # German Credit Data
