@@ -134,7 +134,7 @@ The plots below show the relation between higher bad rate and each categorical f
 ## Modelling
 
 ### Univariate
-The Gini co-efficient and Information Values (IV) are calculated for each feature. The values are tabulated below#:
+The Gini co-efficient and Information Values (IV) are calculated for each feature. The values are tabulated below:
 
 | Feature | IV | Gini |
 |---|---:|---:|
