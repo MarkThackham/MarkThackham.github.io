@@ -11,8 +11,8 @@ permalink: /machine-learning/machine-learning-south-german-credit-data/
 
 <p>
 Dataset 
-<a href="https://www.kaggle.com/datasets/kabure/german-credit-data-with-risk" target="_blank">
-German Credit Data
+<a href="https://archive.ics.uci.edu/dataset/522/south+german+credit" target="_blank">
+South German Credit Data
 </a> contains contains funded retail credit applications. Key take-outs are:
 </p>
 <ul>
@@ -24,7 +24,7 @@ German Credit Data
 </div>
 
 ## Data
-The [German Credit Dataset](https://www.kaggle.com/datasets/kabure/german-credit-data-with-risk) contains 1,000 examples of funded retail credit applications a bad-rate of 30%. The 20 features span: product (3); financial (3); behavioural (3); and borrower(11) features.
+The [South German Credit Dataset](https://archive.ics.uci.edu/dataset/522/south+german+credit) contains 1,000 examples of funded retail credit applications a bad-rate of 30%. The 20 features span: product (3); financial (3); behavioural (3); and borrower(11) features. This is an updated dataset from the older German Credit Data
 
 Product Features
 1. **duration** (months) - loan duration
