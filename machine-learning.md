@@ -8,7 +8,9 @@ permalink: /machine-learning/
 
 [Classification, Hyperparameter Tuning, SHAP Explanations (Pima Indians Data)](/machine-learning/machine-learning-pima-indians/)
 
-[Classification, Gini Coefficient, Information Value, Weight of Evidence, Hierarchial Clustering (German Credit Data)](/machine-learning/machine-learning-credit-data/)
+[Classification, Gini Coefficient, Information Value, Weight of Evidence, Hierarchical Clustering (South German Credit Data)](/machine-learning/machine-learning-south-german-credit-data/)
+
+[Recursive Feature Elimination (Titanic Data)](/machine-learning/machine-learning-recursive-feature-elimination/)
 
 [Regression, Cyclical Feature Encoding (Seoul Bike Hire Data)](/machine-learning/machine-learning-seoul-bike-hire/)
 
@@ -19,9 +21,5 @@ permalink: /machine-learning/
 [Computer Vision, Digitise Data from Graph (S&P Default Study)](/machine-learning/machine-learning-digitise-graph/)
 
 [Natural Language Processing on Amazon Bird App Reviews](/machine-learning/machine-learning-birdapp-amazon-ntlk/)
-
-[Binary Classification Techniques (South German Credit Data)](/machine-learning/machine-learning-south-german-credit-data/)
-
-[Recursive Feature Elimination (Titanic Data)](/machine-learning/machine-learning-recursive-feature-elimination/)
 
 [← Back to Home](/)
