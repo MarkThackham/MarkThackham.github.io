@@ -16,10 +16,13 @@ Titanic Data
 </a> containing features of passengers and their survival. Key take-outs are:
 </p>
 <ul>
-  <li>take out</li>
-  <li>take out</li>
-  <li>take out</li>
-  <li>take out</li>
+  <li>Systematic Dimensionality Reduction: RFE iteratively removes weak variables to reduce model complexity while maintaining predictive power.
+</li>
+  <li>The Importance of Preprocessing: Robust data preprocessing, like targeted imputation and encoding, is crucial for accurate feature selection.
+</li>
+  <li>Balancing Performance vs. Parsimony: The variable selection profile helps identify the optimal trade-off between model complexity and accuracy.
+</li>
+  <li>Uncovering Feature Hierarchy: Tracking the elimination order empirically reveals the most influential predictors, like Sex and Pclass.</li>
 </ul>
 </div>
 
