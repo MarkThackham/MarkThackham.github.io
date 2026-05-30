@@ -10,7 +10,7 @@ permalink: /machine-learning/machine-learning-recursive-feature-elimination/
 <div style="background-color: #f5f5f5; padding: 15px; border-radius: 8px;">
 
 <p>
-Determining the subset of most important features is a key challenge. Recursive Feature Elimination is a structured manner to progressively reduce the feature set. This is demonstrate using the  
+Determining the subset of most important features is a key challenge. Recursive Feature Elimination is a structured manner to progressively reduce the feature set. This is demonstrated using the  
 <a href="https://www.kaggle.com/datasets/yasserh/titanic-dataset" target="_blank">
 Titanic Data
 </a> containing features of passengers and their survival. Key take-outs are:
