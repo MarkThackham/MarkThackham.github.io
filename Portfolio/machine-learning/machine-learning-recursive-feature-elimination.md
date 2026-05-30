@@ -10,8 +10,8 @@ permalink: /machine-learning/machine-learning-recursive-feature-elimination/
 <div style="background-color: #f5f5f5; padding: 15px; border-radius: 8px;">
 
 <p>
-Determining the subset of most important features is a key challenge. Recursive Feature Elimination is a structured manner to progressively reduce the feature set. Using the  
-<a href="NEED TO INSERT LINK" target="_blank">
+Determining the subset of most important features is a key challenge. Recursive Feature Elimination is a structured manner to progressively reduce the feature set. This is demonstrate using the  
+<a href="https://www.kaggle.com/datasets/yasserh/titanic-dataset" target="_blank">
 Titanic Data
 </a> containing features of passengers and their survival. Key take-outs are:
 </p>
@@ -24,7 +24,7 @@ Titanic Data
 </div>
 
 ## Data
-The [Titanic Dataset](NEED TO INSET LINK) contains 891 examples of passengers with a 38% survival rate. After dropping Passenger ID, Name and Ticket, the remaining 8 features are:
+The [Titanic Dataset](https://www.kaggle.com/datasets/yasserh/titanic-dataset) contains 891 examples of passengers with a 38% survival rate. After dropping Passenger ID, Name and Ticket, the remaining 8 features are:
 
 1. **Pclass** (integer) - passenger class
 2. **Sex** (integer) - passenger gender
@@ -70,14 +70,14 @@ A baseline XGBoost model is built using all features. The Gini is 83% (train) an
 Recursive Feature Elimination starts with a model of all available features and removes the p least important features. The value p>1 can be set to any integer value (say 5, 10, 50, ...) but for this toy example p=1.
 
 The process selects these features at each step:
-['Pclass', 'Sex', 'Age', 'SibSp', 'Parch', 'Fare', 'Embarked', 'CabinAssigned']
-['Pclass', 'Sex', 'Age', 'SibSp', 'Fare', 'Embarked', 'CabinAssigned']
-['Pclass', 'Sex', 'Age', 'Fare', 'Embarked', 'CabinAssigned']
-['Pclass', 'Sex', 'Age', 'Embarked', 'CabinAssigned']
-['Pclass', 'Sex', 'Age', 'CabinAssigned']
-['Pclass', 'Sex', 'Age']
-['Pclass', 'Sex']
-['Sex']
+* Pclass, Sex, Age, SibSp, Parch, Fare, Embarked, CabinAssigned
+* Pclass, Sex, Age, SibSp, Fare, Embarked, CabinAssigned
+* Pclass, Sex, Age, Fare, Embarked, CabinAssigned
+* Pclass, Sex, Age, Embarked, CabinAssigned
+* Pclass, Sex, Age, CabinAssigned
+* Pclass, Sex, Age
+* Pclass, Sex
+* Sex
 
 ### Results
 The results produce a variable selection profile, that compare the test and train Gini for the number of selected features.  This profile can be used to assess the best trade-off for the number of features in the model.
