@@ -20,6 +20,6 @@ permalink: /machine-learning/
 
 [Natural Language Processing on Amazon Bird App Reviews](/machine-learning/machine-learning-birdapp-amazon-ntlk/)
 
-[Binary Classification Techniques (South German Credit Data)](/machine-learning/machine-learning-south-german-credit-data.md/)
+[Binary Classification Techniques (South German Credit Data)](/machine-learning/machine-learning-south-german-credit-data/)
 
 [← Back to Home](/)
