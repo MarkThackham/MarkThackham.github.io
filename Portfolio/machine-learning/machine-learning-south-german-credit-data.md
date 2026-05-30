@@ -3,7 +3,7 @@ title: "Machine Learning"
 permalink: /machine-learning/machine-learning-south-german-credit-data/
 ---
 
-# German Credit Data
+# South German Credit Data
 
 ## Take Away
 
@@ -225,7 +225,7 @@ The 10 models are run, with no further hyperparameter tuning. The best models ar
 </div>
 
 ## Codebase
-The codebase to implement this analysis is [here](https://github.com/MarkThackham/MarkThackham.github.io/blob/main/Portfolio/machine-learning/credit-data/machine-learning-german-credit-data.ipynb)
+The codebase to implement this analysis is [here](https://github.com/MarkThackham/MarkThackham.github.io/blob/main/Portfolio/machine-learning/credit-data/machine-learning-south-german-credit-data.ipynb)
 
 [← Back to Portfolio](/machine-learning/)
 
