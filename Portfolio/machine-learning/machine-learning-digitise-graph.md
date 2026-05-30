@@ -72,6 +72,6 @@ These are the results of the digitisation process, showing the extracted series 
 </div>
 
 ## Codebase
-The codebase to implement this analysis is [here](https://github.com/MarkThackham/MarkThackham.github.io/blob/main/Portfolio/machine-learning/digitise-graph/digitise-graph.ipynb)
+The codebase to implement this analysis is [here](https://nbviewer.org/github/MarkThackham/MarkThackham.github.io/blob/main/Portfolio/machine-learning/digitise-graph/digitise-graph.ipynb)
 
 [← Back to Portfolio](/machine-learning/)

@@ -217,14 +217,7 @@ The 10 models were trained and evaluated with no further hyperparameter tuning. 
 </div>
 
 ## Codebase
-The codebase to implement this analysis can be found [here](https://github.com/MarkThackham/MarkThackham.github.io/blob/main/Portfolio/machine-learning/credit-data/machine-learning-south-german-credit-data.ipynb).
-
-## Codebase
 The codebase to implement this analysis can be found [here](https://nbviewer.org/github/MarkThackham/MarkThackham.github.io/blob/main/Portfolio/machine-learning/credit-data/machine-learning-south-german-credit-data.ipynb).
-
-
-## Codebase
-The codebase to implement this analysis can be found [here](https://colab.research.google.com/github/MarkThackham/MarkThackham.github.io/blob/main/Portfolio/machine-learning/credit-data/machine-learning-south-german-credit-data.ipynb).
 
 [← Back to Portfolio](/machine-learning/)
 

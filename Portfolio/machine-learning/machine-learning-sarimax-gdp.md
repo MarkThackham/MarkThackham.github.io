@@ -157,7 +157,7 @@ Both scatter and line plots of observed vs predicted values show a strong model 
 </div>
 
 ## Codebase
-The codebase to implement this analysis is [here](https://github.com/MarkThackham/MarkThackham.github.io/blob/main/Portfolio/machine-learning/sarimax-gdp/sarimax-gdp.ipynb)
+The codebase to implement this analysis is [here](https://nbviewer.org/github/MarkThackham/MarkThackham.github.io/blob/main/Portfolio/machine-learning/sarimax-gdp/sarimax-gdp.ipynb)
 
 [← Back to Portfolio](/machine-learning/)
 

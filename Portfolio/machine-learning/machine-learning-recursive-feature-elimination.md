@@ -93,7 +93,7 @@ The results produce a variable selection profile, that compare the test and trai
 </div>
 
 ## Codebase
-The codebase to implement this analysis is [here](https://github.com/MarkThackham/MarkThackham.github.io/blob/main/Portfolio/machine-learning/recursive-feature-elimination/machine-learning-recursive-feature-elimination.ipynb)
+The codebase to implement this analysis is [here](https://nbviewer.org/github/MarkThackham/MarkThackham.github.io/blob/main/Portfolio/machine-learning/recursive-feature-elimination/machine-learning-recursive-feature-elimination.ipynb)
 
 [← Back to Portfolio](/machine-learning/)
 
