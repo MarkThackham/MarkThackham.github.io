@@ -90,7 +90,7 @@ The results produce a variable selection profile, that compare the test and trai
   <figure style="text-align: center; margin: 0;">
     <img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/recursive-feature-elimination/recursive-feature-elimination-profile.png"
          alt="Recursive Feature Elimination Profile"
-         width="800">
+         width="500">
     <figcaption>Recursive Feature Elimination Profile</figcaption>
   </figure>
 </div>
