@@ -89,9 +89,9 @@ The results produce a variable selection profile, that compare the test and trai
 <div style="display: flex; justify-content: center; align-items: flex-start;">
   <figure style="text-align: center; margin: 0;">
     <img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/recursive-feature-elimination/recursive-feature-elimination-profile.png"
-         alt="Bar Plot of Gini"
+         alt="Recursive Feature Elimination Profile"
          width="800">
-    <figcaption>Bar Plot of Gini</figcaption>
+    <figcaption>Recursive Feature Elimination Profile</figcaption>
   </figure>
 </div>
 

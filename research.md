@@ -25,7 +25,7 @@ This section contains my published research articles, theses, and presentations 
   [http://hdl.handle.net/1959.14/1250438](http://hdl.handle.net/1959.14/1250438)
 
 - **Modelling Exposure at Default Without Using Conversion Factors**  
-  [http://hdl.handle.net/1959.14/1195696](http://hdl.handle.net/1959.14/1195696)
+  [https://figshare.mq.edu.au/articles/thesis/Modelling_exposure_at_default_without_using_conversion_factors/19436573?file=34534253](https://figshare.mq.edu.au/articles/thesis/Modelling_exposure_at_default_without_using_conversion_factors/19436573?file=34534253)
 
 ## Research Presentations
 
