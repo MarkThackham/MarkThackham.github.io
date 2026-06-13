@@ -30,20 +30,24 @@ The [London House Price Data](https://www.kaggle.com/datasets/oktayrdeki/houses-
 ### Results
 
 These plots show the predicted vs actual prices for the three models on both the training and test sets.  The XGBoost model performs best, with predictions closely aligned to actual prices.
-
-
-<div style="display: flex; justify-content: center; gap: 10px; align-items: flex-start; margin-bottom: 20px;">
-  <figure style="flex: 1; text-align: center; margin: 0;"><img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/financial-markets/Index_USA S&P 500.png" alt="Chart 1" style="max-width: 100%; height: auto;"><figcaption>Chart 1</figcaption></figure>
-  <figure style="flex: 1; text-align: center; margin: 0;"><img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/financial-markets/Index_USA Dow Jones.png" alt="Chart 2" style="max-width: 100%; height: auto;"><figcaption>Chart 1</figcaption></figure>
-  <figure style="flex: 1; text-align: center; margin: 0;"><img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/financial-markets/Index_USA NASDAQ.png" alt="Chart 3" style="max-width: 100%; height: auto;"><figcaption>Chart 1</figcaption></figure>
-  <figure style="flex: 1; text-align: center; margin: 0;"><img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/financial-markets/Index_USA Russell 2000.png" alt="Chart 4" style="max-width: 100%; height: auto;"><figcaption>Chart 1</figcaption></figure>
+<div style="display: flex; justify-content: center; gap: 20px; align-items: flex-start; margin-bottom: 20px;">
+  <figure style="flex: 1; text-align: center; margin: 0;"><img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/financial-markets/Index_USA S&P 500.png" alt="S&P 500 Index" style="max-width: 100%; height: auto;"><figcaption>S&P 500 Index</figcaption></figure>
+  <figure style="flex: 1; text-align: center; margin: 0;"><img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/financial-markets/Returns_USA S&P 500.png" alt="S&P 500 Returns" style="max-width: 100%; height: auto;"><figcaption>S&P 500 Return</figcaption></figure>
 </div>
 
-<div style="display: flex; justify-content: center; gap: 10px; align-items: flex-start;">
-  <figure style="flex: 1; text-align: center; margin: 0;"><img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/financial-markets/Returns_USA S&P 500.png" alt="Chart 1" style="max-width: 100%; height: auto;"><figcaption>Chart 1</figcaption></figure>
-  <figure style="flex: 1; text-align: center; margin: 0;"><img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/financial-markets/Returns_USA Dow Jones.png" alt="Chart 2" style="max-width: 100%; height: auto;"><figcaption>Chart 1</figcaption></figure>
-  <figure style="flex: 1; text-align: center; margin: 0;"><img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/financial-markets/Returns_USA NASDAQ.png" alt="Chart 3" style="max-width: 100%; height: auto;"><figcaption>Chart 1</figcaption></figure>
-  <figure style="flex: 1; text-align: center; margin: 0;"><img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/financial-markets/Returns_USA Russell 2000.png" alt="Chart 4" style="max-width: 100%; height: auto;"><figcaption>Chart 1</figcaption></figure>
+<div style="display: flex; justify-content: center; gap: 20px; align-items: flex-start; margin-bottom: 20px;">
+  <figure style="flex: 1; text-align: center; margin: 0;"><img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/financial-markets/Index_USA Dow Jones.png" alt="Dow Jones Index" style="max-width: 100%; height: auto;"><figcaption>Dow Jones Index</figcaption></figure>
+  <figure style="flex: 1; text-align: center; margin: 0;"><img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/financial-markets/Returns_USA Dow Jones.png" alt="Dow Jones Returns" style="max-width: 100%; height: auto;"><figcaption>Dow Jones Return</figcaption></figure>
+</div>
+
+<div style="display: flex; justify-content: center; gap: 20px; align-items: flex-start; margin-bottom: 20px;">
+  <figure style="flex: 1; text-align: center; margin: 0;"><img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/financial-markets/Index_USA NASDAQ.png" alt="NASDAQ Index" style="max-width: 100%; height: auto;"><figcaption>NASDAQ Index</figcaption></figure>
+  <figure style="flex: 1; text-align: center; margin: 0;"><img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/financial-markets/Returns_USA NASDAQ.png" alt="NASDAQ Returns" style="max-width: 100%; height: auto;"><figcaption>NASDAQ Return</figcaption></figure>
+</div>
+
+<div style="display: flex; justify-content: center; gap: 20px; align-items: flex-start;">
+  <figure style="flex: 1; text-align: center; margin: 0;"><img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/financial-markets/Index_USA Russell 2000.png" alt="Russell 2000 Index" style="max-width: 100%; height: auto;"><figcaption>Russell 2000 Index</figcaption></figure>
+  <figure style="flex: 1; text-align: center; margin: 0;"><img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/financial-markets/Returns_USA Russell 2000.png" alt="Russell 2000 Returns" style="max-width: 100%; height: auto;"><figcaption>Russell 2000 Return</figcaption></figure>
 </div>
 
 
@@ -61,7 +65,7 @@ This table shows the RMSE and R² for the three models on both the training and 
 | XGBoost | Test  |  58,683  | 0.9953  |
 
 ## Codebase
-The codebase to implement this analysis is [here](https://nbviewer.org/github/MarkThackham/MarkThackham.github.io/blob/main/Portfolio/machine-learning/london-houseprice/machine-learning-London-House-Data.ipynb)
+The codebase to implement this analysis is [here](https://nbviewer.org/github/MarkThackham/MarkThackham.github.io/blob/main/Portfolio/machine-learning/financial-markets/financial-markets.ipynb)
 
 [← Back to Portfolio](/machine-learning/)
 
