@@ -22,4 +22,6 @@ permalink: /machine-learning/
 
 [Natural Language Processing on Amazon Bird App Reviews](/machine-learning/machine-learning-birdapp-amazon-ntlk/)
 
+[Financial Markets - Indices and Returns](/machine-learning/machine-learning-financial-markets/)
+
 [← Back to Home](/)
