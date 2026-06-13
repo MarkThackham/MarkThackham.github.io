@@ -31,6 +31,9 @@ The [London House Price Data](https://www.kaggle.com/datasets/oktayrdeki/houses-
 
 These plots show the predicted vs actual prices for the three models on both the training and test sets.  The XGBoost model performs best, with predictions closely aligned to actual prices.
 
+
+USA
+
 <div style="display: flex; justify-content: center; gap: 20px; align-items: flex-start; margin-bottom: 20px;">
   <figure style="flex: 1; text-align: center; margin: 0;"><img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/financial-markets/Index_USA S&P 500.png" alt="S&P 500 Index" style="max-width: 100%; height: auto;"></figure>
   <figure style="flex: 1; text-align: center; margin: 0;"><img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/financial-markets/Returns_USA S&P 500.png" alt="S&P 500 Returns" style="max-width: 100%; height: auto;"></figure>
@@ -53,16 +56,53 @@ These plots show the predicted vs actual prices for the three models on both the
 
 
 
-This table shows the RMSE and R² for the three models on both the training and test sets.  The XGBoost model performs best, with the lowest RMSE and highest R² on both sets.
 
-| Model   | Split |  RMSE    |   R²    |
-|---------|-------|----------|---------|
-| OLS     | Train | 203,923  | 0.9471  |
-| OLS     | Test  | 196,788  | 0.9471  |
-| OLS2    | Train | 203,134  | 0.9475  |
-| OLS2    | Test  | 200,161  | 0.9452  |
-| XGBoost | Train |  44,327  | 0.9975  |
-| XGBoost | Test  |  58,683  | 0.9953  |
+Europe
+
+<div style="display: flex; justify-content: center; gap: 20px; align-items: flex-start; margin-bottom: 20px;">
+  <figure style="flex: 1; text-align: center; margin: 0;"><img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/financial-markets/Index_Europe FTSE 100.png" alt="FTSE 100 Index" style="max-width: 100%; height: auto;"></figure>
+  <figure style="flex: 1; text-align: center; margin: 0;"><img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/financial-markets/Returns_Europe FTSE 100.png" alt="FTSE 100 Returns" style="max-width: 100%; height: auto;"></figure>
+</div>
+
+<div style="display: flex; justify-content: center; gap: 20px; align-items: flex-start; margin-bottom: 20px;">
+  <figure style="flex: 1; text-align: center; margin: 0;"><img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/financial-markets/Index_Europe DAX.png" alt="DAX Index" style="max-width: 100%; height: auto;"></figure>
+  <figure style="flex: 1; text-align: center; margin: 0;"><img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/financial-markets/Returns_Europe DAX.png" alt="DAX Returns" style="max-width: 100%; height: auto;"></figure>
+</div>
+
+<div style="display: flex; justify-content: center; gap: 20px; align-items: flex-start; margin-bottom: 20px;">
+  <figure style="flex: 1; text-align: center; margin: 0;"><img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/financial-markets/Index_Europe CAC 40.png" alt="CAC 40 Index" style="max-width: 100%; height: auto;"></figure>
+  <figure style="flex: 1; text-align: center; margin: 0;"><img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/financial-markets/Returns_Europe CAC 40.png" alt="CAC 40 Returns" style="max-width: 100%; height: auto;"></figure>
+</div>
+
+<div style="display: flex; justify-content: center; gap: 20px; align-items: flex-start;">
+  <figure style="flex: 1; text-align: center; margin: 0;"><img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/financial-markets/Index_Europe Euro Stoxx 100.png" alt="Euro Stoxx 100 Index" style="max-width: 100%; height: auto;"></figure>
+  <figure style="flex: 1; text-align: center; margin: 0;"><img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/financial-markets/Returns_Europe Euro Stoxx 100.png" alt="Euro Stoxx 100 Returns" style="max-width: 100%; height: auto;"></figure>
+</div>
+
+
+
+Asia
+
+<div style="display: flex; justify-content: center; gap: 20px; align-items: flex-start; margin-bottom: 20px;">
+  <figure style="flex: 1; text-align: center; margin: 0;"><img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/financial-markets/Index_Asia ASX 200.png" alt="ASX 200 Index" style="max-width: 100%; height: auto;"></figure>
+  <figure style="flex: 1; text-align: center; margin: 0;"><img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/financial-markets/Returns_Asia ASX 200.png" alt="ASX 200 Returns" style="max-width: 100%; height: auto;"></figure>
+</div>
+
+<div style="display: flex; justify-content: center; gap: 20px; align-items: flex-start; margin-bottom: 20px;">
+  <figure style="flex: 1; text-align: center; margin: 0;"><img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/financial-markets/Index_Asia Nikkei 225.png" alt="Nikkei 225 Index" style="max-width: 100%; height: auto;"></figure>
+  <figure style="flex: 1; text-align: center; margin: 0;"><img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/financial-markets/Returns_Asia Nikkei 225.png" alt="Nikkei 225 Returns" style="max-width: 100%; height: auto;"></figure>
+</div>
+
+<div style="display: flex; justify-content: center; gap: 20px; align-items: flex-start; margin-bottom: 20px;">
+  <figure style="flex: 1; text-align: center; margin: 0;"><img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/financial-markets/Index_Asia Hang Seng.png" alt="Hang Seng Index" style="max-width: 100%; height: auto;"></figure>
+  <figure style="flex: 1; text-align: center; margin: 0;"><img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/financial-markets/Returns_Asia Hang Seng.png" alt="Hang Seng Returns" style="max-width: 100%; height: auto;"></figure>
+</div>
+
+<div style="display: flex; justify-content: center; gap: 20px; align-items: flex-start;">
+  <figure style="flex: 1; text-align: center; margin: 0;"><img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/financial-markets/Index_Asia Shanghai Stock Exchange.png" alt="Shanghai Stock Exchange Index" style="max-width: 100%; height: auto;"></figure>
+  <figure style="flex: 1; text-align: center; margin: 0;"><img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/financial-markets/Returns_Asia Shanghai Stock Exchange.png" alt="Shanghai Stock Exchange Returns" style="max-width: 100%; height: auto;"></figure>
+</div>
+
 
 ## Codebase
 The codebase to implement this analysis is [here](https://nbviewer.org/github/MarkThackham/MarkThackham.github.io/blob/main/Portfolio/machine-learning/financial-markets/financial-markets.ipynb)
