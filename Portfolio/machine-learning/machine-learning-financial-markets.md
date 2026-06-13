@@ -25,109 +25,29 @@ dataset
 ## Data
 The [London House Price Data](https://www.kaggle.com/datasets/oktayrdeki/houses-in-london) contains 1,000 examples of prices for London houses, together with 15 features:
 
-1. **Neighbourhood** (Categorical)  
-2. **Bedrooms** (Integer)  
-3. **Bathrooms** (Integer)  
-4. **Square Meters** (Integer)  
-5. **Building Age** (Years, Integer)  
-6. **Garden** (Binary: 0 = No, 1 = Yes)  
-7. **Garage** (Binary: 0 = No, 1 = Yes)  
-8. **Floors** (Integer)  
-9. **Property Type** (Categorical)  
-10. **Heating Type** (Categorical)  
-11. **Balcony** (Binary: 0 = No, 1 = Yes)  
-12. **Interior Style** (Categorical)  
-13. **View** (Categorical)  
-14. **Materials** (Categorical)  
-15. **Building Status** (Categorical)  
-16. **Price** (Integer, Currency)  
 
-## Analysis
-
-### Exploratory Data Analysis
-
-#### Response
-The response is house price. The histograms below show the distribution of house prices, which is right-skewed.  A log transformation normalises the distribution.
-
-<div style="display: flex; justify-content: center; align-items: flex-start;">
-  <figure style="text-align: center; margin: 0;">
-    <img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/london-houseprice/london-house-price-histogram.png"
-         alt="Distribution of House Prices"
-         width="800">
-    <figcaption>Distribution of House Prices</figcaption>
-  </figure>
-</div>
-
-#### Features
-
-The plot shows the distribution of house prices by neighbourhood.  Neighbourhoods vary widely in price, with some areas (e.g., Chelsea, Westminster) having significantly higher prices than others (e.g., Shoreditch, Greenwich).
-
-<div style="display: flex; justify-content: center; align-items: flex-start;">
-  <figure style="text-align: center; margin: 0;">
-    <img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/london-houseprice/london-house-price-neighborhood.png"
-         alt="Distribution of House Prices by Neighbourhood"
-         width="800">
-    <figcaption>Distribution of House Prices by Neighbourhood</figcaption>
-  </figure>
-</div>
-
-The plot below shows the relationships between the 14 remaining features and house price. 
-
-<div style="display: flex; justify-content: center; align-items: flex-start;">
-  <figure style="text-align: center; margin: 0;">
-    <img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/london-houseprice/london-house-price-features.png"
-         alt="Relation between Features and House Price"
-         width="800">
-    <figcaption>Relation between Features and House Price</figcaption>
-  </figure>
-</div>
-
-Feature importance is assessed using the R² from univariate analysis, with square metres, neighbourhood, and property type being the most important features. 
-
-<div style="display: flex; justify-content: center; align-items: flex-start;">
-  <figure style="text-align: center; margin: 0;">
-    <img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/london-houseprice/london-house-price-rsq.png"
-         alt="Feature Importance"
-         width="800">
-    <figcaption>Feature Importance</figcaption>
-  </figure>
-</div>
-
-Only the square metres, neighbourhood, and property type features are retained for modelling, with neighbourhood and property type one-hot encoded into binary features.
-
-## Modelling
-
-### Models
-Three models are trained:
-1. Linear Regression (square metres, neighbourhood, and property type)
-2. Linear Regression (square metres, square metres squared, neighbourhood, and property type)
-3. XGBoost (square metres, neighbourhood, and property type)
 
 ### Results
 
 These plots show the predicted vs actual prices for the three models on both the training and test sets.  The XGBoost model performs best, with predictions closely aligned to actual prices.
 
-<div style="display: flex; justify-content: center; gap: 20px; align-items: flex-start;">
 
-  <figure style="flex: 1; text-align: center; margin: 0;">
-    <img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/london-houseprice/london-house-price-OLS.png"
-         alt="Cyclical Days" style="max-width: 100%; height: auto;">
-    <figcaption>OLS</figcaption>
-  </figure>
-
-  <figure style="flex: 1; text-align: center; margin: 0;">
-    <img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/london-houseprice/london-house-price-OLS2.png"
-         alt="Cyclical Hours" style="max-width: 100%; height: auto;">
-    <figcaption>OLS2</figcaption>
-  </figure>
-
-  <figure style="flex: 1; text-align: center; margin: 0;">
-    <img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/london-houseprice/london-house-price-XGBoost.png"
-         alt="Cyclical Months" style="max-width: 100%; height: auto;">
-    <figcaption>XGBoost</figcaption>
-  </figure>
-
+<div style="display: flex; justify-content: center; gap: 10px; align-items: flex-start; margin-bottom: 20px;">
+  <figure style="flex: 1; text-align: center; margin: 0;"><img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/financial-markets/Index_USA S&P 500.png" alt="Chart 1" style="max-width: 100%; height: auto;"><figcaption>Chart 1</figcaption></figure>
+  <figure style="flex: 1; text-align: center; margin: 0;"><img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/financial-markets/Index_USA Dow Jones.png" alt="Chart 2" style="max-width: 100%; height: auto;"><figcaption>Chart 1</figcaption></figure>
+  <figure style="flex: 1; text-align: center; margin: 0;"><img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/financial-markets/Index_USA NASDAQ.png" alt="Chart 3" style="max-width: 100%; height: auto;"><figcaption>Chart 1</figcaption></figure>
+  <figure style="flex: 1; text-align: center; margin: 0;"><img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/financial-markets/Index_USA Russell 2000.png" alt="Chart 4" style="max-width: 100%; height: auto;"><figcaption>Chart 1</figcaption></figure>
 </div>
+
+<div style="display: flex; justify-content: center; gap: 10px; align-items: flex-start;">
+  <figure style="flex: 1; text-align: center; margin: 0;"><img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/financial-markets/Returns_USA S&P 500.png" alt="Chart 1" style="max-width: 100%; height: auto;"><figcaption>Chart 1</figcaption></figure>
+  <figure style="flex: 1; text-align: center; margin: 0;"><img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/financial-markets/Returns_USA Dow Jones.png" alt="Chart 2" style="max-width: 100%; height: auto;"><figcaption>Chart 1</figcaption></figure>
+  <figure style="flex: 1; text-align: center; margin: 0;"><img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/financial-markets/Returns_USA NASDAQ.png" alt="Chart 3" style="max-width: 100%; height: auto;"><figcaption>Chart 1</figcaption></figure>
+  <figure style="flex: 1; text-align: center; margin: 0;"><img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/financial-markets/Returns_USA Russell 2000.png" alt="Chart 4" style="max-width: 100%; height: auto;"><figcaption>Chart 1</figcaption></figure>
+</div>
+
+
+
 
 This table shows the RMSE and R² for the three models on both the training and test sets.  The XGBoost model performs best, with the lowest RMSE and highest R² on both sets.
 
