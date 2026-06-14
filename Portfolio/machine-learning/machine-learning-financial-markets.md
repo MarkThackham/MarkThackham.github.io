@@ -10,26 +10,59 @@ permalink: /machine-learning/machine-learning-financial-markets/
 <div style="background-color: #f5f5f5; padding: 15px; border-radius: 8px;">
 
 <p>
-The
-<a href="https://www.kaggle.com/datasets/oktayrdeki/houses-in-london" target="_blank">
-dataset
-</a> contains 1,000 examples of prices for London houses. Key take-outs are:
+Financial Index Data from <a href="https://uk.finance.yahoo.com/" target="_blank"> Yahoo Finance 
+</a> can be downloaded into Python using the yfinance package. Investigating key stock market indicies from te USA, Europe and Asia, key take-outs are:
 </p>
 <ul>
-  <li>Square meters, neighbourhood, and property type the strongest predictors of house prices.</li>
-  <li>House prices are critically dependent on location, with significant variations across different neighbourhoods.</li>
-  <li>Property type also influences prices, with detached houses typically fetching higher prices.</li>
+  <li>a</li>
+  <li>b</li>
+  <li>c</li>
 </ul>
 </div>
 
 ## Data
-The [London House Price Data](https://www.kaggle.com/datasets/oktayrdeki/houses-in-london) contains 1,000 examples of prices for London houses, together with 15 features:
+The yfinance PYthon package can download data directly from [Yahoo Finance](href="https://uk.finance.yahoo.com/). Data from 1984 to 2026 for these indices have been downloaded and returns analysed:
 
 
+## Discussion
 
-### Results
+## Selected Indices
 
-These plots show the predicted vs actual prices for the three models on both the training and test sets.  The XGBoost model performs best, with predictions closely aligned to actual prices.
+## USA
+* **S&P 500**: A market-capitalization-weighted index tracking 500 of the largest publicly traded companies in the United States.
+* **Dow Jones**: A price-weighted index of 30 prominent blue-chip companies listed on US stock exchanges.
+* **NASDAQ**: A technology-heavy index that includes many of the world's largest software, hardware, and internet companies.
+* **Russell 2000**: A market-cap-weighted index that tracks the performance of 2,000 small-cap companies in the US.
+
+## Europe
+* **FTSE 100**: An index representing the 100 most highly capitalized companies listed on the London Stock Exchange.
+* **DAX**: A blue-chip stock market index consisting of 40 major German companies trading on the Frankfurt Stock Exchange.
+* **CAC 40**: A benchmark French stock market index that tracks the 40 most significant stocks among the 100 largest on the Euronext Paris.
+* **Euro Stoxx 100**: A broad index tracking 100 blue-chip companies from across the Eurozone.
+
+## Asia
+* **ASX 200**: An index comprising the 200 largest companies listed on the Australian Securities Exchange by float-adjusted market capitalization.
+* **Nikkei 225**: A price-weighted index for the Tokyo Stock Exchange, consisting of 225 large, blue-chip Japanese companies.
+* **Hang Seng**: A free-float-adjusted market-capitalization-weighted stock market index in Hong Kong.
+* **Shanghai Stock Exchange**: A benchmark index representing all stocks (A and B shares) traded on the Shanghai Stock Exchange.
+
+## Time Series Data Characteristics
+
+The analysis for each index is divided into two core components:
+
+* **Price Index Data**:
+    * **Long-term Growth**: Represents the raw index value, demonstrating growth trends over four decades.
+    * **Non-Stationarity**: Displays non-stationary behavior, characterized by long-term trends and shifts in mean value over time.
+    * **Drawdowns**: Clearly illustrates significant historical market events such as the 2000 Dot-com crash, 2008 Financial Crisis, and the 2020 COVID-19 pandemic.
+
+* **Returns Data**:
+    * **Stationarity**: Returns (percentage changes) are generally stationary, fluctuating around a consistent mean (usually close to zero), making them suitable for statistical modeling.
+    * **Volatility Clustering**: Exhibits periods of high variance (erratic swings) followed by periods of relative stability (heteroskedasticity).
+    * **Fat Tails**: Shows a tendency for extreme events to occur more frequently than predicted by a normal (Gaussian) distribution, indicating higher tail risk.
+
+## Results
+
+The results are
 
 
 USA
