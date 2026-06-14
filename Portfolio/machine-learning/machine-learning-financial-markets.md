@@ -62,32 +62,31 @@ The analysis for each index is divided into two core components:
 
 ## Results
 
-The results are
-
-
 USA
 
 <div style="display: flex; justify-content: center; gap: 20px; align-items: flex-start; margin-bottom: 20px;">
   <figure style="flex: 1; text-align: center; margin: 0;"><img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/financial-markets/Index_USA S&P 500.png" alt="S&P 500 Index" style="max-width: 100%; height: auto;"></figure>
   <figure style="flex: 1; text-align: center; margin: 0;"><img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/financial-markets/Returns_USA S&P 500.png" alt="S&P 500 Returns" style="max-width: 100%; height: auto;"></figure>
+  <figure style="flex: 1; text-align: center; margin: 0;"><img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/financial-markets/Histogram_USA S&P 500.png" alt="S&P 500 Returns Histogram" style="max-width: 100%; height: auto;"></figure>
 </div>
 
 <div style="display: flex; justify-content: center; gap: 20px; align-items: flex-start; margin-bottom: 20px;">
   <figure style="flex: 1; text-align: center; margin: 0;"><img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/financial-markets/Index_USA Dow Jones.png" alt="Dow Jones Index" style="max-width: 100%; height: auto;"></figure>
   <figure style="flex: 1; text-align: center; margin: 0;"><img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/financial-markets/Returns_USA Dow Jones.png" alt="Dow Jones Returns" style="max-width: 100%; height: auto;"></figure>
+  <figure style="flex: 1; text-align: center; margin: 0;"><img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/financial-markets/Histogram_USA Dow Jones.png" alt="Dow Jones Returns Histogram" style="max-width: 100%; height: auto;"></figure>
 </div>
 
 <div style="display: flex; justify-content: center; gap: 20px; align-items: flex-start; margin-bottom: 20px;">
   <figure style="flex: 1; text-align: center; margin: 0;"><img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/financial-markets/Index_USA NASDAQ.png" alt="NASDAQ Index" style="max-width: 100%; height: auto;"></figure>
   <figure style="flex: 1; text-align: center; margin: 0;"><img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/financial-markets/Returns_USA NASDAQ.png" alt="NASDAQ Returns" style="max-width: 100%; height: auto;"></figure>
+  <figure style="flex: 1; text-align: center; margin: 0;"><img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/financial-markets/Histogram_USA NASDAQ.png" alt="NASDAQ Returns Histogram" style="max-width: 100%; height: auto;"></figure>
 </div>
 
 <div style="display: flex; justify-content: center; gap: 20px; align-items: flex-start;">
   <figure style="flex: 1; text-align: center; margin: 0;"><img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/financial-markets/Index_USA Russell 2000.png" alt="Russell 2000 Index" style="max-width: 100%; height: auto;"></figure>
   <figure style="flex: 1; text-align: center; margin: 0;"><img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/financial-markets/Returns_USA Russell 2000.png" alt="Russell 2000 Returns" style="max-width: 100%; height: auto;"></figure>
+  <figure style="flex: 1; text-align: center; margin: 0;"><img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/financial-markets/Histogram_USA Russell 2000.png" alt="Russell 2000 Returns Histogram" style="max-width: 100%; height: auto;"></figure>
 </div>
-
-
 
 
 Europe
@@ -95,47 +94,52 @@ Europe
 <div style="display: flex; justify-content: center; gap: 20px; align-items: flex-start; margin-bottom: 20px;">
   <figure style="flex: 1; text-align: center; margin: 0;"><img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/financial-markets/Index_Europe FTSE 100.png" alt="FTSE 100 Index" style="max-width: 100%; height: auto;"></figure>
   <figure style="flex: 1; text-align: center; margin: 0;"><img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/financial-markets/Returns_Europe FTSE 100.png" alt="FTSE 100 Returns" style="max-width: 100%; height: auto;"></figure>
+  <figure style="flex: 1; text-align: center; margin: 0;"><img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/financial-markets/Histogram_Europe FTSE 100.png" alt="FTSE 100 Returns Histogram" style="max-width: 100%; height: auto;"></figure>
 </div>
 
 <div style="display: flex; justify-content: center; gap: 20px; align-items: flex-start; margin-bottom: 20px;">
   <figure style="flex: 1; text-align: center; margin: 0;"><img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/financial-markets/Index_Europe DAX.png" alt="DAX Index" style="max-width: 100%; height: auto;"></figure>
   <figure style="flex: 1; text-align: center; margin: 0;"><img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/financial-markets/Returns_Europe DAX.png" alt="DAX Returns" style="max-width: 100%; height: auto;"></figure>
+  <figure style="flex: 1; text-align: center; margin: 0;"><img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/financial-markets/Histogram_Europe DAX.png" alt="DAX Returns Histogram" style="max-width: 100%; height: auto;"></figure>
 </div>
 
 <div style="display: flex; justify-content: center; gap: 20px; align-items: flex-start; margin-bottom: 20px;">
   <figure style="flex: 1; text-align: center; margin: 0;"><img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/financial-markets/Index_Europe CAC 40.png" alt="CAC 40 Index" style="max-width: 100%; height: auto;"></figure>
   <figure style="flex: 1; text-align: center; margin: 0;"><img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/financial-markets/Returns_Europe CAC 40.png" alt="CAC 40 Returns" style="max-width: 100%; height: auto;"></figure>
+  <figure style="flex: 1; text-align: center; margin: 0;"><img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/financial-markets/Histogram_Europe CAC 40.png" alt="CAC 40 Returns Histogram" style="max-width: 100%; height: auto;"></figure>
 </div>
 
 <div style="display: flex; justify-content: center; gap: 20px; align-items: flex-start;">
   <figure style="flex: 1; text-align: center; margin: 0;"><img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/financial-markets/Index_Europe Euro Stoxx 100.png" alt="Euro Stoxx 100 Index" style="max-width: 100%; height: auto;"></figure>
   <figure style="flex: 1; text-align: center; margin: 0;"><img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/financial-markets/Returns_Europe Euro Stoxx 100.png" alt="Euro Stoxx 100 Returns" style="max-width: 100%; height: auto;"></figure>
+  <figure style="flex: 1; text-align: center; margin: 0;"><img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/financial-markets/Histogram_Europe Euro Stoxx 100.png" alt="Euro Stoxx 100 Returns Histogram" style="max-width: 100%; height: auto;"></figure>
 </div>
 
 
-
-Asia
-
+Asia  
 <div style="display: flex; justify-content: center; gap: 20px; align-items: flex-start; margin-bottom: 20px;">
   <figure style="flex: 1; text-align: center; margin: 0;"><img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/financial-markets/Index_Asia ASX 200.png" alt="ASX 200 Index" style="max-width: 100%; height: auto;"></figure>
   <figure style="flex: 1; text-align: center; margin: 0;"><img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/financial-markets/Returns_Asia ASX 200.png" alt="ASX 200 Returns" style="max-width: 100%; height: auto;"></figure>
+  <figure style="flex: 1; text-align: center; margin: 0;"><img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/financial-markets/Histogram_Asia ASX 200.png" alt="ASX 200 Returns Histogram" style="max-width: 100%; height: auto;"></figure>
 </div>
 
 <div style="display: flex; justify-content: center; gap: 20px; align-items: flex-start; margin-bottom: 20px;">
   <figure style="flex: 1; text-align: center; margin: 0;"><img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/financial-markets/Index_Asia Nikkei 225.png" alt="Nikkei 225 Index" style="max-width: 100%; height: auto;"></figure>
   <figure style="flex: 1; text-align: center; margin: 0;"><img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/financial-markets/Returns_Asia Nikkei 225.png" alt="Nikkei 225 Returns" style="max-width: 100%; height: auto;"></figure>
+  <figure style="flex: 1; text-align: center; margin: 0;"><img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/financial-markets/Histogram_Asia Nikkei 225.png" alt="Nikkei 225 Returns Histogram" style="max-width: 100%; height: auto;"></figure>
 </div>
 
 <div style="display: flex; justify-content: center; gap: 20px; align-items: flex-start; margin-bottom: 20px;">
   <figure style="flex: 1; text-align: center; margin: 0;"><img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/financial-markets/Index_Asia Hang Seng.png" alt="Hang Seng Index" style="max-width: 100%; height: auto;"></figure>
   <figure style="flex: 1; text-align: center; margin: 0;"><img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/financial-markets/Returns_Asia Hang Seng.png" alt="Hang Seng Returns" style="max-width: 100%; height: auto;"></figure>
+  <figure style="flex: 1; text-align: center; margin: 0;"><img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/financial-markets/Histogram_Asia Hang Seng.png" alt="Hang Seng Returns Histogram" style="max-width: 100%; height: auto;"></figure>
 </div>
 
 <div style="display: flex; justify-content: center; gap: 20px; align-items: flex-start;">
   <figure style="flex: 1; text-align: center; margin: 0;"><img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/financial-markets/Index_Asia Shanghai Stock Exchange.png" alt="Shanghai Stock Exchange Index" style="max-width: 100%; height: auto;"></figure>
   <figure style="flex: 1; text-align: center; margin: 0;"><img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/financial-markets/Returns_Asia Shanghai Stock Exchange.png" alt="Shanghai Stock Exchange Returns" style="max-width: 100%; height: auto;"></figure>
+  <figure style="flex: 1; text-align: center; margin: 0;"><img src="https://raw.githubusercontent.com/MarkThackham/MarkThackham.github.io/main/Portfolio/machine-learning/financial-markets/Histogram_Asia Shanghai Stock Exchange.png" alt="Shanghai Stock Exchange Returns Histogram" style="max-width: 100%; height: auto;"></figure>
 </div>
-
 
 ## Codebase
 The codebase to implement this analysis is [here](https://nbviewer.org/github/MarkThackham/MarkThackham.github.io/blob/main/Portfolio/machine-learning/financial-markets/financial-markets.ipynb)
