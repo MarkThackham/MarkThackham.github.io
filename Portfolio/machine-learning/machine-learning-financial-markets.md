@@ -69,7 +69,7 @@ $$
 
 The results are tabulated for both the raw (level) data and the return data.
 
-**Interpretation:** If the $p\text{-value}$ is less than your significance level (typically 0.05), you reject the null hypothesis and conclude that the series is stationary.
+**Interpretation:** If the $p$-value is less than your significance level (typically 0.05), you reject the null hypothesis and conclude that the series is stationary.
 
 | Name | Level ADF Statistic | Level P-Value | Return ADF Statistic | Return P-Value |
 |---|---:|---:|---:|---:|
