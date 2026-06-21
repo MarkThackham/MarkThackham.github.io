@@ -66,33 +66,6 @@ The results are tabulated for both the raw (level) data and te return data.
 
 Interpretation: If the $p\text{-value}$ is less than your significance level (typically $0.05$), you reject the null hypothesis and conclude that the series is stationary.
 
-| Name | Series | ADF Statistic | P-Value |
-|---|---|---:|---:|
-| **USA S&P 500** | Level | 2.7377 | 0.9991 |
-| | Return | -6.5729 | 0.0000 |
-| **USA Dow Jones** | Level | 1.9002 | 0.9985 |
-| | Return | -2.7853 | 0.0604 |
-| **USA NASDAQ** | Level | 3.1061 | 1.0000 |
-| | Return | -2.1873 | 0.2109 |
-| **USA Russell 2000** | Level | 2.9145 | 1.0000 |
-| | Return | -4.5731 | 0.0001 |
-| **Europe FTSE 100** | Level | -0.7252 | 0.8401 |
-| | Return | -6.7940 | 0.0000 |
-| **Europe DAX** | Level | 2.6811 | 0.9991 |
-| | Return | -2.3876 | 0.1453 |
-| **Europe CAC 40** | Level | -0.5879 | 0.8737 |
-| | Return | -4.3343 | 0.0004 |
-| **Europe Euro Stoxx 100** | Level | 0.2570 | 0.9753 |
-| | Return | -1.5401 | 0.5136 |
-| **Asia ASX 200** | Level | -0.5865 | 0.8740 |
-| | Return | -8.5897 | 0.0000 |
-| **Asia Nikkei 225** | Level | -0.2430 | 0.9332 |
-| | Return | -0.5185 | 0.8884 |
-| **Asia Hang Seng** | Level | -1.6604 | 0.4516 |
-| | Return | -2.9722 | 0.0376 |
-| **Asia Shanghai Stock Exchange** | Level | -2.9902 | 0.0358 |
-| | Return | -5.5414 | 0.0000 |
-
 | Name | Level ADF Statistic | Level P-Value | Return ADF Statistic | Return P-Value |
 |---|---:|---:|---:|---:|
 | **USA S&P 500** | 2.7377 | 0.9991 | -6.5729 | 0.0000 |
