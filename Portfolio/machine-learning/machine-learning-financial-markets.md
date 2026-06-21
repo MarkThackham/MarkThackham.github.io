@@ -59,12 +59,17 @@ The analysis for each index is divided into two core components:
 ## Analysis
 The stationarity is formally assessed using the Augmented Dickey Fuller (ADF). Test The ADF test is the most common statistical test used to check for a unit root (a characteristic that causes a time series to be non-stationary).
 
-* Null Hypothesis ($H_0$): The series has a unit root (it is non-stationary).
-* Alternative Hypothesis ($H_a$): The series does not have a unit root (it is stationary).
+$$
+H_0: \text{The series has a unit root (it is non-stationary).}
+$$
 
-The results are tabulated for both the raw (level) data and te return data.
+$$
+H_a: \text{The series does not have a unit root (it is stationary).}
+$$
 
-Interpretation: If the $p\text{-value}$ is less than your significance level (typically $0.05$), you reject the null hypothesis and conclude that the series is stationary.
+The results are tabulated for both the raw (level) data and the return data.
+
+**Interpretation:** If the $p\text{-value}$ is less than your significance level (typically 0.05), you reject the null hypothesis and conclude that the series is stationary.
 
 | Name | Level ADF Statistic | Level P-Value | Return ADF Statistic | Return P-Value |
 |---|---:|---:|---:|---:|
