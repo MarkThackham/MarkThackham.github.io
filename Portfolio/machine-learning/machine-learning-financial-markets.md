@@ -21,26 +21,21 @@ Financial Index Data from <a href="https://uk.finance.yahoo.com/" target="_blank
 </div>
 
 ## Data
-The yfinance PYthon package can download data directly from [Yahoo Finance](href="https://uk.finance.yahoo.com/). Data from 1984 to 2026 for these indices have been downloaded and returns analysed:
+The yfinance Python package can download data directly from [Yahoo Finance](href="https://uk.finance.yahoo.com/). Data from 1984 to 2026 for these indices have been downloaded and returns analysed:
 
-
-## Discussion
-
-## Selected Indices
-
-## USA
+### USA
 * **S&P 500**: A market-capitalization-weighted index tracking 500 of the largest publicly traded companies in the United States.
 * **Dow Jones**: A price-weighted index of 30 prominent blue-chip companies listed on US stock exchanges.
 * **NASDAQ**: A technology-heavy index that includes many of the world's largest software, hardware, and internet companies.
 * **Russell 2000**: A market-cap-weighted index that tracks the performance of 2,000 small-cap companies in the US.
 
-## Europe
+### Europe
 * **FTSE 100**: An index representing the 100 most highly capitalized companies listed on the London Stock Exchange.
 * **DAX**: A blue-chip stock market index consisting of 40 major German companies trading on the Frankfurt Stock Exchange.
 * **CAC 40**: A benchmark French stock market index that tracks the 40 most significant stocks among the 100 largest on the Euronext Paris.
 * **Euro Stoxx 100**: A broad index tracking 100 blue-chip companies from across the Eurozone.
 
-## Asia
+### Asia
 * **ASX 200**: An index comprising the 200 largest companies listed on the Australian Securities Exchange by float-adjusted market capitalization.
 * **Nikkei 225**: A price-weighted index for the Tokyo Stock Exchange, consisting of 225 large, blue-chip Japanese companies.
 * **Hang Seng**: A free-float-adjusted market-capitalization-weighted stock market index in Hong Kong.
